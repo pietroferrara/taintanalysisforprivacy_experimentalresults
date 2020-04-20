@@ -1,7 +1,9 @@
-### Repository content
+# Taint Analysis For Privacy Experimental Results
+
+## Repository content
 
 The repository contains the XML results of the analysis of
-- WebGoat 6.0
+- WebGoat 6.0.1
 - blojsom 3.3b
 - bluebog 0.9
 - riki 1.3.0
@@ -16,9 +18,9 @@ The repository contains the XML results of the analysis of
 - snipsnap 0.7
 
 and taint graphs of
-- WebGoat 6.0
+- WebGoat 6.0.1
 
-###How to view the taint graphs
+## How to view the taint graphs
 
 The taint graphs are contained in taint_graphs.zip. They are represented as hierarchical graphml files. These can be visualized using the yEd graph editor (https://www.yworks.com/products/yed) and then by:
 
