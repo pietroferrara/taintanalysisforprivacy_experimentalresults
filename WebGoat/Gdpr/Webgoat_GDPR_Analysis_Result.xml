@@ -1,0 +1,2299 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<analysisReportResult>
+    <id>Webgoat_GDPR_Analysis_Result</id>
+    <status>COMPLETED</status>
+    <creationTimestamp>2020-04-20T08:39:30.733Z</creationTimestamp>
+    <engineVersion>3.0.0</engineVersion>
+    <runDuration>133818</runDuration>
+    <warnings>
+        <warning kind="Gdpr" progressive="0" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.session.LessonTracker</className>
+            <line>203</line>
+            <memberName>load</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/session/LessonTracker.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.io) through parameter actual parameter "arg 0" of method "&lt;init&gt;"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="1" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.LessonSource</className>
+            <line>182</line>
+            <memberName>writeSource</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/LessonSource.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.io) through parameter actual parameter "arg 0" of method "print"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="2" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.SilentTransactions</className>
+            <line>89</line>
+            <memberName>handleRequest</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/SilentTransactions.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.io) through parameter actual parameter "arg 0" of method "print"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="3" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.util.Exec</className>
+            <line>126</line>
+            <memberName>execOptions</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/util/Exec.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.io) through parameter actual parameter "arg 0" of method "write"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="4" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.util.Exec</className>
+            <line>201</line>
+            <memberName>execOptions</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/util/Exec.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.io) through parameter actual parameter "arg 0" of method "write"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="5" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.SqlAddData</className>
+            <line>99</line>
+            <memberName>createContent</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/SqlAddData.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 0" of method "execute"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="6" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.SqlModifyData</className>
+            <line>107</line>
+            <memberName>createContent</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/SqlModifyData.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 0" of method "execute"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="7" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.BackDoors</className>
+            <line>148</line>
+            <memberName>concept1</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/BackDoors.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 0" of method "executeQuery"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="8" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.BackDoors</className>
+            <line>180</line>
+            <memberName>concept2</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/BackDoors.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 0" of method "executeQuery"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="9" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.BlindNumericSqlInjection</className>
+            <line>114</line>
+            <memberName>createContent</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/BlindNumericSqlInjection.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 0" of method "executeQuery"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="10" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.BlindStringSqlInjection</className>
+            <line>114</line>
+            <memberName>createContent</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/BlindStringSqlInjection.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 0" of method "executeQuery"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="11" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.Challenge2Screen</className>
+            <line>226</line>
+            <memberName>doStage2</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/Challenge2Screen.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 0" of method "executeQuery"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="12" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.CrossSiteScripting.ViewProfile</className>
+            <line>97</line>
+            <memberName>getEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/CrossSiteScripting/ViewProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 0" of method "executeQuery"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="13" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.DOS_Login</className>
+            <line>106</line>
+            <memberName>createContent</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/DOS_Login.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 0" of method "executeQuery"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="14" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.GoatHillsFinancial.DefaultLessonAction</className>
+            <line>252</line>
+            <memberName>isAuthorized</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/GoatHillsFinancial/DefaultLessonAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 0" of method "executeQuery"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="15" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.GoatHillsFinancial.ListStaff</className>
+            <line>87</line>
+            <memberName>getAllEmployees</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/GoatHillsFinancial/ListStaff.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 0" of method "executeQuery"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="16" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.GoatHillsFinancial.Login</className>
+            <line>127</line>
+            <memberName>login</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/GoatHillsFinancial/Login.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 0" of method "executeQuery"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="17" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.GoatHillsFinancial.ViewProfile</className>
+            <line>94</line>
+            <memberName>getEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/GoatHillsFinancial/ViewProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 0" of method "executeQuery"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="18" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.RoleBasedAccessControl.ViewProfile</className>
+            <line>115</line>
+            <memberName>getEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/RoleBasedAccessControl/ViewProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 0" of method "executeQuery"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="19" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.SQLInjection.ListStaff</className>
+            <line>89</line>
+            <memberName>getAllEmployees</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/SQLInjection/ListStaff.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 0" of method "executeQuery"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="20" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.SQLInjection.Login</className>
+            <line>131</line>
+            <memberName>login</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/SQLInjection/Login.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 0" of method "executeQuery"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="21" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.SQLInjection.Login</className>
+            <line>166</line>
+            <memberName>login_BACKUP</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/SQLInjection/Login.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 0" of method "executeQuery"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="22" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.SQLInjection.ViewProfile</className>
+            <line>108</line>
+            <memberName>getEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/SQLInjection/ViewProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 0" of method "executeQuery"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="23" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.SQLInjection.ViewProfile</className>
+            <line>157</line>
+            <memberName>getEmployeeProfile_BACKUP</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/SQLInjection/ViewProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 0" of method "executeQuery"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="24" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.SqlNumericInjection</className>
+            <line>118</line>
+            <memberName>injectableQuery</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/SqlNumericInjection.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 0" of method "executeQuery"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="25" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.SqlStringInjection</className>
+            <line>100</line>
+            <memberName>injectableQuery</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/SqlStringInjection.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 0" of method "executeQuery"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="26" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.ThreadSafetyProblem</className>
+            <line>98</line>
+            <memberName>createContent</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/ThreadSafetyProblem.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 0" of method "executeQuery"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="27" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.WsSqlInjection</className>
+            <line>233</line>
+            <memberName>getResults</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/WsSqlInjection.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 0" of method "executeQuery"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="28" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.admin.ViewDatabase</className>
+            <line>82</line>
+            <memberName>createContent</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/admin/ViewDatabase.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 0" of method "executeQuery"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="29" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.instructor.RoleBasedAccessControl.ViewProfile_i</className>
+            <line>88</line>
+            <memberName>getEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/instructor/RoleBasedAccessControl/ViewProfile_i.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 0" of method "executeQuery"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="30" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.BackDoors</className>
+            <line>141</line>
+            <memberName>concept1</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/BackDoors.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 0" of method "executeUpdate"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="31" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.DOS_Login</className>
+            <line>122</line>
+            <memberName>createContent</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/DOS_Login.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 0" of method "executeUpdate"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="32" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.GoatHillsFinancial.DeleteProfile</className>
+            <line>98</line>
+            <memberName>deleteEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/GoatHillsFinancial/DeleteProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 0" of method "executeUpdate"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="33" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.MaliciousFileExecution</className>
+            <line>463</line>
+            <memberName>handleRequest</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/MaliciousFileExecution.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 0" of method "executeUpdate"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="34" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.MaliciousFileExecution</className>
+            <line>471</line>
+            <memberName>handleRequest</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/MaliciousFileExecution.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 0" of method "executeUpdate"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="35" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.RoleBasedAccessControl.DeleteProfile</className>
+            <line>103</line>
+            <memberName>deleteEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/RoleBasedAccessControl/DeleteProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 0" of method "executeUpdate"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="36" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.CSRF</className>
+            <line>101</line>
+            <memberName>addMessage</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/CSRF.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="37" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.CSRF</className>
+            <line>102</line>
+            <memberName>addMessage</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/CSRF.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="38" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.CrossSiteScripting.FindProfile</className>
+            <line>154</line>
+            <memberName>findEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/CrossSiteScripting/FindProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="39" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.CrossSiteScripting.FindProfile</className>
+            <line>155</line>
+            <memberName>findEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/CrossSiteScripting/FindProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="40" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.CrossSiteScripting.UpdateProfile</className>
+            <line>201</line>
+            <memberName>changeEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/CrossSiteScripting/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="41" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.CrossSiteScripting.UpdateProfile</className>
+            <line>206</line>
+            <memberName>changeEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/CrossSiteScripting/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="42" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.CrossSiteScripting.UpdateProfile</className>
+            <line>209</line>
+            <memberName>changeEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/CrossSiteScripting/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="43" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.CrossSiteScripting.UpdateProfile</className>
+            <line>284</line>
+            <memberName>createEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/CrossSiteScripting/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="44" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.CrossSiteScripting.UpdateProfile</className>
+            <line>289</line>
+            <memberName>createEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/CrossSiteScripting/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="45" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.CrossSiteScripting.UpdateProfile</className>
+            <line>292</line>
+            <memberName>createEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/CrossSiteScripting/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="46" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.CrossSiteScripting.UpdateProfile</className>
+            <line>293</line>
+            <memberName>createEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/CrossSiteScripting/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="47" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.CrossSiteScripting.UpdateProfile</className>
+            <line>294</line>
+            <memberName>createEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/CrossSiteScripting/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="48" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.DBCrossSiteScripting.UpdateProfile</className>
+            <line>154</line>
+            <memberName>changeEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/DBCrossSiteScripting/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="49" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.DBCrossSiteScripting.UpdateProfile</className>
+            <line>159</line>
+            <memberName>changeEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/DBCrossSiteScripting/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="50" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.DBCrossSiteScripting.UpdateProfile</className>
+            <line>163</line>
+            <memberName>changeEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/DBCrossSiteScripting/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="51" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.DBCrossSiteScripting.UpdateProfile</className>
+            <line>164</line>
+            <memberName>changeEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/DBCrossSiteScripting/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="52" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.DBCrossSiteScripting.UpdateProfile</className>
+            <line>165</line>
+            <memberName>changeEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/DBCrossSiteScripting/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="53" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.DBCrossSiteScripting.UpdateProfile</className>
+            <line>183</line>
+            <memberName>createEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/DBCrossSiteScripting/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="54" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.DBCrossSiteScripting.UpdateProfile</className>
+            <line>188</line>
+            <memberName>createEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/DBCrossSiteScripting/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="55" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.DBCrossSiteScripting.UpdateProfile</className>
+            <line>191</line>
+            <memberName>createEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/DBCrossSiteScripting/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="56" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.DBCrossSiteScripting.UpdateProfile</className>
+            <line>192</line>
+            <memberName>createEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/DBCrossSiteScripting/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="57" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.DBCrossSiteScripting.UpdateProfile</className>
+            <line>193</line>
+            <memberName>createEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/DBCrossSiteScripting/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="58" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.DBSQLInjection.Login</className>
+            <line>132</line>
+            <memberName>login</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/DBSQLInjection/Login.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="59" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.DBSQLInjection.Login</className>
+            <line>160</line>
+            <memberName>login</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/DBSQLInjection/Login.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="60" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.GoatHillsFinancial.FindProfile</className>
+            <line>123</line>
+            <memberName>findEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/GoatHillsFinancial/FindProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="61" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.GoatHillsFinancial.FindProfile</className>
+            <line>124</line>
+            <memberName>findEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/GoatHillsFinancial/FindProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="62" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.GoatHillsFinancial.UpdateProfile</className>
+            <line>132</line>
+            <memberName>changeEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/GoatHillsFinancial/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="63" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.GoatHillsFinancial.UpdateProfile</className>
+            <line>137</line>
+            <memberName>changeEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/GoatHillsFinancial/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="64" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.GoatHillsFinancial.UpdateProfile</className>
+            <line>140</line>
+            <memberName>changeEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/GoatHillsFinancial/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="65" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.GoatHillsFinancial.UpdateProfile</className>
+            <line>188</line>
+            <memberName>createEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/GoatHillsFinancial/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="66" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.GoatHillsFinancial.UpdateProfile</className>
+            <line>193</line>
+            <memberName>createEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/GoatHillsFinancial/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="67" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.GoatHillsFinancial.UpdateProfile</className>
+            <line>196</line>
+            <memberName>createEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/GoatHillsFinancial/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="68" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.GoatHillsFinancial.UpdateProfile</className>
+            <line>197</line>
+            <memberName>createEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/GoatHillsFinancial/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="69" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.GoatHillsFinancial.UpdateProfile</className>
+            <line>198</line>
+            <memberName>createEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/GoatHillsFinancial/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="70" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.InsecureLogin</className>
+            <line>254</line>
+            <memberName>correctLogin</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/InsecureLogin.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="71" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.InsecureLogin</className>
+            <line>255</line>
+            <memberName>correctLogin</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/InsecureLogin.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="72" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.InsecureLogin</className>
+            <line>445</line>
+            <memberName>getUser</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/InsecureLogin.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="73" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.MultiLevelLogin1</className>
+            <line>498</line>
+            <memberName>updateTan</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/MultiLevelLogin1.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="74" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.MultiLevelLogin1</className>
+            <line>572</line>
+            <memberName>getTanPosition</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/MultiLevelLogin1.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="75" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.MultiLevelLogin1</className>
+            <line>626</line>
+            <memberName>getUser</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/MultiLevelLogin1.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="76" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.MultiLevelLogin1</className>
+            <line>672</line>
+            <memberName>correctTan</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/MultiLevelLogin1.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="77" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.MultiLevelLogin1</className>
+            <line>673</line>
+            <memberName>correctTan</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/MultiLevelLogin1.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="78" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.MultiLevelLogin1</className>
+            <line>674</line>
+            <memberName>correctTan</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/MultiLevelLogin1.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="79" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.MultiLevelLogin1</className>
+            <line>720</line>
+            <memberName>correctLogin</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/MultiLevelLogin1.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="80" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.MultiLevelLogin1</className>
+            <line>721</line>
+            <memberName>correctLogin</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/MultiLevelLogin1.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="81" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.MultiLevelLogin2</className>
+            <line>499</line>
+            <memberName>updateTan</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/MultiLevelLogin2.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="82" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.MultiLevelLogin2</className>
+            <line>537</line>
+            <memberName>getUser</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/MultiLevelLogin2.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="83" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.MultiLevelLogin2</className>
+            <line>615</line>
+            <memberName>getTanPosition</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/MultiLevelLogin2.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="84" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.MultiLevelLogin2</className>
+            <line>666</line>
+            <memberName>getTan</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/MultiLevelLogin2.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="85" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.MultiLevelLogin2</className>
+            <line>728</line>
+            <memberName>correctLogin</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/MultiLevelLogin2.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="86" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.MultiLevelLogin2</className>
+            <line>729</line>
+            <memberName>correctLogin</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/MultiLevelLogin2.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="87" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.RoleBasedAccessControl.UpdateProfile</className>
+            <line>136</line>
+            <memberName>changeEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/RoleBasedAccessControl/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="88" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.RoleBasedAccessControl.UpdateProfile</className>
+            <line>141</line>
+            <memberName>changeEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/RoleBasedAccessControl/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="89" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.RoleBasedAccessControl.UpdateProfile</className>
+            <line>144</line>
+            <memberName>changeEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/RoleBasedAccessControl/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="90" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.RoleBasedAccessControl.UpdateProfile</className>
+            <line>237</line>
+            <memberName>createEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/RoleBasedAccessControl/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="91" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.RoleBasedAccessControl.UpdateProfile</className>
+            <line>242</line>
+            <memberName>createEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/RoleBasedAccessControl/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="92" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.RoleBasedAccessControl.UpdateProfile</className>
+            <line>245</line>
+            <memberName>createEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/RoleBasedAccessControl/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="93" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.RoleBasedAccessControl.UpdateProfile</className>
+            <line>246</line>
+            <memberName>createEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/RoleBasedAccessControl/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="94" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.RoleBasedAccessControl.UpdateProfile</className>
+            <line>247</line>
+            <memberName>createEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/RoleBasedAccessControl/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="95" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.SessionFixation</className>
+            <line>465</line>
+            <memberName>correctLogin</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/SessionFixation.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="96" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.SessionFixation</className>
+            <line>466</line>
+            <memberName>correctLogin</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/SessionFixation.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="97" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.SessionFixation</className>
+            <line>639</line>
+            <memberName>getUser</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/SessionFixation.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="98" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.SqlStringInjection</className>
+            <line>165</line>
+            <memberName>parameterizedQuery</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/SqlStringInjection.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="99" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.StoredXss</className>
+            <line>102</line>
+            <memberName>addMessage</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/StoredXss.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="100" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.StoredXss</className>
+            <line>103</line>
+            <memberName>addMessage</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/StoredXss.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="101" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.instructor.RoleBasedAccessControl.UpdateProfile_i</className>
+            <line>57</line>
+            <memberName>changeEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/instructor/RoleBasedAccessControl/UpdateProfile_i.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="102" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.instructor.RoleBasedAccessControl.UpdateProfile_i</className>
+            <line>62</line>
+            <memberName>changeEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/instructor/RoleBasedAccessControl/UpdateProfile_i.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="103" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.instructor.RoleBasedAccessControl.UpdateProfile_i</className>
+            <line>65</line>
+            <memberName>changeEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/instructor/RoleBasedAccessControl/UpdateProfile_i.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="104" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.instructor.RoleBasedAccessControl.UpdateProfile_i</className>
+            <line>105</line>
+            <memberName>createEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/instructor/RoleBasedAccessControl/UpdateProfile_i.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="105" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.instructor.RoleBasedAccessControl.UpdateProfile_i</className>
+            <line>110</line>
+            <memberName>createEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/instructor/RoleBasedAccessControl/UpdateProfile_i.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="106" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.instructor.RoleBasedAccessControl.UpdateProfile_i</className>
+            <line>113</line>
+            <memberName>createEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/instructor/RoleBasedAccessControl/UpdateProfile_i.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="107" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.instructor.RoleBasedAccessControl.UpdateProfile_i</className>
+            <line>114</line>
+            <memberName>createEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/instructor/RoleBasedAccessControl/UpdateProfile_i.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="108" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.instructor.RoleBasedAccessControl.UpdateProfile_i</className>
+            <line>115</line>
+            <memberName>createEmployeeProfile</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/instructor/RoleBasedAccessControl/UpdateProfile_i.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="109" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.instructor.SQLInjection.Login_i</className>
+            <line>56</line>
+            <memberName>login</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/instructor/SQLInjection/Login_i.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="110" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.instructor.SQLInjection.Login_i</className>
+            <line>57</line>
+            <memberName>login</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/instructor/SQLInjection/Login_i.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="111" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.UncheckedEmail</className>
+            <line>369</line>
+            <memberName>sendGoogleMail</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/UncheckedEmail.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to DEFAULT LEAK (javax.mail) through parameter the 0th actual parameter of method "send"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="112" rank="1" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.WsSAXInjection</className>
+            <line>144</line>
+            <memberName>createContent</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/WsSAXInjection.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to XML through parameter actual parameter "s" of method "checkXML"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="113" rank="3" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.CrossSiteScripting.UpdateProfile</className>
+            <line>207</line>
+            <memberName>changeEmployeeProfile</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_55d5cdcc8e919e132bb57891c06adc041c8bb1e7e1935c4044ecc7160121a681</outputArtifact>
+            </outputArtifacts>
+            <simpleName>LeakageOfPrivateDataThroughParameterWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/CrossSiteScripting/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of type CreditCard to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="114" rank="3" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.CrossSiteScripting.UpdateProfile</className>
+            <line>249</line>
+            <memberName>doChangeEmployeeProfile_BACKUP</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_68081a530624281daf946ac33cc41ea7667d4b376c3d850f1ac16f5abe8e5f53</outputArtifact>
+            </outputArtifacts>
+            <simpleName>LeakageOfPrivateDataThroughParameterWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/CrossSiteScripting/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of type CreditCard to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="115" rank="3" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.CrossSiteScripting.UpdateProfile</className>
+            <line>290</line>
+            <memberName>createEmployeeProfile</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_bdbeb13afeafbec81ce64e4358139c30a357638764a406bc7ade89fc0a5ee4fb</outputArtifact>
+            </outputArtifacts>
+            <simpleName>LeakageOfPrivateDataThroughParameterWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/CrossSiteScripting/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of type CreditCard to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="116" rank="3" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.CrossSiteScripting.UpdateProfile</className>
+            <line>332</line>
+            <memberName>createEmployeeProfile_BACKUP</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_e2c2e36d462a3a6909c7f57474af4338db3c11cb0171b671b22e86d576993c33</outputArtifact>
+            </outputArtifacts>
+            <simpleName>LeakageOfPrivateDataThroughParameterWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/CrossSiteScripting/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of type CreditCard to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="117" rank="3" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.DBCrossSiteScripting.UpdateProfile</className>
+            <line>161</line>
+            <memberName>changeEmployeeProfile</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_f6d1f2456eccd89dd4ee6b88c9b6aef1ef820b8967f03950c4ce62cd06bfb72a</outputArtifact>
+            </outputArtifacts>
+            <simpleName>LeakageOfPrivateDataThroughParameterWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/DBCrossSiteScripting/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of type CreditCard to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="118" rank="3" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.DBCrossSiteScripting.UpdateProfile</className>
+            <line>189</line>
+            <memberName>createEmployeeProfile</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_03fb6c9aeb73ca605a774c4bf036acf20310f5a85b46f02ae291a3a1cd80a523</outputArtifact>
+            </outputArtifacts>
+            <simpleName>LeakageOfPrivateDataThroughParameterWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/DBCrossSiteScripting/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of type CreditCard to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="119" rank="3" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.GoatHillsFinancial.UpdateProfile</className>
+            <line>138</line>
+            <memberName>changeEmployeeProfile</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_6a6f3b001e7152d58cd3d019f972385e4bc629dc2e998283229447f3963401f2</outputArtifact>
+            </outputArtifacts>
+            <simpleName>LeakageOfPrivateDataThroughParameterWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/GoatHillsFinancial/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of type CreditCard to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="120" rank="3" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.GoatHillsFinancial.UpdateProfile</className>
+            <line>194</line>
+            <memberName>createEmployeeProfile</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_c2b5ee1acf8d3aa9a5229d8e4f10b5375524a520ac42ddbb154fae5b2181b938</outputArtifact>
+            </outputArtifacts>
+            <simpleName>LeakageOfPrivateDataThroughParameterWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/GoatHillsFinancial/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of type CreditCard to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="121" rank="3" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.RoleBasedAccessControl.UpdateProfile</className>
+            <line>142</line>
+            <memberName>changeEmployeeProfile</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_39f127124a1ea36ab008ab61784018fe42c18ca9470c49f63557360668829827</outputArtifact>
+            </outputArtifacts>
+            <simpleName>LeakageOfPrivateDataThroughParameterWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/RoleBasedAccessControl/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of type CreditCard to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="122" rank="3" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.RoleBasedAccessControl.UpdateProfile</className>
+            <line>184</line>
+            <memberName>changeEmployeeProfile_BACKUP</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_71df361bfce22052ba7d8140126080d13ccf3e054c65c8c87274a365f7480700</outputArtifact>
+            </outputArtifacts>
+            <simpleName>LeakageOfPrivateDataThroughParameterWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/RoleBasedAccessControl/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of type CreditCard to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="123" rank="3" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.RoleBasedAccessControl.UpdateProfile</className>
+            <line>243</line>
+            <memberName>createEmployeeProfile</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_7a54db0cc67d6c6f1b7a0f3d9d28b07e12d72014160849452b838af154dba30f</outputArtifact>
+            </outputArtifacts>
+            <simpleName>LeakageOfPrivateDataThroughParameterWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/RoleBasedAccessControl/UpdateProfile.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of type CreditCard to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="124" rank="3" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.instructor.RoleBasedAccessControl.UpdateProfile_i</className>
+            <line>63</line>
+            <memberName>changeEmployeeProfile</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_aa12c709d8cccb9de2bdf9cb64df768ba55ee5f5570c69145696848ab15351f8</outputArtifact>
+            </outputArtifacts>
+            <simpleName>LeakageOfPrivateDataThroughParameterWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/instructor/RoleBasedAccessControl/UpdateProfile_i.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of type CreditCard to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="125" rank="3" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.instructor.RoleBasedAccessControl.UpdateProfile_i</className>
+            <line>111</line>
+            <memberName>createEmployeeProfile</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_adceb50a497701b52030805288e8ae3230130fe0318a9f870c061de5c6dce58f</outputArtifact>
+            </outputArtifacts>
+            <simpleName>LeakageOfPrivateDataThroughParameterWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/instructor/RoleBasedAccessControl/UpdateProfile_i.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of type CreditCard to DEFAULT LEAK (java.sql) through parameter actual parameter "arg 1" of method "setString"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="126" rank="3" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.session.Screen</className>
+            <line>201</line>
+            <memberName>output</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_97724f6f6ec8106a951098e8af3fa43d05f897353d16d93016c54f3fb371f2d9</outputArtifact>
+                <outputArtifact>Artifact_e150f39ef7619e007c334033286a3ea93a8c744133075cc4ada3398807d0ae80</outputArtifact>
+            </outputArtifacts>
+            <simpleName>LeakageOfPrivateDataThroughParameterWarning</simpleName>
+            <source>org/owasp/webgoat/session/Screen.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of type Password to DEFAULT LEAK (java.io) through parameter actual parameter "arg 0" of method "print"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="127" rank="3" aboutAField="false">
+            <artifacts>WebGoat.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>org.owasp.webgoat.lessons.WsSAXInjection</className>
+            <line>144</line>
+            <memberName>createContent</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_5e2016b3c76e98c15afd2100f760a85d6707486cbbf675bac787af2a1d5702cb</outputArtifact>
+            </outputArtifacts>
+            <simpleName>LeakageOfPrivateDataThroughParameterWarning</simpleName>
+            <source>org/owasp/webgoat/lessons/WsSAXInjection.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of type Password to XML through parameter actual parameter "xml" of method "checkXML"</warningMessage>
+        </warning>
+    </warnings>
+    <remarks>
+        <remark tag="FRAMEWORKS">Are you using Servlet in your application? If yes, please provide the required libraries to improve the results of the analysis. Refer to the documentation of Julia's supported frameworks for further details</remark>
+        <remark tag="FRAMEWORKS">Are you using Spring in your application? If yes, please provide the required libraries to improve the results of the analysis. Refer to the documentation of Julia's supported frameworks for further details</remark>
+    </remarks>
+    <metrics>
+        <entry>
+            <key>BYTECODES_REACHED</key>
+            <value>288910</value>
+        </entry>
+        <entry>
+            <key>BYTECODES_STATISTICALLY_CLOSED</key>
+            <value>97484</value>
+        </entry>
+        <entry>
+            <key>GRADE</key>
+            <value>0.8130517</value>
+        </entry>
+        <entry>
+            <key>HUMAN_FRIENDLY_GRADE</key>
+            <value>good</value>
+        </entry>
+        <entry>
+            <key>LOCS_REACHED_ESTIMATE</key>
+            <value>60933</value>
+        </entry>
+        <entry>
+            <key>LOCS_STATISTICALLY_CLOSED_ESTIMATE</key>
+            <value>19182</value>
+        </entry>
+    </metrics>
+    <outputArtifacts>
+        <outputArtifact producer="Julia 3.1.0.dev1" standalone="true" id="Artifact_a8b8431c9a74d145a8c4d394c82c2d102876d1011eeb41b95f3cc79dfa0a69a4">
+            <key>GDPR_Results.zip</key>
+            <logicalType>GDPR_RESULT_ARCHIVE</logicalType>
+            <hash>87a79df07757ec165fa85acf865633b9</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_b39431e8f327d56b1b3ab5fdf27754aca5266d5988f657de39cec6fccd30312e">
+            <key>GDPR_Results.zip/Address_DEFAULT LEAK (java.sql)_FlowSubGraph_102_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>e12297637159ed5e0e4f33537a5d944d</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_e3caa859fc8a52196eebf4062e26167b706841c58fadf607fab8d968f34b3ca8">
+            <key>GDPR_Results.zip/Address_DEFAULT LEAK (java.sql)_FlowSubGraph_130_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>f29ae77b8379b1857b90813a45b5182f</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_e2044987471b96f478c47686f99959666acb9d17b5975298dfe34ad3386a8d39">
+            <key>GDPR_Results.zip/Address_DEFAULT LEAK (java.sql)_FlowSubGraph_144_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>12587b2cf541517c34e1d9d387bc7ba7</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_bd23fab22f08f14d90764fbf64861b012be88326e69ecc243bdb3a5dea30cd29">
+            <key>GDPR_Results.zip/Address_DEFAULT LEAK (java.sql)_FlowSubGraph_147_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>a5e905d519d42ae34181d105c7b4c582</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_d1a80d367864db9425f2f25e5f8d2b4d0995d83a3937b4e16a232b338f0b7b9f">
+            <key>GDPR_Results.zip/Address_DEFAULT LEAK (java.sql)_FlowSubGraph_149_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>24513fe2f58189a6c6295980af4922f7</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_b6561e993608def8b8bda8ea12d75c1d11f570840865fa81a8a9ecbc63842256">
+            <key>GDPR_Results.zip/Address_DEFAULT LEAK (java.sql)_FlowSubGraph_14_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>d3337aeeb9a552e4bb3a1465655f8f0f</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_3d4227f0232fa96290e8c70651d133525acb4541cd9589046a3d54364b1d4d34">
+            <key>GDPR_Results.zip/Address_DEFAULT LEAK (java.sql)_FlowSubGraph_150_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>316b1e1dd0fa02d5d7167ea1db028da8</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_6f11a23f4eff473355b2177f4ccfafc2fde06ed32b2a8d3c686938ae18a87400">
+            <key>GDPR_Results.zip/Address_DEFAULT LEAK (java.sql)_FlowSubGraph_151_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>e3d6a4e7473c24c35f7e2da3c478aa31</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_30fe01e45f948c42bb757b8195882d3d08e55799f592a9e30d013b5cf2f58269">
+            <key>GDPR_Results.zip/Address_DEFAULT LEAK (java.sql)_FlowSubGraph_158_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>f6dd068437eb50e93383a9c6efafa17a</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_7c2118b52682877202733c01892525ce1e6486a06e1ad3ad3bb82ce5e9254d2c">
+            <key>GDPR_Results.zip/Address_DEFAULT LEAK (java.sql)_FlowSubGraph_159_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>e1dea1f95a9d3583665ca13d43e5ca2a</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_797c9c7d6f5962ff0c1988378560da6d08b199e13c07cdf52d64e434919b6bec">
+            <key>GDPR_Results.zip/Address_DEFAULT LEAK (java.sql)_FlowSubGraph_161_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>1d73087c86b92ce6d1327cc24aab5f07</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_664379f882356c3e51b4959412836f4142e1055c5192f8cbb696b3edf2567af5">
+            <key>GDPR_Results.zip/Address_DEFAULT LEAK (java.sql)_FlowSubGraph_163_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>3d211774a26b2e981301983dcb69c29c</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_35f884e3cb1102fa3cf52b41cb4e3bb483f9b2da0005e371c74c7508dbb6faed">
+            <key>GDPR_Results.zip/Address_DEFAULT LEAK (java.sql)_FlowSubGraph_164_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>411738e645d1691b1644ee5c690c3b56</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_2f883bd67c9978724757aa485f0482a768f669578d2cbad8422d6f4a47d3eeb6">
+            <key>GDPR_Results.zip/Address_DEFAULT LEAK (java.sql)_FlowSubGraph_166_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>08e0388c69439ad5da61ff24deae3dcb</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_fa564453619e2056f8c599217905226f00938eeaedd585121393a53f3758381a">
+            <key>GDPR_Results.zip/Address_DEFAULT LEAK (java.sql)_FlowSubGraph_167_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>2f118d072bea92cd50f112db9bf25fb6</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_9258c4e2bc1b237bfce8e9061bf3cbd57205b196d59b1bae2a76451487114c67">
+            <key>GDPR_Results.zip/Address_DEFAULT LEAK (java.sql)_FlowSubGraph_170_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>bf466a8809a434c45e055d5fead8e49c</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_5051d7821f316ef6ee95329ab806bdbf7955f8d1c299fd9e4b39baf33e9dad28">
+            <key>GDPR_Results.zip/Address_DEFAULT LEAK (java.sql)_FlowSubGraph_175_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>3266e45b574869543337e7aa81d8e9c9</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_632872d75104503b171308cf875ec58993183e197875e095b64cd90e022b41d2">
+            <key>GDPR_Results.zip/Address_DEFAULT LEAK (java.sql)_FlowSubGraph_177_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>33e0bff5a714643ce0cee0448a05cbd7</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_664677053ce477baae951eb5676047ea7208a89dc96e3176e1595858e2266f0d">
+            <key>GDPR_Results.zip/Address_DEFAULT LEAK (java.sql)_FlowSubGraph_20_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>26d290c78639ed047fb342ac939c8fc0</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_fd32765dbe18db0608998ccdfad2e0d454e7f751d89b81452c36c5d7a60e20ed">
+            <key>GDPR_Results.zip/Address_DEFAULT LEAK (java.sql)_FlowSubGraph_30_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>988a5ce1fc6311e75c094aa5e9dd3a17</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_b4d62bd2c7dad07d0c1654efb261b3eb213e9e81e0863994f7d5f5984f1ec4dd">
+            <key>GDPR_Results.zip/Address_DEFAULT LEAK (java.sql)_FlowSubGraph_38_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>64898989a27bbab1e7ce994bcc8a8bcc</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_0c1dcb6610b0ecce508dda5f8baa6a61db9cbe0554a1508f947af0961e98f1bf">
+            <key>GDPR_Results.zip/Address_DEFAULT LEAK (java.sql)_FlowSubGraph_42_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>e785d2ff939a4a15065583af5cf10f6b</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_35bc6e4a3d490429d1354d8543fb9263db38cc0101d82bf2fc1f04017b32f5fd">
+            <key>GDPR_Results.zip/Address_DEFAULT LEAK (java.sql)_FlowSubGraph_51_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>288ba4b8490973eee881b1c0c8445f6c</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_4d2df0a58d7de412eb850c691f9a1d2ed5e7e848e6924c90c5fe4d44b216c7a2">
+            <key>GDPR_Results.zip/Address_DEFAULT LEAK (java.sql)_FlowSubGraph_80_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>e8a8bb3deb253576c570455739df62ec</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_0705864202999503471a6f80b502fbe967273792885ccd202f95295d1268e4b8">
+            <key>GDPR_Results.zip/Address_DEFAULT LEAK (java.sql)_FlowSubGraph_86_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>c01ce0b882231667ace13b1f106191b6</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_d524f4939450ca3812eab95fbbc9d04ce2c25cd21af3fb43778ae337cd4f2b4a">
+            <key>GDPR_Results.zip/Address_DEFAULT LEAK (java.sql)_FlowSubGraph_94_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>cbc6d5e4630f7bb511b354dd9a251d09</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_03fb6c9aeb73ca605a774c4bf036acf20310f5a85b46f02ae291a3a1cd80a523">
+            <key>GDPR_Results.zip/CreditCard_DEFAULT LEAK (java.sql)_FlowSubGraph_139_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>41f46fccbd8c39e13fd84486ec03fdaa</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_6a6f3b001e7152d58cd3d019f972385e4bc629dc2e998283229447f3963401f2">
+            <key>GDPR_Results.zip/CreditCard_DEFAULT LEAK (java.sql)_FlowSubGraph_146_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>c2353bdf0212f6be36cd7e4d3d038658</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_bdbeb13afeafbec81ce64e4358139c30a357638764a406bc7ade89fc0a5ee4fb">
+            <key>GDPR_Results.zip/CreditCard_DEFAULT LEAK (java.sql)_FlowSubGraph_168_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>3fa019fe1b8ddd1d0742d1536e04f6b0</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_55d5cdcc8e919e132bb57891c06adc041c8bb1e7e1935c4044ecc7160121a681">
+            <key>GDPR_Results.zip/CreditCard_DEFAULT LEAK (java.sql)_FlowSubGraph_188_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>10848fb71b7724bc0388744f2aeba7a5</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_7a54db0cc67d6c6f1b7a0f3d9d28b07e12d72014160849452b838af154dba30f">
+            <key>GDPR_Results.zip/CreditCard_DEFAULT LEAK (java.sql)_FlowSubGraph_195_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>3b2f98a4b9abeba2d08dba0a17d50455</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_39f127124a1ea36ab008ab61784018fe42c18ca9470c49f63557360668829827">
+            <key>GDPR_Results.zip/CreditCard_DEFAULT LEAK (java.sql)_FlowSubGraph_196_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>bbbbaa6c03c20d27785b0a2a65efd025</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_adceb50a497701b52030805288e8ae3230130fe0318a9f870c061de5c6dce58f">
+            <key>GDPR_Results.zip/CreditCard_DEFAULT LEAK (java.sql)_FlowSubGraph_197_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>571251676d40a45f2464a4779ef7fa93</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_f6d1f2456eccd89dd4ee6b88c9b6aef1ef820b8967f03950c4ce62cd06bfb72a">
+            <key>GDPR_Results.zip/CreditCard_DEFAULT LEAK (java.sql)_FlowSubGraph_204_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>a009839269a0a9e3eaa1ebe3403c534e</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_c2b5ee1acf8d3aa9a5229d8e4f10b5375524a520ac42ddbb154fae5b2181b938">
+            <key>GDPR_Results.zip/CreditCard_DEFAULT LEAK (java.sql)_FlowSubGraph_21_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>c2fdb9b5f1202e84c24c8207aa363f6e</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_68081a530624281daf946ac33cc41ea7667d4b376c3d850f1ac16f5abe8e5f53">
+            <key>GDPR_Results.zip/CreditCard_DEFAULT LEAK (java.sql)_FlowSubGraph_53_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>aebf2ea0aab537653d16b2b537fca2b2</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_71df361bfce22052ba7d8140126080d13ccf3e054c65c8c87274a365f7480700">
+            <key>GDPR_Results.zip/CreditCard_DEFAULT LEAK (java.sql)_FlowSubGraph_66_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>40f1596e672152d4454d3ac152593721</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_aa12c709d8cccb9de2bdf9cb64df768ba55ee5f5570c69145696848ab15351f8">
+            <key>GDPR_Results.zip/CreditCard_DEFAULT LEAK (java.sql)_FlowSubGraph_7_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>1250ed9a4dd7d653442f7bb61df09d5c</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_e2c2e36d462a3a6909c7f57474af4338db3c11cb0171b671b22e86d576993c33">
+            <key>GDPR_Results.zip/CreditCard_DEFAULT LEAK (java.sql)_FlowSubGraph_85_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>991af312bee9335620678de49e9307d8</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_f82f31e56197b09195b65a251b71ad08c240c011a1449b903d37ce12d50c2ca9">
+            <key>GDPR_Results.zip/Name_DEFAULT LEAK (java.sql)_FlowSubGraph_165_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>4526a5e711fa40d06670c5232726a198</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_130d5bb9af0b8450333056517afe0552c1f358c814d6f12af223aa375e693244">
+            <key>GDPR_Results.zip/Name_DEFAULT LEAK (java.sql)_FlowSubGraph_173_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>c63a54e7ecd291bbe309453e412f4662</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_949e137acea75f8738f8caa3aebeece247816b4ef503185f269a64e7c0b05e15">
+            <key>GDPR_Results.zip/Name_DEFAULT LEAK (java.sql)_FlowSubGraph_191_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>829c31cfa660ec6ad74f93e88fe37b52</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_80b1d190edc769343282d3ad89f8dcb0f37c9f4aa3d5727d92aa2279f6c0965e">
+            <key>GDPR_Results.zip/Name_DEFAULT LEAK (java.sql)_FlowSubGraph_29_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>08d21e7c24dc4687509a99dfecd8c19a</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_fc2176289caa681bfd78c3e9a0c64bb87daab279f005c91506c55a9206fad1ae">
+            <key>GDPR_Results.zip/Name_DEFAULT LEAK (java.sql)_FlowSubGraph_37_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>c9543a26c57222b7681a62a8b49b58a2</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_58eac22b56646163312da257ca079bb615214c1729244929c78643bd00a2198a">
+            <key>GDPR_Results.zip/Name_DEFAULT LEAK (java.sql)_FlowSubGraph_59_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>ace457acfa65f2a5ef8629e71cbf64eb</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_4ce77eb5b2a6e1d8698b94c097375b285f823fb4610048b697c4aa2af47abb2a">
+            <key>GDPR_Results.zip/Name_DEFAULT LEAK (java.sql)_FlowSubGraph_67_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>8e00def5cb8afd398c43a93e834188aa</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_bb60179a3d5152015005e73f69b6fef4141c7aeab2c6d80a5a857506d94377aa">
+            <key>GDPR_Results.zip/Name_DEFAULT LEAK (java.sql)_FlowSubGraph_71_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>fb68bf4f75b8d948f721dc6fecfda560</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_673466dca1b559195293f34064f284f725381ce769e98fd05a58436e551ef478">
+            <key>GDPR_Results.zip/Name_DEFAULT LEAK (java.sql)_FlowSubGraph_74_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>915da1baed97c68b179ba4471dbfe7d8</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_7f59551f422fee91c2d1187a545a6e4d9e46545fe9ba60c8fbe2c3cf08726cce">
+            <key>GDPR_Results.zip/Name_DEFAULT LEAK (java.sql)_FlowSubGraph_81_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>b2363461ea6576f890790ad51563b055</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_e0240e0c2708b15a4e32815a52368fd197f7f27c64b3698211f51d34c004d4cd">
+            <key>GDPR_Results.zip/Name_DEFAULT LEAK (java.sql)_FlowSubGraph_83_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>ef0894d933714ff6adb3d721e45e8a57</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_4d0e5e6bc658dce46346afe2d89135ceb89d2af49302d0116c5fba5114523ceb">
+            <key>GDPR_Results.zip/Name_DEFAULT LEAK (java.sql)_FlowSubGraph_98_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>487ff22c6f84964bc49eb79403bf9260</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_55d0bff58bd385444fad4cc98057a95121185ea2612e983a15b4112a03415b13">
+            <key>GDPR_Results.zip/Name_DEFAULT LEAK (java.sql)_FlowSubGraph_99_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>7d470b58f4c68a8b43876392aa5a6057</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_e150f39ef7619e007c334033286a3ea93a8c744133075cc4ada3398807d0ae80">
+            <key>GDPR_Results.zip/Password_DEFAULT LEAK (java.io)_FlowSubGraph_107_1_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>b7e62e059844267276c03bff337f7a92</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_97724f6f6ec8106a951098e8af3fa43d05f897353d16d93016c54f3fb371f2d9">
+            <key>GDPR_Results.zip/Password_DEFAULT LEAK (java.io)_FlowSubGraph_107_2_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>9981a54b91337ab1bcd3702cdfef271a</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_5e2016b3c76e98c15afd2100f760a85d6707486cbbf675bac787af2a1d5702cb">
+            <key>GDPR_Results.zip/Password_XML_FlowSubGraph_15_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>3b8b15d75c58ea88ab19cf8f4007e56f</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_6a98279b1eb2e1eb40b9cbcaadb39408b77c1b632dcab4cb1340da607c1898d5">
+            <key>GDPR_Results.zip/Phone_DEFAULT LEAK (java.sql)_FlowSubGraph_113_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>d15e9beead8763fe3026ea88a2e93158</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_ddc05ba235806f41fcd8eece651a90d98b226105f4a2f280dc7b6be4cf3d4543">
+            <key>GDPR_Results.zip/Phone_DEFAULT LEAK (java.sql)_FlowSubGraph_122_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>44476d705abc0e3c86d6f54eb0d2a01c</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_26d713d41cf03cbef5c674f97cb455e2c1bdb04f9db2588e696fb2b9cb65d90d">
+            <key>GDPR_Results.zip/Phone_DEFAULT LEAK (java.sql)_FlowSubGraph_129_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>994a4d8509429e565080e4ec2908244b</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_167101878a0cb0140328eeea86a8ab5321e755cc8995833a2deb8597bcfa7ccc">
+            <key>GDPR_Results.zip/Phone_DEFAULT LEAK (java.sql)_FlowSubGraph_12_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>8b0c11ae8c64fd6ad149b559defd8bdd</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_684420123a070fab48caadf99987262789669ab21c8d08f025be0126f77e8561">
+            <key>GDPR_Results.zip/Phone_DEFAULT LEAK (java.sql)_FlowSubGraph_133_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>0f824a1dad1b9fb0a833d808cd6634e9</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_0a0a772b276c5bf6c550018b4ab7341dee5d64237d8113f363d712fd2793bacb">
+            <key>GDPR_Results.zip/Phone_DEFAULT LEAK (java.sql)_FlowSubGraph_134_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>fad86d78ec79b6fc06ee4e38b06a18bd</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_40eef7a52b8053084179b0eec9d633200b75c7b6f4664ca4ff4dbcf1ade2d2d1">
+            <key>GDPR_Results.zip/Phone_DEFAULT LEAK (java.sql)_FlowSubGraph_140_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>10b51a5c17a21397b002c300e937b797</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_d45bd1b44f3ac934af770b0284b24ff0bec2bf9d68d05760cd39bef5e1295a93">
+            <key>GDPR_Results.zip/Phone_DEFAULT LEAK (java.sql)_FlowSubGraph_152_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>6dc4745dab7561199cd3cfa7d62f2cc4</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_5fd6a72eaf529349f87d6548f03dae2f5a923d13e1c275978da97212105ba733">
+            <key>GDPR_Results.zip/Phone_DEFAULT LEAK (java.sql)_FlowSubGraph_153_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>23c6b11fe29237fcff850d924564c1a8</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_287b3d6677ff21930006fb9bde0732d1e2c5e6a04d7a9c82f0213aaaf333a216">
+            <key>GDPR_Results.zip/Phone_DEFAULT LEAK (java.sql)_FlowSubGraph_1_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>b97d23b6cbd65e6a85e3b8c3c7111ace</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_eca256e287c13a2ae5c1f6d679693ba10210143a9b44e54868d01997a21be7da">
+            <key>GDPR_Results.zip/Phone_DEFAULT LEAK (java.sql)_FlowSubGraph_24_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>2ecacbaaec6d837cdcb19297679d8f6e</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_6efddedd374624b0c18573aaf7a537e4d727b50ee08e1327cd1b25ae301b6da8">
+            <key>GDPR_Results.zip/Phone_DEFAULT LEAK (java.sql)_FlowSubGraph_65_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>fd4bb72547fc4b3e409c74a8d18a203d</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_ea26cf37a721095752aeb8e0b1e239338940387b08d98ee2c6ac5fbe332d9a66">
+            <key>GDPR_Results.zip/Phone_DEFAULT LEAK (java.sql)_FlowSubGraph_82_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>8b91fa57a4b705a5a2a1ea8a2d07e8e0</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="true" id="Artifact_7a6b03612d7530bde49ca936f4b298c5ac4679232bfdb1f5bd72cdc03645923a">
+            <key>GDPR_Results.zip/Report.xml</key>
+            <logicalType>OUTPUT_GDPR_INDEX</logicalType>
+            <hash>395c6ab334e749dd4a556f3e3fda5d3f</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_239ace4e952fcbb39417166f21748025f2eb253ccd15b29946ec72c23ba91a12">
+            <key>GDPR_Results.zip/SSN_DEFAULT LEAK (java.sql)_FlowSubGraph_101_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>6403e5c28a427dfb5612aeeb212f1e39</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_345a09ed98f18a1854c86ed350de7cef39c538e87741f9bb51053a4f87267869">
+            <key>GDPR_Results.zip/SSN_DEFAULT LEAK (java.sql)_FlowSubGraph_103_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>faf179106f32d17987faa87339006442</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_80733a5567ee63e1a793985af7e8e48f329a5e60ab7fa4c537ae029d68b43015">
+            <key>GDPR_Results.zip/SSN_DEFAULT LEAK (java.sql)_FlowSubGraph_104_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>72ff17d95effa14b898df765e39303e5</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_e20993ac6e3c84b1225cfba92e74bede42a2a53d0e059c8a6970499138a17145">
+            <key>GDPR_Results.zip/SSN_DEFAULT LEAK (java.sql)_FlowSubGraph_109_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>7bb4238fccaf05451b743da0ed36ee98</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_a5384ba1b90a6f0a63a319ac16b0cdf21e15a225cb3a67402813007447117f48">
+            <key>GDPR_Results.zip/SSN_DEFAULT LEAK (java.sql)_FlowSubGraph_124_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>0aa63224745a958381f67492443a7f6b</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_f73dd119849ede84e9f37a735a89199c861c5118587f8f1e3254235491e56982">
+            <key>GDPR_Results.zip/SSN_DEFAULT LEAK (java.sql)_FlowSubGraph_126_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>8de51383b1afda1e561067e22f52676d</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_d1bd71eac1c02b02affba6a27761abb7e7450826fc9a806dc9106f8e1a1dfa2b">
+            <key>GDPR_Results.zip/SSN_DEFAULT LEAK (java.sql)_FlowSubGraph_186_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>1f6d602f9dbccc995f1928b9b1c8758b</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_606bc9048701dbe109d03d2b3bed5d6e7f9ec4b927cc97f2b462e63d54f23755">
+            <key>GDPR_Results.zip/SSN_DEFAULT LEAK (java.sql)_FlowSubGraph_199_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>e8d68ae1e91407b306adacd1c83e1d2a</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_7fc1bfbab693cca419a5ec945a0b45172541037247d075aa0d970b2d84b98a64">
+            <key>GDPR_Results.zip/SSN_DEFAULT LEAK (java.sql)_FlowSubGraph_43_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>50533498c927d8a9bbc8b7dd066c1a26</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_b5533568558fd75d5a9469bed4a0ca94adb4e866fd84e240e28266bb6ee5288d">
+            <key>GDPR_Results.zip/SSN_DEFAULT LEAK (java.sql)_FlowSubGraph_54_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>6a6bd981908eb4feee6224cd2d764750</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_df2c6bc092ed756c001c6e552c856cca7b77ec1ddef0e37d08a55301d279115c">
+            <key>GDPR_Results.zip/SSN_DEFAULT LEAK (java.sql)_FlowSubGraph_5_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>c06283041ea801b85e73d38ca8a4be8a</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_73fa08b2e2d1c23e27b92d46423d7f8a6f0818648f31b6d5ed4a03c222601866">
+            <key>GDPR_Results.zip/SSN_DEFAULT LEAK (java.sql)_FlowSubGraph_92_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>0cf9f45b81a19dfce7f51807018ab521</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_1365aadaaf45409fbd583a08b0f3a1ba97e2ce620545248fe24ca8f4ec9b79ca">
+            <key>GDPR_Results.zip/SSN_DEFAULT LEAK (java.sql)_FlowSubGraph_96_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>d51748da56f39346c199024a1686e01f</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_b7a3372cb5efffa5e64c7e0ac536d9c66affa89cc85b64afef31e58259528e99">
+            <key>GDPR_Results.zip/SummaryOfLeakages.xml</key>
+            <logicalType>GDPR_SUMMARY</logicalType>
+            <hash>bec6f020c224940c4f1a35a0e88ab419</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_69fe80fa146c32ae2faa573e63ddcb4ecd20e76111fc0fb992e15256db8f107c">
+            <key>GDPR_Results.zip/Surname_DEFAULT LEAK (java.sql)_FlowSubGraph_111_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>54ea93461a662fe2e8ef706926331291</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_0aaad680c6083c230c18e5ae07dc18084ef77f1281a72c178168c8317d8688bc">
+            <key>GDPR_Results.zip/Surname_DEFAULT LEAK (java.sql)_FlowSubGraph_112_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>ba2ad994d77251fbdd65836da64e7755</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_9c83b3c86d73dee9ea1e0ff9a40ce51a89166a01bbf6a84db5dd97f714de18ba">
+            <key>GDPR_Results.zip/Surname_DEFAULT LEAK (java.sql)_FlowSubGraph_174_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>52f609e95cec7f2fb34cab76e22860c1</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_3f6ad64871d129c4636b2fdbd3f7d119d73ccf9ce1e4a509863b676997607dd8">
+            <key>GDPR_Results.zip/Surname_DEFAULT LEAK (java.sql)_FlowSubGraph_189_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>2ef0c26dfdb9cbe197fd304041961e1f</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_f83906014d79d34f42638dfbcf7e4532ff81e5b2cecd1bb089d48e183942db3c">
+            <key>GDPR_Results.zip/Surname_DEFAULT LEAK (java.sql)_FlowSubGraph_200_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>fb757cbff2f1abf965661a20da048f25</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_11f0f37d9a28ded5cf2a02900b1cb1b401df043b8610b1b0b6c5fa039d334906">
+            <key>GDPR_Results.zip/Surname_DEFAULT LEAK (java.sql)_FlowSubGraph_41_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>a74aaf9786020a991948e04cb550ab30</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_4aba921a6b70d469d70a7e46ae9e467d44aa253560ec628c4748055bbadce589">
+            <key>GDPR_Results.zip/Surname_DEFAULT LEAK (java.sql)_FlowSubGraph_45_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>d9e1322cdddfe3bfdc068ec6ad9b2f38</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_b9bd8df715a0e16dfdd9eac3366e703ebae379c33e15750591ecd61913b35307">
+            <key>GDPR_Results.zip/Surname_DEFAULT LEAK (java.sql)_FlowSubGraph_75_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>951366e003cae48625b9362ac963c299</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_516b8aa6d27c7bad034c81ad614116323859ba8c562bd7feaceeb29357243d55">
+            <key>GDPR_Results.zip/Surname_DEFAULT LEAK (java.sql)_FlowSubGraph_78_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>3c77fe4baa3a9341c54701e52415f4ef</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_27001d64a45c57f3ef30010a5fdd115e5f8bbb2e2bf557931b208b21097592e7">
+            <key>GDPR_Results.zip/Surname_DEFAULT LEAK (java.sql)_FlowSubGraph_84_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>0115f5ab127af5a3d34464389166f523</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_7c73672a2546e809c9ea25f9dee2b52659e4a1198cafbc763bde17889f7a16aa">
+            <key>GDPR_Results.zip/Surname_DEFAULT LEAK (java.sql)_FlowSubGraph_87_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>5bfa00fd811113171f4781b81e9ea380</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_37b744c4f8c6f31bce623b42ce8700852669ee20735eed920733f89e5849e75c">
+            <key>GDPR_Results.zip/Surname_DEFAULT LEAK (java.sql)_FlowSubGraph_91_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>048eeeb445a517a4c685899024044c5a</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_ab3508396b674eab21a4a54399fbb8cd02c1c592586397b304f617c902b01972">
+            <key>GDPR_Results.zip/Surname_DEFAULT LEAK (java.sql)_FlowSubGraph_95_id_96fb3574-0f1c-494d-87fa-fbf4423699a8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>b9bc9eb5a13e6e532174a43ceb476dd3</hash>
+        </outputArtifact>
+        <outputArtifact producer="Julia Worker 3.1.0.dev1 (built on 16 Mar 2020)" standalone="true" id="Artifact_b63b961cd95f2deb99d336a4916090af6381b78d9b63523d32e72468b3ebd99a">
+            <key>analysis-report-96fb3574-0f1c-494d-87fa-fbf4423699a8.pdf</key>
+            <logicalType>OUTPUT_REPORT</logicalType>
+            <hash>8528013e3f067de374ad21d8fb604490</hash>
+            <description>PDF Report for projects WebGoat</description>
+        </outputArtifact>
+    </outputArtifacts>
+    <analysisSpecification>
+        <id>Webgoat_GDPR_Analysis_Result</id>
+        <solutionId>1015</solutionId>
+        <creationTimestamp>2020-04-20T08:37:41.165Z</creationTimestamp>
+        <specificationSource>Julia Eclipse Plugin 2.7.5</specificationSource>
+        <specificationProducer>Julia Eclipse Plugin 2.7.5</specificationProducer>
+        <sourceProjects>WebGoat</sourceProjects>
+        <packages>
+            <package id="Artifact_224c81774821e9c101af81b00107d34cb9d1277e8f99c70891dbe5b97471953c">
+                <key>WebGoat.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <hash>a5824708e249f2dbd6e91d811929474a</hash>
+                <originatingPath>C:\Users\OlivieriL\eclipse-workspace\.metadata\.plugins\com.juliasoft.julia.plugin.eclipse\juliaGeneratedJars\WebGoat.jar</originatingPath>
+                <moduleName>WebGoat</moduleName>
+                <packageMetrics>
+                    <projectName>WebGoat</projectName>
+                    <classCount>198</classCount>
+                    <sourceCount>189</sourceCount>
+                    <methodCount>1870</methodCount>
+                    <fieldCount>776</fieldCount>
+                    <constPoolEntryCount>49314</constPoolEntryCount>
+                    <byteCodeSize>139448</byteCodeSize>
+                    <statementCount>15061</statementCount>
+                </packageMetrics>
+                <type>Application</type>
+            </package>
+            <package id="Artifact_11ccb210e71fefa3847e5fcd35993b6f7e37c6bed14a6fb814f45c8de70de232">
+                <key>GDPRSpecification.xlsx</key>
+                <logicalType>GDPR_SPECIFICATION</logicalType>
+                <hash>b816adc9719fa7af685a68912c6cd6cd</hash>
+                <originatingPath>C:\Users\OlivieriL\Documents\GitHub\taintanalysisforprivacy_experimentalresults\WebGoat\Gdpr\specification\GDPRSpecification.xlsx</originatingPath>
+                <type>Other</type>
+            </package>
+        </packages>
+        <options>
+            <stringOption value="java6" label="Framework" name="framework" userVisible="true"/>
+        </options>
+        <checkers>
+            <checker group="Advanced" name="Gdpr">
+                <booleanOption value="false" label="compileLeakagePoints" name="compileLeakagePoints" userVisible="true"/>
+                <booleanOption value="false" label="dumpAnalysis" name="dumpAnalysis" userVisible="true"/>
+                <booleanOption value="false" label="dumpCompleteGraphs" name="dumpCompleteGraphs" userVisible="true"/>
+                <enumOption value="AVERAGE" label="flowComputingSpeed" name="flowComputingSpeed" userVisible="true"/>
+                <enumOption value="Report" label="phase" name="phase" userVisible="true"/>
+                <fileOption value="GDPRSpecification.xlsx" label="specificationFile" name="specificationFile" userVisible="true">
+                    <allowedFileExtension>*.xlsx</allowedFileExtension>
+                    <allowedFileExtension>*.xls</allowedFileExtension>
+                    <allowedFileExtensionName>Excel Workbook</allowedFileExtensionName>
+                    <allowedFileExtensionName>Excel 97-2003 Workbook</allowedFileExtensionName>
+                    <logicalType>GDPR_SPECIFICATION</logicalType>
+                </fileOption>
+                <synopsis></synopsis>
+            </checker>
+        </checkers>
+    </analysisSpecification>
+    <formattedRunDuration>00:02:13.818</formattedRunDuration>
+</analysisReportResult>
