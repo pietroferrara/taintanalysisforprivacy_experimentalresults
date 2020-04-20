@@ -1,0 +1,1894 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<analysisReportResult>
+    <id>729b20b7-4ccc-4eb8-b30b-1f369a02538f</id>
+    <status>COMPLETED</status>
+    <creationTimestamp>2019-08-07T16:22:53.430+02:00</creationTimestamp>
+    <engineVersion>2.7.0</engineVersion>
+    <runDuration>119281</runDuration>
+    <warnings>
+        <warning kind="Injection" progressive="0" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>117</CWEid>
+            <className>net.wgbv.photov.dam.EmailFactory</className>
+            <line>65</line>
+            <memberName>sendEmail</memberName>
+            <simpleName>LogForgingWarning</simpleName>
+            <source>net/wgbv/photov/dam/EmailFactory.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a log</warningDescription>
+            <warningMessage>Possible log forging into the 0th actual parameter of method "debug"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="1" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>117</CWEid>
+            <className>net.wgbv.photov.dam.EmailFactory</className>
+            <line>79</line>
+            <memberName>sendEmail</memberName>
+            <simpleName>LogForgingWarning</simpleName>
+            <source>net/wgbv/photov/dam/EmailFactory.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a log</warningDescription>
+            <warningMessage>Possible log forging into the 0th actual parameter of method "debug"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="2" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>117</CWEid>
+            <className>net.wgbv.photov.dam.EmailFactory</className>
+            <line>89</line>
+            <memberName>sendEmail</memberName>
+            <simpleName>LogForgingWarning</simpleName>
+            <source>net/wgbv/photov/dam/EmailFactory.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a log</warningDescription>
+            <warningMessage>Possible log forging into the 0th actual parameter of method "debug"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="3" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>117</CWEid>
+            <className>net.wgbv.photov.dam.EmailFactory</className>
+            <line>94</line>
+            <memberName>sendEmail</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_4cf8932f002048f76cbae35bfbf0e37c964e80bb0196291166d6467939b38d30</outputArtifact>
+            </outputArtifacts>
+            <simpleName>LogForgingWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/dam/EmailFactory.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a log</warningDescription>
+            <warningMessage>Possible log forging into the 0th actual parameter of method "debug"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="4" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>117</CWEid>
+            <className>net.wgbv.photov.dam.EmailFactory</className>
+            <line>96</line>
+            <memberName>sendEmail</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_d7eda8abb72f68254302f457ebc4658df1ecf7966d2e6004a780182f4e18d95a</outputArtifact>
+            </outputArtifacts>
+            <simpleName>LogForgingWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/dam/EmailFactory.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a log</warningDescription>
+            <warningMessage>Possible log forging into the 0th actual parameter of method "debug"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="5" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.PeopleSearchAction</className>
+            <line>127</line>
+            <memberName>execute</memberName>
+            <simpleName>SessionInjectionWarning</simpleName>
+            <source>net/wgbv/photov/action/PeopleSearchAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="6" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.AuditQueueAction</className>
+            <line>92</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_97292a0aa8eb7ad0c02b0c3075d857c4a5837b38d411e3247f83bc62a562ecbe</outputArtifact>
+                <outputArtifact>Artifact_a8cb018abb97a7b2b6c44b4591feb84375b1cf5813dd6d9469e8bec598961914</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/AuditQueueAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="7" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.AuditQueueAction</className>
+            <line>93</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_eb0608355420c5a61e77b555397e55e20fbcf881c408d0a7033478fe2a466c5d</outputArtifact>
+                <outputArtifact>Artifact_d4a0bf6a850ecd3bf08766447c58cfa4947bc55cf443ec43e34d8ed05357e75d</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/AuditQueueAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="8" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.AuditQueueAction</className>
+            <line>100</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_43959e81f3d6afe5668fda7caf743caee49627bd2a168bbf88cbb05ceb622eba</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/AuditQueueAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="9" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.BulkAction</className>
+            <line>82</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_7ce0d8923f5d00c0be394d2fc684cfb43102addd685ca81b2593f3fdc3a1d349</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/BulkAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="10" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.CameraAction</className>
+            <line>71</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_3e43191b161b9b375873040697f07d508264137f1a5bc97c77f846d358f97c58</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/CameraAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="11" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.CategoryAction</className>
+            <line>74</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_e949e367d626ab60f13313763f2d98504d27ba8325b964ff89be2365de8f9d26</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/CategoryAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="12" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.CountryAction</className>
+            <line>72</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_79995198e119f3e9305397757565de8bbb6540a73a8290195a0ec8cf8dc60e18</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/CountryAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="13" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.FilmAction</className>
+            <line>71</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_a804760a48799dbfe1b26c401075d7dfed6569dc54c11820dbdd3cd912b9e68c</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/FilmAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="14" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.GroupAction</className>
+            <line>85</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_13fd9f26d6ea4e8d41c3b35e3d4cd847a2e7188e4f539cc68e153fe7c07a2e02</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/GroupAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="15" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.HeadingAction</className>
+            <line>92</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_a7c99228194947cf3ac32ef4c18c105078b886e248e21040fcdd5c1f3ffc574a</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/HeadingAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="16" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.HeirarchyAction</className>
+            <line>55</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_7d3b4cf61ae00ee8ff903add7b377cd246d97e4326cf2c6436242902339a1360</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/HeirarchyAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="17" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.ListAction</className>
+            <line>110</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_d8056d3bf77cfedbc5ba76a68a37b70656d6567a14bf797a372c1cdee102df22</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/ListAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="18" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.ListAction</className>
+            <line>124</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_f9f6bb86bed8079df7027b9952379209587f17124744b3e6194b31f009767ddc</outputArtifact>
+                <outputArtifact>Artifact_bcad0799ee12db2846baeac08ac1a16fed7b3b0ed2731903216cb83c9ad69971</outputArtifact>
+                <outputArtifact>Artifact_96891cfbf74ad904f657ebd6ecd4e1731ba01281e9d26ed0f727352fecb4b4bf</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/ListAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="19" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.ListAction</className>
+            <line>186</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_3688d1188f8204caec247a0f79f11bb5f83e57914d39a99450e28236cd1d4423</outputArtifact>
+                <outputArtifact>Artifact_1495468f313f576944ce6b2148ba4e87c459e5fb76e9f95780f540c689f2f8be</outputArtifact>
+                <outputArtifact>Artifact_bc8bc34b37a4b2c58d05c2a97b5e7ebe2ee859451aadb8f33393215f93480178</outputArtifact>
+                <outputArtifact>Artifact_20b8e7b4dbd8424bc091fc6ac669ece9319e94ab508741d87c2183299dc1347c</outputArtifact>
+                <outputArtifact>Artifact_4eb12c9b86faeda66c0c3c4c26b925181c6366e37edadeb403c2a9cc7b8c9da6</outputArtifact>
+                <outputArtifact>Artifact_1c17b966ba786ef4f1c6770119bab66f7674c0546bad246408ee033e47cce644</outputArtifact>
+                <outputArtifact>Artifact_85308a5b97e9089a6d09e06ccce3f458a53807a0fbdd436805a88e380f5ceebe</outputArtifact>
+                <outputArtifact>Artifact_bab0f3a7e12528ddab1ba31eafb89b10838d3fb2792289ea1f44709a2556511e</outputArtifact>
+                <outputArtifact>Artifact_c45cdfa4264eac2634b14da11bc2c84b48aa5b49b0aa1b1b53e92bef624bcec1</outputArtifact>
+                <outputArtifact>Artifact_0287ba6053901bad3041e30a8d5a71ab6e8b789d07cf47be7760da18fc47a47f</outputArtifact>
+                <outputArtifact>Artifact_c2a1bc3596663583207f3f2dc6b397692efe0e62380a16b27db643614270a3d3</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/ListAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="20" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.ListAction</className>
+            <line>187</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_f88a4f5d23caecb355275b2547b6556d53916a51166a7c247698114731afcd17</outputArtifact>
+                <outputArtifact>Artifact_8ae0e13d8d1523e7853852cf790bbe4c933e00cbd4c1617190ea0940c3fe2028</outputArtifact>
+                <outputArtifact>Artifact_22377d9195c684743a97f3f1caafa97c7fc8a26b30e19d409676f38b0e56575f</outputArtifact>
+                <outputArtifact>Artifact_d73fbbd8de698c994d74f8da889a5fbb12c2013bb70f065f281608b80ddac7f3</outputArtifact>
+                <outputArtifact>Artifact_7313a1947010728f4d558e4771bf214bd25927d9f31d36e24a63a6d263f60c3c</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/ListAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="21" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.ListAction</className>
+            <line>188</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_f6324a2bff8df3e490f53e33ff8b35e237a7bd8030548245283bd2d4de510b4e</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/ListAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="22" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.LoginAction</className>
+            <line>83</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_0c8768fc6cdf1d84a75550fe60f750bd326b3efde96aa6c0fafb203db5570788</outputArtifact>
+                <outputArtifact>Artifact_5909d3c1be4f5969d42620f856a2e68aa0e40c8a5108c38a5ea86eb7cfde6f06</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/LoginAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="23" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.MessageAction</className>
+            <line>71</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_a35ea5592549a2eccf540a912be22051cc79126a45a9eec2409c2250b1d09cbc</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/MessageAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="24" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.NewPhotoQueueAction</className>
+            <line>95</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_fe609f1249c9e3431100e541ffcade597c14a82fbaaff0c0a48ca840260ec1f1</outputArtifact>
+                <outputArtifact>Artifact_ed1ee62d6282952238cb81e1e8881f7ca5d6f1c42dd39091b0f669c993f16a33</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/NewPhotoQueueAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="25" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.NewPhotoQueueAction</className>
+            <line>96</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_0f37068d5fa72493a22beec8025798eecc58dd1c627840dca5b6eb7fe5bbf2e5</outputArtifact>
+                <outputArtifact>Artifact_98f5ba3884ebf345e84f6dd3200299e07772e1a5df0c79ab6ad7fd89e0f4c1eb</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/NewPhotoQueueAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="26" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.NewPhotoQueueAction</className>
+            <line>104</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_b1add14a9486d60d6790cc7d90f3ba4a57d43323d704a198efe6672de5004093</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/NewPhotoQueueAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="27" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.PeopleRankingAction</className>
+            <line>57</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_75f278b060562b0a402f59de8a1d3e696b65f98521af869560e4dbda36a6f744</outputArtifact>
+                <outputArtifact>Artifact_82e51ac3a3e725c82fdb8516db492c49c8fed15305c6379ee37b1a0efe8eee19</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/PeopleRankingAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="28" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.PeopleRankingAction</className>
+            <line>58</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_6cade60417436831319a0640929136cdc24c4b69961e7d080b4daf867e831dea</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/PeopleRankingAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="29" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.PeopleSearchAction</className>
+            <line>117</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_5ff55bce095be95582181d8b64223df248f85a6bdc598f935c5db0ad4fac1f42</outputArtifact>
+                <outputArtifact>Artifact_34be153874290aef0acad072375b831f06a4c6cf1492b0af27ac080e43ac53e5</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/PeopleSearchAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="30" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.PeopleSearchAction</className>
+            <line>120</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_9d25875061f0d448558119e7a8216fa8e82b972fee0356f3b9866881b75d7277</outputArtifact>
+                <outputArtifact>Artifact_3dba59572afb6b1d30d6d784dae14026de0f2e6fb6530345f5bd8b8c904c3766</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/PeopleSearchAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="31" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.PeopleSearchAction</className>
+            <line>124</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_61b23d390a425fc12d84128abe1a009288bf97b3ae14c82de24ac0c518ffa5d6</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/PeopleSearchAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="32" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.PeopleSearchAction</className>
+            <line>134</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_b1a34c3c86ad8614fab6fccdedd5e7accaf2dcee97a3ab65a8011a4984742834</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/PeopleSearchAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="33" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.PersonAction</className>
+            <line>72</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_1b7f5794f167d2e169287092b74704102cc06e8362829e1d89e347eded4e14f0</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/PersonAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="34" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.PhotoAction</className>
+            <line>181</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_492a11d0f21dd6319e8e9db6c8609a2cecd1eb19e823c4538b91ebefb6af9536</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/PhotoAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="35" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.PhotoAction</className>
+            <line>194</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_d82559989dbc59aa34c6ead1f1ee249f0fd3646eb6dba9d8496ed3b993b7fb38</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/PhotoAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="36" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.PhotoChangeAction</className>
+            <line>63</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_42f4c992a5a5c099530c7240b9b7407c6491dc33ce647bcbb852c2ee0fbb87b9</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/PhotoChangeAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="37" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.PhotoChangeAction</className>
+            <line>84</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_aedb7d569fcd37458e9544a345375ac5f43f1c5fa035448334a173a16adfbe9c</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/PhotoChangeAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="38" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.PlaceAction</className>
+            <line>72</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_9dad525bf7aeb6b22b2c31189065689661ff40fec89a294a312a38e09cb1e185</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/PlaceAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="39" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.PlaceListAction</className>
+            <line>52</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_b29a08c55ab5976b189566ac83ca072f10f85ceabbf330c77ef9c5234be99b15</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/PlaceListAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="40" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.RegistrationAction</className>
+            <line>126</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_2ecd0784f1d06c4b96ba625b246993799114549657726ae275cdb6d3c8eae724</outputArtifact>
+                <outputArtifact>Artifact_5baa24a7b0606d9b557a5b3909cdf49a7891f7d6fd6e771769aa7df423714952</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/RegistrationAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="41" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.SiteAction</className>
+            <line>73</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_c6028e4260baa0faebbeb377a76251bf17b29798ef7af4e39bc7c70ef955fc25</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/SiteAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="42" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.StateAction</className>
+            <line>72</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_43ce86339e6d7049b79433f526d3854d4483d511f29684c84656dd629dce0a13</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/StateAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="43" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.TopicAction</className>
+            <line>74</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_56db9442390236443941bd6d9abbd4b27f8ecc5dd2be23c90a0df46c7e051e2f</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/TopicAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="44" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.wgbv.photov.action.UserAction</className>
+            <line>104</line>
+            <memberName>execute</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_c4819b8fb442f3986b7a6a068bd8d9a620680395d9ef25f19667929f23e800e7</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/wgbv/photov/action/UserAction.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="45" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>89</CWEid>
+            <className>net.wgbv.photov.dam.PhotoFactory</className>
+            <line>693</line>
+            <memberName>getPhotosByWhere</memberName>
+            <simpleName>SqlInjectionWarning</simpleName>
+            <source>net/wgbv/photov/dam/PhotoFactory.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into an sql query, unsanitized</warningDescription>
+            <warningMessage>Possible SQL-injection into actual parameter "arg 0" of method "executeQuery"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="46" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>89</CWEid>
+            <className>net.wgbv.photov.dam.QueueFactory</className>
+            <line>242</line>
+            <memberName>getAuditQueue</memberName>
+            <simpleName>SqlInjectionWarning</simpleName>
+            <source>net/wgbv/photov/dam/QueueFactory.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into an sql query, unsanitized</warningDescription>
+            <warningMessage>Possible SQL-injection into actual parameter "arg 0" of method "executeQuery"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="47" rank="3" aboutAField="false">
+            <artifacts>photov\app.jar</artifacts>
+            <CWEid>89</CWEid>
+            <className>net.wgbv.photov.dam.QueueFactory</className>
+            <line>241</line>
+            <memberName>getAuditQueue</memberName>
+            <simpleName>SqlInjectionWarning</simpleName>
+            <source>net/wgbv/photov/dam/QueueFactory.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into an sql query, unsanitized</warningDescription>
+            <warningMessage>Possible SQL-injection into actual parameter "arg 0" of method "prepareStatement"</warningMessage>
+        </warning>
+    </warnings>
+    <remarks>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in private static net.wgbv.photov.dam.EmailFactory.sendEmail(java.util.ArrayList,java.util.ArrayList,java.util.ArrayList,net.wgbv.photov.objects.Message):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in private static net.wgbv.photov.dam.OtherFactory.getCameraId(net.wgbv.photov.form.CameraForm):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in private static net.wgbv.photov.dam.OtherFactory.getCountryId(net.wgbv.photov.form.CountryForm):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in private static net.wgbv.photov.dam.OtherFactory.getFilmId(net.wgbv.photov.form.FilmForm):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in private static net.wgbv.photov.dam.OtherFactory.getHeadingId(net.wgbv.photov.form.HeadingForm):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in private static net.wgbv.photov.dam.OtherFactory.getPlaceId(net.wgbv.photov.form.PlaceForm):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in private static net.wgbv.photov.dam.OtherFactory.getSiteId(net.wgbv.photov.form.SiteForm):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in private static net.wgbv.photov.dam.OtherFactory.getStateId(net.wgbv.photov.form.StateForm):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in private static net.wgbv.photov.dam.OtherFactory.getTopicId(net.wgbv.photov.form.TopicForm):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in private static net.wgbv.photov.dam.PersonFactory.getAllLetters():java.util.ArrayList</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in private static net.wgbv.photov.dam.PersonFactory.getLetters(net.wgbv.photov.objects.User):java.util.ArrayList</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in private static net.wgbv.photov.dam.PersonFactory.getPeopleSearch(net.wgbv.photov.form.PeopleSearchForm,net.wgbv.photov.objects.User):java.util.Collection</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in private static net.wgbv.photov.dam.PersonFactory.populateFlags(net.wgbv.photov.objects.PersonRanking):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in private static net.wgbv.photov.dam.UserFactory.getGroupId(java.lang.String):int</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in private static net.wgbv.photov.dam.UserFactory.getUserId(java.lang.String):int</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public net.wgbv.photov.action.BulkAction.execute(org.apache.struts.action.ActionMapping,org.apache.struts.action.ActionForm,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse):org.apache.struts.action.ActionForward</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public net.wgbv.photov.dam.Log4jInit.init():void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public net.wgbv.photov.objects.Person.getPersonLName():java.lang.String</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public net.wgbv.photov.objects.Person.getPersonName():java.lang.String</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public net.wgbv.photov.objects.PersonRanking.getStringNumPhotos():java.lang.String</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public net.wgbv.photov.objects.PersonRanking.toString():java.lang.String</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public net.wgbv.photov.objects.PhotoDetails.toString():java.lang.String</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public net.wgbv.photov.objects.PlaceDetails.getPlaceFullName(boolean,boolean):java.lang.String</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public net.wgbv.photov.objects.User.toString():java.lang.String</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.ConnectionFactory.getConnection():java.sql.Connection</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.EmailFactory.setMessageForm(net.wgbv.photov.form.MessageForm):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.Log4jInit.auditLog(java.lang.Object,net.wgbv.photov.objects.User):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.OtherFactory.getCategoriesByHeadingId(int):java.util.Collection</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.OtherFactory.getCategoriesByTopicId(int):java.util.Collection</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.OtherFactory.getCategoryId(net.wgbv.photov.form.CategoryForm):int</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.OtherFactory.getHeadingsByCategoryId(int):java.util.Collection</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.OtherFactory.getPersonByPersonId(int):net.wgbv.photov.objects.Person</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.OtherFactory.getPlaceByPlaceId(int):net.wgbv.photov.objects.PlaceDetails</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.OtherFactory.getStatesByCountryId(int):java.util.Collection</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.OtherFactory.populateCameraForm(net.wgbv.photov.form.CameraForm):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.OtherFactory.populateCategoryForm(net.wgbv.photov.form.CategoryForm):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.OtherFactory.populateCountryForm(net.wgbv.photov.form.CountryForm):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.OtherFactory.populateFilmForm(net.wgbv.photov.form.FilmForm):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.OtherFactory.populateHeadingForm(net.wgbv.photov.form.HeadingForm):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.OtherFactory.populatePlaceForm(net.wgbv.photov.form.PlaceForm):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.OtherFactory.populateSiteForm(net.wgbv.photov.form.SiteForm):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.OtherFactory.populateStateForm(net.wgbv.photov.form.StateForm):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.OtherFactory.populateTopicForm(net.wgbv.photov.form.TopicForm):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.OtherFactory.setCameraForm(net.wgbv.photov.form.CameraForm):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.OtherFactory.setCategoryForm(net.wgbv.photov.form.CategoryForm):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.OtherFactory.setCountryForm(net.wgbv.photov.form.CountryForm):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.OtherFactory.setFilmForm(net.wgbv.photov.form.FilmForm):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.OtherFactory.setHeadingForm(net.wgbv.photov.form.HeadingForm):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.OtherFactory.setPlaceForm(net.wgbv.photov.form.PlaceForm):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.OtherFactory.setSiteForm(net.wgbv.photov.form.SiteForm):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.OtherFactory.setStateForm(net.wgbv.photov.form.StateForm):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.OtherFactory.setTopicForm(net.wgbv.photov.form.TopicForm):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.PersonFactory.addGroupPhoto(net.wgbv.photov.form.HeadingForm,int,net.wgbv.photov.objects.User):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.PersonFactory.getAllPeople(java.util.Collection,int,java.lang.String):java.util.Collection</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.PersonFactory.getAllPeople(net.wgbv.photov.objects.User):java.util.Collection</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.PersonFactory.getPeopleByPhotoId(int):java.util.Collection</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.PersonFactory.getPersonByPersonId(int):net.wgbv.photov.objects.Person</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.PersonFactory.getRankings():java.util.Collection</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.PersonFactory.getRelatedPeople(net.wgbv.photov.objects.Person,net.wgbv.photov.objects.User):java.util.Collection</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.PersonFactory.removeGroupPhoto(net.wgbv.photov.form.HeadingForm,int,net.wgbv.photov.objects.User):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.PersonFactory.setPersonForm(net.wgbv.photov.form.PersonForm):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.PhotoFactory.getPhotoByCategoryId(int,net.wgbv.photov.objects.User):net.wgbv.photov.objects.PhotoDetails</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.PhotoFactory.getPhotoByHeadingId(int,net.wgbv.photov.objects.User):net.wgbv.photov.objects.PhotoDetails</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.PhotoFactory.getPhotoByPhotoId(int,net.wgbv.photov.objects.User):java.util.Collection</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.PhotoFactory.getPhotoByPhotoId(java.lang.String,net.wgbv.photov.objects.User):java.util.Collection</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.PhotoFactory.getPhotoByTopicId(int,net.wgbv.photov.objects.User):net.wgbv.photov.objects.PhotoDetails</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.PhotoFactory.getPhotoId(net.wgbv.photov.form.PhotoForm):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.PhotoFactory.getPhotos(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,net.wgbv.photov.objects.User):java.util.Collection</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.PhotoFactory.getPhotosByCategoryId(int,net.wgbv.photov.objects.User):java.util.Collection</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.PhotoFactory.getPhotosByHeadingId(int,net.wgbv.photov.objects.Page,java.util.ArrayList,java.util.ArrayList,net.wgbv.photov.objects.User):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.PhotoFactory.getPhotosByPersonId(int,net.wgbv.photov.objects.Page,java.util.ArrayList,java.util.ArrayList,net.wgbv.photov.objects.User):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.PhotoFactory.getPhotosByPersonWith(net.wgbv.photov.objects.Person,net.wgbv.photov.objects.Person,net.wgbv.photov.objects.User):java.util.Collection</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.PhotoFactory.getPhotosByPlaceId(int,net.wgbv.photov.objects.Page,java.util.ArrayList,java.util.ArrayList,net.wgbv.photov.objects.User):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.PhotoFactory.getPhotosByTopicId(int,net.wgbv.photov.objects.User):java.util.Collection</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.PhotoFactory.getPhotosByWhere(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.util.Collection,java.util.Collection,int,int,java.lang.String,net.wgbv.photov.objects.User,int):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.PhotoFactory.getUserWhere(net.wgbv.photov.objects.User):java.lang.String</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.PhotoFactory.populatePhotoForm(net.wgbv.photov.form.PhotoForm,net.wgbv.photov.objects.User):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.PhotoFactory.setBulkForm(net.wgbv.photov.form.BulkForm,net.wgbv.photov.objects.User):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.PhotoFactory.setPhotoForm(net.wgbv.photov.form.PhotoForm,net.wgbv.photov.objects.User):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.QueueFactory.getAuditQueue(net.wgbv.photov.objects.Page,java.util.ArrayList,java.util.ArrayList,net.wgbv.photov.objects.User):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.QueueFactory.getNewPhotoQueue(net.wgbv.photov.objects.Page,java.util.ArrayList,java.util.ArrayList,net.wgbv.photov.objects.User):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.QueueFactory.removePhotoQueue(int):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.UserFactory.createUserGroup(int,java.lang.String):int</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.UserFactory.getGroup(int):net.wgbv.photov.objects.Group</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.UserFactory.getGroupsByUserId(int):java.util.ArrayList</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.UserFactory.getHeadingGroups(int):java.util.ArrayList</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.UserFactory.getPhotoGroups(int):java.util.ArrayList</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.UserFactory.getUser(java.lang.String,java.lang.String):net.wgbv.photov.objects.User</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.UserFactory.getUserGroupByPersonId(int):int</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.UserFactory.getUserGroups(net.wgbv.photov.objects.User):java.util.ArrayList</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.UserFactory.populateGroupForm(net.wgbv.photov.form.GroupForm):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.UserFactory.populateUserForm(net.wgbv.photov.form.UserForm,net.wgbv.photov.objects.User):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.UserFactory.setGroupForm(net.wgbv.photov.form.GroupForm):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.UserFactory.setRegistrationForm(net.wgbv.photov.form.RegistrationForm):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.UserFactory.setUserForm(net.wgbv.photov.form.UserForm,net.wgbv.photov.objects.User):void</remark>
+        <remark tag="EXTRACTION">Could not translate an invokedynamic bytecode in public static net.wgbv.photov.dam.UserFactory.toggleActive(net.wgbv.photov.form.UserForm):void</remark>
+        <remark tag="FRAMEWORKS">Are you using Servlet in your application? If yes, please provide the required libraries to improve the results of the analysis. Refer to the documentation of Julia's supported frameworks for further details</remark>
+    </remarks>
+    <metrics>
+        <entry>
+            <key>BYTECODES_REACHED</key>
+            <value>112755</value>
+        </entry>
+        <entry>
+            <key>BYTECODES_STATISTICALLY_CLOSED</key>
+            <value>29094</value>
+        </entry>
+        <entry>
+            <key>GRADE</key>
+            <value>0.60952824</value>
+        </entry>
+        <entry>
+            <key>HUMAN_FRIENDLY_GRADE</key>
+            <value>low</value>
+        </entry>
+        <entry>
+            <key>LOCS_REACHED_ESTIMATE</key>
+            <value>26114</value>
+        </entry>
+        <entry>
+            <key>LOCS_STATISTICALLY_CLOSED_ESTIMATE</key>
+            <value>9368</value>
+        </entry>
+    </metrics>
+    <outputArtifacts>
+        <outputArtifact producer="Julia 1.0" standalone="true" id="Artifact_8a1b32a0dc2b3b0588131e031e73ef2994235a5acfe884023903af429dea9e6f">
+            <key>FlowAnalysisForUNTRUSTED.zip</key>
+            <logicalType>LOGICAL_TYPE_FLOW_ANALYSIS_ARCHIVE</logicalType>
+            <hash>a91710de17a6132a788e08acd73b8b2f</hash>
+        </outputArtifact>
+        <outputArtifact producer="InjectionChecker" standalone="true" id="Artifact_672af21ffe4a2a03dbd3f5f8044197ce347d742df2b728bd4b144da1baf53562">
+            <key>FlowAnalysisForUNTRUSTED.zip/FlowAnalysisForUNTRUSTED.txt</key>
+            <logicalType>FLOW_TEXT</logicalType>
+            <hash>481889adbc35409946e7973069e2f51c</hash>
+        </outputArtifact>
+        <outputArtifact producer="Julia 1.0" standalone="true" id="Artifact_b3973236e39f0e67344896530b755e54109f4384730164c6aff9e1186f3cf6e9">
+            <key>Injection_BackwardFlowsGraph.zip</key>
+            <logicalType>FLOW_GRAPHS_RESULT_ARCHIVE</logicalType>
+            <hash>3d605b4305171e37c9ca4fd9d363a037</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_00cb5ed89090a77c4bf5028a35a688a3df2410f31f1b6cb7ef5acc29a1cbe384">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.AuditQueueAction.java_100_3.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>a68aaa1178d5476a63d559c3d35aa859</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_5afd96fdbebdd60373b9fece2f0606b1eff67dec79c80f42cabaacc8fefdd6a7">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.AuditQueueAction.java_92_4.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>5182d93d0ddc43c9c3d9bca5df9b25ea</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_ce838c301290236d04037d671b71e2f5c2e299f77ddde1103cbb63ce0a15d721">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.AuditQueueAction.java_93_5.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>81550dada5394ef2eb3a35bd092074da</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_85496af4ab496ccf95fe5ef62c1bf871c21f2fec1ae2df4ad2e185f4596807ad">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.BulkAction.java_82_27.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>7cab8d7705ab744b96301ad12465ac3d</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_ccd3ddfa1d05b024896e6e906894677f8f88ac448a341e1bddf09a01fb533cd6">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.CameraAction.java_71_12.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>5c4249defd93a8e594d0df01651f3583</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_9d34d858ea381fcfd2c9a9ada841ed80b0eea8ba6411ebd8e1023bd60e910288">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.CategoryAction.java_74_17.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>8ba3dc5cfd1db733a0c1310fc8708844</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_9ad0e57c3083349a42c0c6da219506a68b2726b329a572a2b9ca0e4fe6ace409">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.CountryAction.java_72_6.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>7028eb12c13bf6b6d1501e0c85c6780b</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_51a7c973455e321f005e1177ab6427275e67885fb5d9f70039e07dfbf0bc3dc8">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.FilmAction.java_71_35.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>a307fa707300a6ce5852be1e9825419a</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_8d190e0d690b6758dc8455a953d02ba75592b3d3e97441b4c0f7dc17e5b62f0a">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.GroupAction.java_85_34.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>15681ee226cb389458b63505dfc2c2f1</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_8d33e9e1c9c83540ff225922edb8e764a5c1571e49e842dc17adc8d49f454a55">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.HeadingAction.java_92_16.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>2849e764e0a86943d67c2b9d3709681a</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_059a1d761b0c49b0f08a608416811cdaf6a8874ae07e76b150ca39c5dae13992">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.HeirarchyAction.java_55_2.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>e85bdfee347e6eff702c07b753bfcc21</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_a8a313b8259a26f725a666105218b57ac5b1af7ed7e057b92d63b095a6ba6509">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.ListAction.java_110_11.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>0b81c1bf9b2d05400b258ae52ee94aa0</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_82b4fc50f3bb2694391dfb5f088cf88da117f7079fe03faa9426c06492747f28">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.ListAction.java_124_10.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>89b45ea13f83f5a6ee5a3e4f51a127c2</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_9da222706f8793434b8ed229806e98780beb5beb415ac13ed6994c8336620578">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.ListAction.java_186_7.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>6c4e0674c30e225ce1206a0e7562f3dc</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_9eb69feae7b972ed430727c392ccffce76d2db15a25da661e87c22336695188b">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.ListAction.java_187_8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>83a883d6cadcf1e42432e1c9f32bf80c</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_3eac06126a604a9c3d980805d18ad7f7827ba1a7846e1346fd5078678b388ceb">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.ListAction.java_188_9.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>4ef7831eb09daa93c30ed5b343e89c0a</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_346399ea12efea088f03ec0e24b16404a917ef7e8b16214094e86841675d048c">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.LoginAction.java_83_30.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>067cef44d4b1e57b69b37ed9d2b35b6a</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_b94400315fb699d7c8734a17ba59191deef607efd0ba7d1d11e15c31eba1d304">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.MessageAction.java_71_36.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>4d3c76202c3fb4c68e394025e210936e</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_7a0ef389ebead0e6d3dbb13210a7562d2c10ed2980fc571c3b02053bd3378db5">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.NewPhotoQueueAction.java_104_18.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>93c5aba2748e9b45bd2ce65b3eb834fe</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_64e54d8107e5c63adb3fb0ea332403a99a8e4bbbdfcf95ece3eaeee9fb53be88">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.NewPhotoQueueAction.java_95_19.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>86ae32763cce172e51fb0801a2b6e1ea</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_a4e74fbffcb52dee7c182df482559586f1e9ad343e6c0c240326a669eec9eec0">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.NewPhotoQueueAction.java_96_20.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>38dfec4a513e7f4b47a9d3ed58c3c65a</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_ac3ccf81801e5b547fd55740b17ce468c21e459557e2d4026e79ec9dee2cbc39">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.PeopleRankingAction.java_57_40.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>79b4b817a846a8451b26b1d83438d682</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_e2a25fee2d0d13533f540ab2e4d0a272660ef7062312f367508f9982479ad9e6">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.PeopleRankingAction.java_58_41.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>adbf93d4b37cbfb655858078e37911aa</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_6a11e8763101010a32a3dbed3c353a39e296a5cb86bbcd93c652768a7acfe474">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.PeopleSearchAction.java_117_45.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>85578d61b9c132b4e1c037c4e9e28f2a</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_6a13a94281d1059bc835a01567aeddbe99db72863cbafa4790665a4f82a3ad66">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.PeopleSearchAction.java_120_46.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>25acbc51ab31c08771f98abb356eab3d</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_11d2427bdd4d479ef2bb30bc691ae75b3318d404091705afce8cdb42990f76a8">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.PeopleSearchAction.java_124_47.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>339decd82f8f24f0af7b131c3e4d4eac</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_37770f890f9a7e10c5e2e6501ce005efe6d76d08edf574c7a7124ceded49074d">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.PeopleSearchAction.java_127_48.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>80cc179074ba1f7a9712663d7bc72bd6</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_27513c9e9e5e74bf30888f97e3c7c1f8fdd6e70ea3fb056350a8653feff0d116">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.PeopleSearchAction.java_134_44.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>09e44a90f845afcf30f62f208920bc94</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_8936cb1b2607a52e947e547eb473648fcb2f1f470d39e25737c55ef09d565b69">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.PersonAction.java_72_32.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>1f96ed043b5219f90a1f7cda3a7fedea</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_12c774da9cc8dd5d14aa3294c273e7f0742a9081983440a5e0bdc009ff1e6764">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.PhotoAction.java_181_39.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>855b7e84a0aa0524f43d3d4773a065ed</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_113b56b7eeb7eadcbc3174390a8d516c70dfd3ba9e6a81f3e7e0ea818c8df6a0">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.PhotoAction.java_194_38.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>0da02dd3e6621c39ae7198bf7d489298</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_6c35e7c705991d26c0ddcc4bf4bdfcef5d5e2de9e7dadc33dd8ea44a575bbe2d">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.PhotoChangeAction.java_63_29.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>8c20546215b79284422bc702487ab240</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_acdd805fbddd7c9dcfb190e2473998e384fd6d4fc307cc187ec518a2aee41910">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.PhotoChangeAction.java_84_28.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>18272246d706d39581b94a2370c5a715</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_044fcc29fe5ba731d5ca14087aba5e4dabcbf39ee509829625958b8564c61352">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.PlaceAction.java_72_26.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>832f8ada98b315f235bdc54560db491d</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_addb18301e6a4411ad1bd77447e1446c6baa99f6ff7b3507f0f39525876657df">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.PlaceListAction.java_52_43.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>6cb517a2f4c47f27a4d68e2b7ff45180</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_ff320d34c04f86a41cdd986a1f7eda9cd8e89078eb38460e5374ecd171d8d45a">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.RegistrationAction.java_126_31.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>36578f7e32ecfa907e37071195a2938f</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_dd302ff735ee75c11f89e6a9cebe233861639d4b43442b31f1e2907fb08b480b">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.SiteAction.java_73_33.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>7f68c9a961ee8cb5fc192bd07302ca77</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_7d55eda2f339b232ea7919c98ebc55bf27ab7d912c4f42216d762b6c72ff518d">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.StateAction.java_72_1.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>e848281fc503f6aea0a6b10a8ebf41d0</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_f21686bbb715d2a117df679c9ccc0d196f7625abd35d3b03740a4f8c9484e924">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.TopicAction.java_74_42.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>b01b30c74f203f19f1e41989ba85ab08</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_478700e3e4cda90d70a0fdae037d62b87df2398c053218c04ade1f9b833193b7">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.action.UserAction.java_104_37.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>409232b69518c9ad68a5efa9ffb242d5</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_aa51403e5136ef0a3bca6626047166e2eb4d889ddea35eb0acd12d8c32f5ad61">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.dam.EmailFactory.java_65_25.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>dbd679fa411288dbe5cdcf54f3281f4f</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_f98acb88d6d3b6bfe50f62c0a3a07793e49507e17fd76673d18c2e0bc3f046a1">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.dam.EmailFactory.java_79_24.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>a25598927b1742a44c73f006593c3e08</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_7510a2c0c806e22934e26168f3ea8ac652534fea74eb5471ba5b409324687afb">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.dam.EmailFactory.java_89_23.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>469b5945fe07436f84f751a791060359</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_b341155f2095d8b7ff31d9778ee3da5cf45506f3d997461cc12858445886c7cd">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.dam.EmailFactory.java_94_21.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>7ed8a11ec0a94f707c0d879cb5c9f06f</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_9128e4d234d65bc0370e497b9341af55d81dc12fd60225aad53e7247345cc392">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.dam.EmailFactory.java_96_22.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>36bc0239e0d9efef7920a0c1a4726612</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_6481a9cba571a35c2c7ea697797b24758e46311702b57cf5326c8921c0a0bbcf">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.dam.PhotoFactory.java_693_15.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>744a1024b8b017194d042e3aeb616888</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_1f19befdea395486955519d96266148441dc56ad8b6428d30191a8516136981d">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.dam.QueueFactory.java_241_13.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>e209cbf74897d12f25712e6c49cbf82d</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_789e965856b5c82561d5fbaa271141278944156eba6a30f6b60b06493742326a">
+            <key>Injection_BackwardFlowsGraph.zip/net.wgbv.photov.dam.QueueFactory.java_242_14.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>d79b23dc6ff8ceaa12f5d55a0b50d52b</hash>
+        </outputArtifact>
+        <outputArtifact producer="Julia 1.0" standalone="true" id="Artifact_c5b5861a53283ff6948f919b908a46ae7537da641282ba065739881d33541383">
+            <key>Injection_BackwardFlowsSubGraph.zip</key>
+            <logicalType>FLOW_GRAPHS_RESULT_ARCHIVE</logicalType>
+            <hash>fd48556b40819e1a11cb731d4ffe70e9</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_43959e81f3d6afe5668fda7caf743caee49627bd2a168bbf88cbb05ceb622eba">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.AuditQueueAction.java_100_19_18_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>3fd705f374c0c306c260cb4ea659b169</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_97292a0aa8eb7ad0c02b0c3075d857c4a5837b38d411e3247f83bc62a562ecbe">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.AuditQueueAction.java_92_27_26_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>bc3eea1de6d183bdca0397b397984530</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_a8cb018abb97a7b2b6c44b4591feb84375b1cf5813dd6d9469e8bec598961914">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.AuditQueueAction.java_92_27_26_1_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>4e1df3d3898dd61fc1c426fe4187fb58</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_eb0608355420c5a61e77b555397e55e20fbcf881c408d0a7033478fe2a466c5d">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.AuditQueueAction.java_93_33_32_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>0cabf5ea5a71ce9cc6f0928881869225</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_d4a0bf6a850ecd3bf08766447c58cfa4947bc55cf443ec43e34d8ed05357e75d">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.AuditQueueAction.java_93_33_32_1_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>83369a596978a6c93446000ac741e552</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_7ce0d8923f5d00c0be394d2fc684cfb43102addd685ca81b2593f3fdc3a1d349">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.BulkAction.java_82_25_24_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>46c8924e6e061ebd02e7e5352e8f7fbe</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_3e43191b161b9b375873040697f07d508264137f1a5bc97c77f846d358f97c58">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.CameraAction.java_71_37_36_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>d06caeb45cc76888ec1da3ca4e0aeb9a</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_e949e367d626ab60f13313763f2d98504d27ba8325b964ff89be2365de8f9d26">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.CategoryAction.java_74_46_45_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>617c72772afa56d9a6ee68a0c5b21b4e</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_79995198e119f3e9305397757565de8bbb6540a73a8290195a0ec8cf8dc60e18">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.CountryAction.java_72_41_40_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>1092dd573d9cc206c6d82ebacc498372</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_a804760a48799dbfe1b26c401075d7dfed6569dc54c11820dbdd3cd912b9e68c">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.FilmAction.java_71_38_37_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>db70c6864a43be3ab5c43a2668a8bc95</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_13fd9f26d6ea4e8d41c3b35e3d4cd847a2e7188e4f539cc68e153fe7c07a2e02">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.GroupAction.java_85_26_25_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>53956773faa9da0bb04cf5b17c5462d4</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_a7c99228194947cf3ac32ef4c18c105078b886e248e21040fcdd5c1f3ffc574a">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.HeadingAction.java_92_28_27_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>9b8a708b1bba72321c1e5a8926b4b017</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_7d3b4cf61ae00ee8ff903add7b377cd246d97e4326cf2c6436242902339a1360">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.HeirarchyAction.java_55_4_3_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>814fbf4c504605f0708e7f094ab58478</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_d8056d3bf77cfedbc5ba76a68a37b70656d6567a14bf797a372c1cdee102df22">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.ListAction.java_110_22_21_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>59a65a7936279eb9dcaae62c4c95bb81</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_f9f6bb86bed8079df7027b9952379209587f17124744b3e6194b31f009767ddc">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.ListAction.java_124_11_10_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>1b163e473fbda10edfeea0b5b6ee0d04</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_bcad0799ee12db2846baeac08ac1a16fed7b3b0ed2731903216cb83c9ad69971">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.ListAction.java_124_11_10_1_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>5fe2d437f3edf1ab613fa040c29a3901</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_96891cfbf74ad904f657ebd6ecd4e1731ba01281e9d26ed0f727352fecb4b4bf">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.ListAction.java_124_11_10_2_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>55b7e1995d873698b3fda4187ad72785</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_3688d1188f8204caec247a0f79f11bb5f83e57914d39a99450e28236cd1d4423">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.ListAction.java_186_14_13_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>2b87dde2f06ebae7e99c0d1b81dfa24e</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_1495468f313f576944ce6b2148ba4e87c459e5fb76e9f95780f540c689f2f8be">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.ListAction.java_186_14_13_10_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>dbc62131b1ab58f9a93265b9c57b4f92</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_bc8bc34b37a4b2c58d05c2a97b5e7ebe2ee859451aadb8f33393215f93480178">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.ListAction.java_186_14_13_1_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>3941f323d9a3e8d2c4adfc107170bef1</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_20b8e7b4dbd8424bc091fc6ac669ece9319e94ab508741d87c2183299dc1347c">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.ListAction.java_186_14_13_2_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>10ed72779d78cbff94ff96b589393553</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_4eb12c9b86faeda66c0c3c4c26b925181c6366e37edadeb403c2a9cc7b8c9da6">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.ListAction.java_186_14_13_3_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>bdd38b4ada8126d6191702f8b703f473</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_1c17b966ba786ef4f1c6770119bab66f7674c0546bad246408ee033e47cce644">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.ListAction.java_186_14_13_4_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>d3deb386399f4222c883da5d4af0eddf</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_85308a5b97e9089a6d09e06ccce3f458a53807a0fbdd436805a88e380f5ceebe">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.ListAction.java_186_14_13_5_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>0dbace5fd9efbdbc6e5f2588cfc4580d</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_bab0f3a7e12528ddab1ba31eafb89b10838d3fb2792289ea1f44709a2556511e">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.ListAction.java_186_14_13_6_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>6626e927a26e721d1b89706e08a0588e</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_c45cdfa4264eac2634b14da11bc2c84b48aa5b49b0aa1b1b53e92bef624bcec1">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.ListAction.java_186_14_13_7_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>3c7d59c058f9a77965614cd2f15d3ad6</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_0287ba6053901bad3041e30a8d5a71ab6e8b789d07cf47be7760da18fc47a47f">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.ListAction.java_186_14_13_8_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>e1c5848f170b2f855729a7b2808759e5</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_c2a1bc3596663583207f3f2dc6b397692efe0e62380a16b27db643614270a3d3">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.ListAction.java_186_14_13_9_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>7cf1779485f4065ce2c4c2b37b64044a</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_f88a4f5d23caecb355275b2547b6556d53916a51166a7c247698114731afcd17">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.ListAction.java_187_9_8_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>e43b4a17bcee7d3493d8b4296f771586</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_8ae0e13d8d1523e7853852cf790bbe4c933e00cbd4c1617190ea0940c3fe2028">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.ListAction.java_187_9_8_1_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>0063718bf7479f664b2c8880339adf21</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_22377d9195c684743a97f3f1caafa97c7fc8a26b30e19d409676f38b0e56575f">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.ListAction.java_187_9_8_2_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>f129c943fbafae26bcf66232b2d40310</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_d73fbbd8de698c994d74f8da889a5fbb12c2013bb70f065f281608b80ddac7f3">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.ListAction.java_187_9_8_3_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>47e1941d8d237935116ccc3850584486</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_7313a1947010728f4d558e4771bf214bd25927d9f31d36e24a63a6d263f60c3c">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.ListAction.java_187_9_8_4_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>e8b03a144106246da13f0482d1a0211d</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_f6324a2bff8df3e490f53e33ff8b35e237a7bd8030548245283bd2d4de510b4e">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.ListAction.java_188_10_9_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>abd869f9d03cc49a3af198aedbe5fff9</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_0c8768fc6cdf1d84a75550fe60f750bd326b3efde96aa6c0fafb203db5570788">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.LoginAction.java_83_23_22_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>e1429ee6aa19ddafd87fc29eafd1a674</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_5909d3c1be4f5969d42620f856a2e68aa0e40c8a5108c38a5ea86eb7cfde6f06">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.LoginAction.java_83_23_22_1_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>f8dbbc63dd13a5df4795a50ccd9bc898</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_a35ea5592549a2eccf540a912be22051cc79126a45a9eec2409c2250b1d09cbc">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.MessageAction.java_71_39_38_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>3726312f50321177623f01b0fcc0f0a0</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_b1add14a9486d60d6790cc7d90f3ba4a57d43323d704a198efe6672de5004093">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.NewPhotoQueueAction.java_104_20_19_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>a04ae1ec29f2f5aab21949e70e9fe3d7</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_fe609f1249c9e3431100e541ffcade597c14a82fbaaff0c0a48ca840260ec1f1">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.NewPhotoQueueAction.java_95_30_29_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>f2970881a2ff7a9a77c7c188b96956fb</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_ed1ee62d6282952238cb81e1e8881f7ca5d6f1c42dd39091b0f669c993f16a33">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.NewPhotoQueueAction.java_95_30_29_1_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>c17f58cd47084058072d4cdb915ab0ef</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_0f37068d5fa72493a22beec8025798eecc58dd1c627840dca5b6eb7fe5bbf2e5">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.NewPhotoQueueAction.java_96_31_30_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>87334bd5ef1c493622f78143233c2c10</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_98f5ba3884ebf345e84f6dd3200299e07772e1a5df0c79ab6ad7fd89e0f4c1eb">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.NewPhotoQueueAction.java_96_31_30_1_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>456aedb8d25c9acda71794a5c3b719a3</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_75f278b060562b0a402f59de8a1d3e696b65f98521af869560e4dbda36a6f744">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.PeopleRankingAction.java_57_13_12_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>8e85907aaa7807d6458d379790f2b769</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_82e51ac3a3e725c82fdb8516db492c49c8fed15305c6379ee37b1a0efe8eee19">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.PeopleRankingAction.java_57_13_12_1_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>554a9a441ea6085fc761fdda06190e1c</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_6cade60417436831319a0640929136cdc24c4b69961e7d080b4daf867e831dea">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.PeopleRankingAction.java_58_15_14_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>cb2b5559835020e565574dce7de14fa4</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_5ff55bce095be95582181d8b64223df248f85a6bdc598f935c5db0ad4fac1f42">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.PeopleSearchAction.java_117_8_7_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>d33e51e1ba3a8b0bbe8e4c222b38252c</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_34be153874290aef0acad072375b831f06a4c6cf1492b0af27ac080e43ac53e5">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.PeopleSearchAction.java_117_8_7_1_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>564f62f2f0e8d483dd259f8bb9588db4</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_9d25875061f0d448558119e7a8216fa8e82b972fee0356f3b9866881b75d7277">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.PeopleSearchAction.java_120_5_4_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>3e942961a9dc7f2ca9465b7e4f497963</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_3dba59572afb6b1d30d6d784dae14026de0f2e6fb6530345f5bd8b8c904c3766">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.PeopleSearchAction.java_120_5_4_1_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>b5a63bc5688ce425ebf9cb0e1b5fbdb2</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_61b23d390a425fc12d84128abe1a009288bf97b3ae14c82de24ac0c518ffa5d6">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.PeopleSearchAction.java_124_12_11_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>a55becbabbd84f9af1de64020f3ab5f2</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_b1a34c3c86ad8614fab6fccdedd5e7accaf2dcee97a3ab65a8011a4984742834">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.PeopleSearchAction.java_134_44_43_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>aa4dcab4e1349d806984bd393b476f94</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_1b7f5794f167d2e169287092b74704102cc06e8362829e1d89e347eded4e14f0">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.PersonAction.java_72_43_42_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>091757d39c57ed6c15e9317ec2805411</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_492a11d0f21dd6319e8e9db6c8609a2cecd1eb19e823c4538b91ebefb6af9536">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.PhotoAction.java_181_7_6_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>ccc1e58208fd106d93b7ca509b4d3ba8</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_d82559989dbc59aa34c6ead1f1ee249f0fd3646eb6dba9d8496ed3b993b7fb38">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.PhotoAction.java_194_36_35_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>90f04e74e8d89f66f4966c56da55e104</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_42f4c992a5a5c099530c7240b9b7407c6491dc33ce647bcbb852c2ee0fbb87b9">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.PhotoChangeAction.java_63_16_15_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>3feb29671e1435d3b241f5c26324c262</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_aedb7d569fcd37458e9544a345375ac5f43f1c5fa035448334a173a16adfbe9c">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.PhotoChangeAction.java_84_24_23_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>5df16726ae989007f4ea4899c40e68f3</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_9dad525bf7aeb6b22b2c31189065689661ff40fec89a294a312a38e09cb1e185">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.PlaceAction.java_72_42_41_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>ab1fe4eed836ac082eeb2abad710e466</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_b29a08c55ab5976b189566ac83ca072f10f85ceabbf330c77ef9c5234be99b15">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.PlaceListAction.java_52_1_0_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>64be84fe69d1bbbf28638a8ebb6ea19a</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_2ecd0784f1d06c4b96ba625b246993799114549657726ae275cdb6d3c8eae724">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.RegistrationAction.java_126_18_17_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>6f24d08310a3a9f4ce6a99c579837486</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_5baa24a7b0606d9b557a5b3909cdf49a7891f7d6fd6e771769aa7df423714952">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.RegistrationAction.java_126_18_17_1_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>91d16c4ab7763d97bd7010a7bd6d9343</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_c6028e4260baa0faebbeb377a76251bf17b29798ef7af4e39bc7c70ef955fc25">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.SiteAction.java_73_45_44_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>b2fa8f9d4ec77a3dd93e35bc692d6200</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_43ce86339e6d7049b79433f526d3854d4483d511f29684c84656dd629dce0a13">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.StateAction.java_72_40_39_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>b875279f47e3f8ac5b4f158e53c75d74</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_56db9442390236443941bd6d9abbd4b27f8ecc5dd2be23c90a0df46c7e051e2f">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.TopicAction.java_74_47_46_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>e2ccbd550abbb910bf47e6518cb88a62</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_c4819b8fb442f3986b7a6a068bd8d9a620680395d9ef25f19667929f23e800e7">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.action.UserAction.java_104_21_20_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>176b8f582ee67f4421d104093b8c7f5b</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_4cf8932f002048f76cbae35bfbf0e37c964e80bb0196291166d6467939b38d30">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.dam.EmailFactory.java_94_34_33_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>a7b693ebb1060111063627d005944af6</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_d7eda8abb72f68254302f457ebc4658df1ecf7966d2e6004a780182f4e18d95a">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.wgbv.photov.dam.EmailFactory.java_96_32_31_0_id_729b20b7-4ccc-4eb8-b30b-1f369a02538f.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>0128d5a24847cccb5e9f3f2760400c46</hash>
+        </outputArtifact>
+        <outputArtifact producer="InjectionChecker" standalone="true" id="Artifact_40b5ff9a6857af7ed12b807d4f8623483bf1becc173df5ca005ef1d36fadf3ab">
+            <key>Injection_Trusted_UNTRUSTED.jaif</key>
+            <logicalType>JAIF</logicalType>
+            <hash>5d0eea47b8485b00c2fa75a456f6db31</hash>
+        </outputArtifact>
+    </outputArtifacts>
+    <analysisSpecification>
+        <id>729b20b7-4ccc-4eb8-b30b-1f369a02538f</id>
+        <solutionId>-1</solutionId>
+        <creationTimestamp>2019-08-07T16:22:52.610+02:00</creationTimestamp>
+        <sourceProjects>[]</sourceProjects>
+        <packages>
+            <package id="Artifact_498166963b8db29db4d5fd2aeddbbdb66962ffd55dd60387f6b06b26aebe0ecd">
+                <key>photov\app.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>app.jar</moduleName>
+                <type>Application</type>
+            </package>
+        </packages>
+        <options name="Internal options">
+            <booleanOption value="true" label="Allow framework detection" name="allowFrameworkDetection" userVisible="true">
+                <description>Enables automatic framework detection</description>
+                <documentation>Enables automatic framework detection, allowing Julia to identify frameworks and optimize the analysis accordingly. A description of the frameworks automatically recognized by Julia is available in the documentation</documentation>
+                <syntax>-allowFrameworkDetection true|false</syntax>
+            </booleanOption>
+            <stringOption label="Type of splitter" name="applicationSplitter" userVisible="false">
+                <alternative name="ByPackage">
+                    <synopsis>split the application jars on the basis of their packages structure</synopsis>
+                </alternative>
+                <alternative name="KargerSteinCut">
+                    <synopsis>apply the Karger-Stein algorithm to partition the application jars</synopsis>
+                </alternative>
+                <alternative name="RandomDeterministic">
+                    <synopsis>randomly split the application jars</synopsis>
+                </alternative>
+                <alternative name="StoerWagnerMinimumCut">
+                    <synopsis>apply the Stoer-Wagner algorithm to partition the application jars</synopsis>
+                </alternative>
+                <description>Specify the application splitter</description>
+                <documentation>Specifies the application splitter that must be used to split the application jars. By deafult, the random splitter is selected.</documentation>
+                <syntax>-applicationSplitter XXX</syntax>
+            </stringOption>
+            <booleanOption value="false" label="classifyForCS" name="classifyForCS" userVisible="true">
+                <description>Add external classification for GrammaTech CodeSonar</description>
+                <documentation>If true, add the external classification CS-INT-CLASSIFICATION that is used by CodeSonarto categorize Security warnings</documentation>
+                <syntax>-classifyForCS true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="Dump call graph" name="dumpCallGraph" userVisible="false">
+                <description>Dump the call graph generated by the analysis</description>
+                <documentation>Specifies whether or not the call graph computed by the analysis should be dumped to a dot file</documentation>
+                <syntax>-dumpCallGraph true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="Dump generated annotations" name="dumpFrameworkAnnotations" userVisible="false">
+                <description>Dump annotations generated by framework specification</description>
+                <documentation>Specifies whether or not the annotations automatically generated by the application of a framework specification should be dumped or not</documentation>
+                <syntax>-dumpFrameworkAnnotations true|false</syntax>
+            </booleanOption>
+            <booleanOption value="true" label="dumpOutputToLog" name="dumpOutputToLog" userVisible="true">
+                <description>Dump warnings and remarks to standard output</description>
+                <documentation>If true, the complete list of warnings and remarks will be dumped to the standard output</documentation>
+                <syntax>-dumpOutputToLog true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="Enable assertions" name="ea" userVisible="true">
+                <description>Assume that assertions are turned on</description>
+                <documentation>Assume that assertion statements are executed, hence warnings should be reported about those statements and their effects on subsequent instructions must be taken into account</documentation>
+                <syntax>-ea true|false</syntax>
+            </booleanOption>
+            <enumOption value="ALL_ENTRIES" label="Entry points" name="entryPoint" userVisible="true">
+                <alternative name="ALL_ENTRIES">
+                    <synopsis>Assume that all public and protected methods and constructors are entry points</synopsis>
+                </alternative>
+                <alternative name="ALL_METHODS">
+                    <synopsis>Assume that all public, protected and private methods and constructors are entry points</synopsis>
+                </alternative>
+                <alternative name="LIBRARY">
+                    <synopsis>Run in library mode</synopsis>
+                </alternative>
+                <alternative name="ONLY_EXPLICIT_ENTRIES">
+                    <synopsis>Only consider entry points marked as @EntryPoint</synopsis>
+                </alternative>
+                <alternative name="ONLY_STANDARD_ENTRIES">
+                    <synopsis>Only consider default entry points like main methods, event handlers of Swing and Android</synopsis>
+                </alternative>
+                <description>The entry points of the application</description>
+                <documentation>Specify the entry point of the application the analysis starts from.</documentation>
+                <syntax>-entryPoint</syntax>
+            </enumOption>
+            <stringOption value="java8" label="Framework" name="framework" userVisible="true">
+                <alternative name="androidAPI1">
+                    <synopsis>use the framework of analysis for Android API 1</synopsis>
+                </alternative>
+                <alternative name="androidAPI10">
+                    <synopsis>use the framework of analysis for Android API 10</synopsis>
+                </alternative>
+                <alternative name="androidAPI11">
+                    <synopsis>use the framework of analysis for Android API 11</synopsis>
+                </alternative>
+                <alternative name="androidAPI12">
+                    <synopsis>use the framework of analysis for Android API 12</synopsis>
+                </alternative>
+                <alternative name="androidAPI13">
+                    <synopsis>use the framework of analysis for Android API 13</synopsis>
+                </alternative>
+                <alternative name="androidAPI14">
+                    <synopsis>use the framework of analysis for Android API 14</synopsis>
+                </alternative>
+                <alternative name="androidAPI15">
+                    <synopsis>use the framework of analysis for Android API 15</synopsis>
+                </alternative>
+                <alternative name="androidAPI16">
+                    <synopsis>use the framework of analysis for Android API 16</synopsis>
+                </alternative>
+                <alternative name="androidAPI17">
+                    <synopsis>use the framework of analysis for Android API 17</synopsis>
+                </alternative>
+                <alternative name="androidAPI18">
+                    <synopsis>use the framework of analysis for Android API 18</synopsis>
+                </alternative>
+                <alternative name="androidAPI19">
+                    <synopsis>use the framework of analysis for Android API 19</synopsis>
+                </alternative>
+                <alternative name="androidAPI2">
+                    <synopsis>use the framework of analysis for Android API 2</synopsis>
+                </alternative>
+                <alternative name="androidAPI20">
+                    <synopsis>use the framework of analysis for Android API 20</synopsis>
+                </alternative>
+                <alternative name="androidAPI21">
+                    <synopsis>use the framework of analysis for Android API 21</synopsis>
+                </alternative>
+                <alternative name="androidAPI22">
+                    <synopsis>use the framework of analysis for Android API 22</synopsis>
+                </alternative>
+                <alternative name="androidAPI23">
+                    <synopsis>use the framework of analysis for Android API 23</synopsis>
+                </alternative>
+                <alternative name="androidAPI24">
+                    <synopsis>use the framework of analysis for Android API 24</synopsis>
+                </alternative>
+                <alternative name="androidAPI25">
+                    <synopsis>use the framework of analysis for Android API 25</synopsis>
+                </alternative>
+                <alternative name="androidAPI3">
+                    <synopsis>use the framework of analysis for Android API 3</synopsis>
+                </alternative>
+                <alternative name="androidAPI4">
+                    <synopsis>use the framework of analysis for Android API 4</synopsis>
+                </alternative>
+                <alternative name="androidAPI5">
+                    <synopsis>use the framework of analysis for Android API 5</synopsis>
+                </alternative>
+                <alternative name="androidAPI6">
+                    <synopsis>use the framework of analysis for Android API 6</synopsis>
+                </alternative>
+                <alternative name="androidAPI7">
+                    <synopsis>use the framework of analysis for Android API 7</synopsis>
+                </alternative>
+                <alternative name="androidAPI8">
+                    <synopsis>use the framework of analysis for Android API 8</synopsis>
+                </alternative>
+                <alternative name="androidAPI9">
+                    <synopsis>use the framework of analysis for Android API 9</synopsis>
+                </alternative>
+                <alternative name="dotnet">
+                    <synopsis>use the framework of analysis for .NET</synopsis>
+                </alternative>
+                <alternative name="java1">
+                    <synopsis>use the framework of analysis for Java 1.1</synopsis>
+                </alternative>
+                <alternative name="java2">
+                    <synopsis>use the framework of analysis for Java 1.2</synopsis>
+                </alternative>
+                <alternative name="java3">
+                    <synopsis>use the framework of analysis for Java 1.3</synopsis>
+                </alternative>
+                <alternative name="java4">
+                    <synopsis>use the framework of analysis for Java 1.4</synopsis>
+                </alternative>
+                <alternative name="java5">
+                    <synopsis>use the framework of analysis for Java 1.5</synopsis>
+                </alternative>
+                <alternative name="java6">
+                    <synopsis>use the framework of analysis for Java 1.6</synopsis>
+                </alternative>
+                <alternative name="java7">
+                    <synopsis>use the framework of analysis for Java 1.7</synopsis>
+                </alternative>
+                <alternative name="java8">
+                    <synopsis>use the framework of analysis for Java 1.8</synopsis>
+                </alternative>
+                <description>Specify the framework of analysis</description>
+                <documentation>A framework specifies rules specific to the given programming context used for the application under analysis, such as the entry points for the analysis. The "java7" framework will work in most cases, but more specific frameworks might yield more precise results of analysis. The specification of the framework might also change the behavior of the checkers, since some checks might be sensible for some frameworks only</documentation>
+                <syntax>-framework XXX</syntax>
+            </stringOption>
+            <booleanOption value="false" label="help" name="help" userVisible="true">
+                <description>Display the help of the analyzer</description>
+                <syntax>-help true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="Ignore XML files" name="ignoreXMLFiles" userVisible="false">
+                <description>Ignore XML files regardless of content/type and support</description>
+                <documentation>Frameworks often rely on XML files to specify configuration and application behaviour.By default, Julia tries to parse common xml configuration files and simulate the implied runtime effects, this option forces Julia to ignore all input xml files regardless of the analysis support and optimizations provided by the selected framework.</documentation>
+                <syntax>-ignoreXMLFiles true|false</syntax>
+            </booleanOption>
+            <enumOption value="TYPES" label="Mode of library processing" name="libraryProcessingMode" userVisible="true">
+                <alternative name="TYPES">
+                    <synopsis>ignore the code of the non-runtime libraries</synopsis>
+                </alternative>
+                <alternative name="TYPES_AND_CODE">
+                    <synopsis>include the code of all classes during analysis</synopsis>
+                </alternative>
+                <description>Processing mode for library classes</description>
+                <documentation>Allow the analyzer to discard the implementation of library methods and only uses the hierarchy of the library classes during the analysis. This decreases the precision of the analysis and might occasionally make it unsound, but reduces the time of analysis.</documentation>
+                <syntax>-libraryProcessingMode</syntax>
+            </enumOption>
+            <booleanOption value="false" label="maniac" name="maniac" userVisible="true">
+                <description>Run in maniac mode</description>
+                <documentation>Applies very strict hypotheses about unknown code, such as reflective calls and calls with missing targets</documentation>
+                <syntax>-maniac true|false</syntax>
+            </booleanOption>
+            <intOption value="0" label="maxMethods" name="maxMethods" userVisible="true">
+                <description>Set the maximum number of extracted methods to N (0 means no limit)</description>
+                <documentation>After this threshold, the analysis aborts</documentation>
+                <syntax>-maxMethods N</syntax>
+            </intOption>
+            <booleanOption value="false" label="mergeArrays" name="mergeArrays" userVisible="true">
+                <description>Merge, during the extraction of the application, the arrays of the same type</description>
+                <documentation>This allows you to analyze applications that create a large number of arrays at many program points. This option might sometimes slightly reduce the precision of the analysis, by considering a larger number of methods and fields as reachable. However, it might be important for the analysis of some application, since it improves the scalability of the analyzer</documentation>
+                <syntax>-mergeArrays true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="mergeArraysInsideMethod" name="mergeArraysInsideMethod" userVisible="true">
+                <description>Merge, during the extraction of the application, the arrays of the same type created inside the same method or constructor</description>
+                <documentation>This allows the user to analyze applications that create a large number of arrays at many program points. This option might sometimes slightly reduce the precision of the analysis, by considering a larger number of methods and fields as reachable. However, it might be important for the analysis of some application, since it improves the scalability of the analyzer. This option is less radical than the -mergeArrays option, that is, it introduces less imprecison but also induces less scalability</documentation>
+                <syntax>-mergeArraysInsideMethod true|false</syntax>
+            </booleanOption>
+            <stringOption value="juliaOutput\729b20b7-4ccc-4eb8-b30b-1f369a02538f\" label="outputPath" name="outputPath" userVisible="true">
+                <description>Set the directory where the output of the analyzer must be dumped</description>
+                <documentation>If that directory does not exist, it is automatically created by the analyzer</documentation>
+                <syntax>-outputPath PATH</syntax>
+            </stringOption>
+            <booleanOption value="false" label="Robust" name="robust" userVisible="false">
+                <description>Do not crash if a checker crashes</description>
+                <documentation>If a checker crashes (for any reason), the overall analysis goes ahead and terminates.A warning  stating that &lt;checker&gt; crashed is produced in the console.</documentation>
+                <syntax>-robust true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="rta" name="rta" userVisible="true">
+                <description>Use rapid type analysis to extract the application</description>
+                <documentation>This is rarely used and currently not optimized for large applications. The precision of rapid type analysis is worse than that of the standard extraction algorithm used by Julia but, in principle, should scale better. Please consider using the -mergeArrays and -mergeArraysInsideMethod options instead</documentation>
+                <syntax>-rta true|false</syntax>
+            </booleanOption>
+            <stringOption value="C:\Users\FerraraP\Desktop\runtime\java8\jce.jar;C:\Users\FerraraP\Desktop\runtime\java8\jsse.jar;C:\Users\FerraraP\Desktop\runtime\java8\rt.jar" label="runtime" name="runtime" userVisible="true">
+                <description>Specify the classpath used for loading the runtime classes</description>
+                <documentation>Runtime classes are normally loaded by using the default class loader. This option allows one to change this behavior, by specifying a specific class path to use for class loading of runtime classes</documentation>
+                <syntax>-runtime XXX</syntax>
+            </stringOption>
+            <booleanOption value="false" label="sequential" name="sequential" userVisible="true">
+                <description>Run checkers one after another</description>
+                <documentation>Instruct Julia to wait for the completion of a checker before starting running another checker</documentation>
+                <syntax>-sequential true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="silent" name="silent" userVisible="true">
+                <description>Run in silent mode</description>
+                <documentation>No textual output is produced with this option, but the analyses are run and output files are generated</documentation>
+                <syntax>-silent true|false</syntax>
+            </booleanOption>
+            <intOption value="1" label="Number of splits" name="splitApplicationJar" userVisible="false">
+                <description>Split statistically closed jars, containing the application to analyse, into the given number of partitions</description>
+                <documentation>Splits the jars containing the application to analyse. This decreases the precision of the analysis and might occasionally make it unsound, but reduces the time of analysis</documentation>
+                <syntax>-splitApplicationJar N</syntax>
+            </intOption>
+            <booleanOption value="false" label="verbose" name="verbose" userVisible="true">
+                <description>Run in verbose mode</description>
+                <documentation>This produces a longer and more detailed textual output. Mostly useful for debugging the analyzer</documentation>
+                <syntax>-verbose true|false</syntax>
+            </booleanOption>
+        </options>
+        <checkers>
+            <checker group="Advanced" level="Public" name="Injection">
+                <enumOption value="javaBDDs" label="bddType" name="bddType" userVisible="true">
+                    <alternative name="javaBDDs">
+                        <synopsis>use the JavaBDD binary decision diagram library. See http://javabdd.sourceforge.net/</synopsis>
+                    </alternative>
+                    <alternative name="juliaBDDs">
+                        <synopsis>use Julia's multithreaded binary decision diagram library</synopsis>
+                    </alternative>
+                    <alternative name="nativeBDDs">
+                        <synopsis>use the native C-based binary decision diagram library</synopsis>
+                    </alternative>
+                    <description>specify the binary decision diagram library that must be used</description>
+                    <documentation>The native binary decision diagrams (BDD) library is in general faster (10% time reduction) than the Java versions but requires that that library be compiled, into native code, on the machine where the analysis is performed. Note, moreover, that the native library cannot be used for concurrent executions (for instance, inside a servlet container). The Julia library is multithreaded and can consequently be shared by many concurrent analyses, which reduces the memory footprint</documentation>
+                    <syntax>bddType</syntax>
+                </enumOption>
+                <booleanOption value="true" label="dumpAnalysis" name="dumpAnalysis" userVisible="true">
+                    <description>dump extensive (very large!) log information about the analysis</description>
+                    <documentation>Only useful for debugging the analyzer</documentation>
+                    <syntax>dumpAnalysis true|false</syntax>
+                </booleanOption>
+                <booleanOption value="true" label="dumpCompleteGraphs" name="dumpCompleteGraphs" userVisible="true">
+                    <description>dump the complete backward flow graph derivated from a sink</description>
+                    <documentation>If set to true, it produces an archive with the complete backward flow graphs that are used for the extraction of source-sink subgraphs</documentation>
+                    <syntax>dumpCompleteGraphs true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="dumpDotWithInvariants" name="dumpDotWithInvariants" userVisible="true">
+                    <description>dump the analysed code in dot format, with flow information</description>
+                    <documentation>This option dumps a dot file for each method or constructor that is reachable from the entry points of the analysis. At the beginning of each code, a flow invariant is reported</documentation>
+                    <syntax>dumpDotWithInvariants true|false</syntax>
+                </booleanOption>
+                <booleanOption value="true" label="flow" name="flow" userVisible="true">
+                    <description>where possible, reconstructs the instruction flows leading to injection issues</description>
+                    <documentation>If true, it reconstructs the flow and provides detailed information on the warning if successful.</documentation>
+                    <syntax>flow true|false</syntax>
+                </booleanOption>
+                <enumOption value="AVERAGE" label="flowComputingSpeed" name="flowComputingSpeed" userVisible="true">
+                    <alternative name="AVERAGE">
+                        <synopsis>reconstruct graphs until max of 2000 nodes</synopsis>
+                    </alternative>
+                    <alternative name="FAST">
+                        <synopsis>reconstruct graphs until max of 1000 nodes</synopsis>
+                    </alternative>
+                    <alternative name="FASTEST">
+                        <synopsis>reconstruct graphs until max of 500 nodes</synopsis>
+                    </alternative>
+                    <alternative name="SLOW">
+                        <synopsis>reconstruct graphs until max of 4000 nodes</synopsis>
+                    </alternative>
+                    <alternative name="SLOWEST">
+                        <synopsis>reconstruct graphs until max of integer limit nodes</synopsis>
+                    </alternative>
+                    <description>efficiency of the flow reconstruction</description>
+                    <documentation>This speciefies the efficiency of the flow reconstruct. Interesting only if option flow is set to true. (AVERAGE by default)</documentation>
+                    <syntax>flowComputingSpeed</syntax>
+                </enumOption>
+                <booleanOption value="false" label="fullJaif" name="fullJaif" userVisible="true">
+                    <description>dump a jaif file with the information flow information of the program, containing both the selected properties of interest and their complement</description>
+                    <documentation>The generated jaif file is a compact report of the program places that might contain a secret (tainted) value. Differently from the -jaif option, this generates explicit information for the places that contain a non-secret value as well and is hence a more verbose version of the same information</documentation>
+                    <syntax>fullJaif true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="fullyQualifiedNames" name="fullyQualifiedNames" userVisible="true">
+                    <description>use fully qualified class names in the jaif files</description>
+                    <documentation>The generated jaif file is a compact report of the program places that might contain a secret (tainted) value. This option forces the use of fully qualified class names in the jaif file, also when referring to classes in the same package that is being reported</documentation>
+                    <syntax>fullyQualifiedNames true|false</syntax>
+                </booleanOption>
+                <booleanOption value="true" label="jaif" name="jaif" userVisible="true">
+                    <description>dump a jaif file with the information flow information of the program</description>
+                    <documentation>A jaif file is a compact report of the program places that might contain a secret (tainted) value. It can be used for reference and documentation, but can also be imported in the source code of the program by using the annotation file utilities (see http://types.cs.washington.edu/annotation-file-utilities)</documentation>
+                    <syntax>jaif true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="mergeCreations" name="mergeCreations" userVisible="true">
+                    <description>merge the creation points for the same type inside the same class</description>
+                    <documentation>This enhances the efficiency of the creation points analysis performed as part of flow analysis but, in general, reduces the precision of the analyzer. However, it can be an important option to select for the analysis of very large applications and in library mode, in the rare cases when the creation points analysis takes too long to complete. This option is automatically selected for large programs</documentation>
+                    <syntax>mergeCreations true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="noOracle" name="noOracle" userVisible="true">
+                    <description>do not use an oracle semantics for the fields</description>
+                    <documentation>This largely reduces the precision of the analysis, since Julia will not track anymore the fields that are  definitely initialized to a non-secret (non-tainted) value before being accessed. Mainly useful for profiling and statistics</documentation>
+                    <syntax>noOracle true|false</syntax>
+                </booleanOption>
+                <booleanOption value="true" label="noUnreachable" name="noUnreachable" userVisible="true">
+                    <description>do not dump information on unreachable code</description>
+                    <documentation>By selecting this option, the jaif files become smaller</documentation>
+                    <syntax>noUnreachable true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="reportLocals" name="reportLocals" userVisible="true">
+                    <description>dump information on local variables</description>
+                    <documentation>By selecting this option, the jaif file contains information on local variables as well and consequently becomes larger</documentation>
+                    <syntax>reportLocals true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="trustDatabase" name="trustDatabase" userVisible="true">
+                    <description>consider data coming from a database query as trusted</description>
+                    <documentation>This option lets Julia consider data coming from database queries as untainted and hence trusted. This is false by default</documentation>
+                    <syntax>trustDatabase true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="trustDevice" name="trustDevice" userVisible="true">
+                    <description>consider data about the specific device as trusted</description>
+                    <documentation>This option lets Julia consider data about the specific device running the application as untainted and hence trusted. This is false by default</documentation>
+                    <syntax>trustDevice true|false</syntax>
+                </booleanOption>
+                <booleanOption value="true" label="trustEnvironment" name="trustEnvironment" userVisible="true">
+                    <description>consider data coming from the running environment as trusted</description>
+                    <documentation>This option lets Julia consider data coming from files or properties as untainted and hence trusted. This is true by default</documentation>
+                    <syntax>trustEnvironment true|false</syntax>
+                </booleanOption>
+                <booleanOption value="true" label="trustExternalStreams" name="trustExternalStreams" userVisible="true">
+                    <description>consider data coming from external streams as trusted</description>
+                    <documentation>This option lets Julia consider data coming from external streams and sockets as untainted and hence trusted. This is true by default</documentation>
+                    <syntax>trustExternalStreams true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="trustUserInput" name="trustUserInput" userVisible="true">
+                    <description>consider data from servlet requests and console as trusted</description>
+                    <documentation>This option lets Julia consider data coming from servlet requests and console input as untainted and hence trusted. This is false by default</documentation>
+                    <syntax>trustUserInput true|false</syntax>
+                </booleanOption>
+                <synopsis>Identify potential security injections</synopsis>
+            </checker>
+        </checkers>
+    </analysisSpecification>
+    <formattedRunDuration>00:01:59.281</formattedRunDuration>
+</analysisReportResult>

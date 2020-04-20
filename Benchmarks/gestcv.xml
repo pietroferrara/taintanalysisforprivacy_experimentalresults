@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<analysisReportResult>
+    <id>ab8552a4-b755-44cf-ab4c-fe563b793dec</id>
+    <status>COMPLETED</status>
+    <creationTimestamp>2019-08-07T11:52:29.286+02:00</creationTimestamp>
+    <engineVersion>2.7.0</engineVersion>
+    <runDuration>96261</runDuration>
+    <warnings>
+        <warning kind="Injection" progressive="0" rank="3" aboutAField="false">
+            <artifacts>gestcv\app.jar</artifacts>
+            <CWEid>22</CWEid>
+            <className>net.sourceforge.gestcv.rtf.GestcvRTFServlet</className>
+            <line>38</line>
+            <memberName>getRTFReader</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_66f9b33a450cf2df346893a0828ebe1780c8f6c53dd361a9ffcdb4e2e0ce7612</outputArtifact>
+                <outputArtifact>Artifact_1dd03007a1dbd9ae396bc47d1146fec01d703c4ee30339783285c8c84d653e7e</outputArtifact>
+                <outputArtifact>Artifact_de5910d78d60f44f4db2c73cc4f20985a574be5ed2520d7626d74949674390f4</outputArtifact>
+            </outputArtifacts>
+            <simpleName>PathInjectionWarningWithFlow</simpleName>
+            <source>net/sourceforge/gestcv/rtf/GestcvRTFServlet.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a file path creation method</warningDescription>
+            <warningMessage>Possible path-traversal injection into actual parameter "arg 0" of method "&lt;init&gt;"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="1" rank="3" aboutAField="false">
+            <artifacts>gestcv\app.jar</artifacts>
+            <CWEid>79</CWEid>
+            <className>net.sourceforge.rtftemplate.web.servlet.RTFTemplateServlet</className>
+            <line>138</line>
+            <memberName>error</memberName>
+            <simpleName>XSSInjectionWarning</simpleName>
+            <source>net/sourceforge/rtftemplate/web/servlet/RTFTemplateServlet.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a script execution routine</warningDescription>
+            <warningMessage>Possible XSS-injection into the 0th actual parameter of method "print"</warningMessage>
+        </warning>
+    </warnings>
+    <remarks>
+        <remark tag="FRAMEWORKS">Are you using Servlet in your application? If yes, please provide the required libraries to improve the results of the analysis. Refer to the documentation of Julia's supported frameworks for further details</remark>
+    </remarks>
+    <metrics>
+        <entry>
+            <key>BYTECODES_REACHED</key>
+            <value>96417</value>
+        </entry>
+        <entry>
+            <key>BYTECODES_STATISTICALLY_CLOSED</key>
+            <value>9552</value>
+        </entry>
+        <entry>
+            <key>GRADE</key>
+            <value>0.93911624</value>
+        </entry>
+        <entry>
+            <key>HUMAN_FRIENDLY_GRADE</key>
+            <value>highest</value>
+        </entry>
+        <entry>
+            <key>LOCS_REACHED_ESTIMATE</key>
+            <value>22279</value>
+        </entry>
+        <entry>
+            <key>LOCS_STATISTICALLY_CLOSED_ESTIMATE</key>
+            <value>3948</value>
+        </entry>
+    </metrics>
+    <outputArtifacts>
+        <outputArtifact producer="Julia 1.0" standalone="true" id="Artifact_8a1b32a0dc2b3b0588131e031e73ef2994235a5acfe884023903af429dea9e6f">
+            <key>FlowAnalysisForUNTRUSTED.zip</key>
+            <logicalType>LOGICAL_TYPE_FLOW_ANALYSIS_ARCHIVE</logicalType>
+            <hash>f0718a906ac9bcce32b59c3f43888b90</hash>
+        </outputArtifact>
+        <outputArtifact producer="InjectionChecker" standalone="true" id="Artifact_672af21ffe4a2a03dbd3f5f8044197ce347d742df2b728bd4b144da1baf53562">
+            <key>FlowAnalysisForUNTRUSTED.zip/FlowAnalysisForUNTRUSTED.txt</key>
+            <logicalType>FLOW_TEXT</logicalType>
+            <hash>8ca90f54007d32ff7c102fa8061ee2cb</hash>
+        </outputArtifact>
+        <outputArtifact producer="Julia 1.0" standalone="true" id="Artifact_b3973236e39f0e67344896530b755e54109f4384730164c6aff9e1186f3cf6e9">
+            <key>Injection_BackwardFlowsGraph.zip</key>
+            <logicalType>FLOW_GRAPHS_RESULT_ARCHIVE</logicalType>
+            <hash>1d02dee35064be61937f0c60183a5020</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_a4b9a022812875df3e3a3f91cc7e7137f67c370c513289e0247bd8bf55efe126">
+            <key>Injection_BackwardFlowsGraph.zip/net.sourceforge.gestcv.rtf.GestcvRTFServlet.java_38_1.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>7d80753867cd8946dde5d6d171ec99b4</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_67773fa1ac24765ffa7c00f1c68a2cff0e9dd0324d0b080e44e5f5593b153ae0">
+            <key>Injection_BackwardFlowsGraph.zip/net.sourceforge.rtftemplate.web.servlet.RTFTemplateServlet.java_138_2.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>5d129e211ce45c2999ffc95d2182f56d</hash>
+        </outputArtifact>
+        <outputArtifact producer="Julia 1.0" standalone="true" id="Artifact_c5b5861a53283ff6948f919b908a46ae7537da641282ba065739881d33541383">
+            <key>Injection_BackwardFlowsSubGraph.zip</key>
+            <logicalType>FLOW_GRAPHS_RESULT_ARCHIVE</logicalType>
+            <hash>87d64a83dfa20f3bc95e074e07438041</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_66f9b33a450cf2df346893a0828ebe1780c8f6c53dd361a9ffcdb4e2e0ce7612">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.sourceforge.gestcv.rtf.GestcvRTFServlet.java_38_1_0_0_id_ab8552a4-b755-44cf-ab4c-fe563b793dec.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>22f47cc58d73b4741a07ad5cd5d6b094</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_1dd03007a1dbd9ae396bc47d1146fec01d703c4ee30339783285c8c84d653e7e">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.sourceforge.gestcv.rtf.GestcvRTFServlet.java_38_1_0_1_id_ab8552a4-b755-44cf-ab4c-fe563b793dec.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>3a448d2c55128841af352f964b9de128</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_de5910d78d60f44f4db2c73cc4f20985a574be5ed2520d7626d74949674390f4">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.sourceforge.gestcv.rtf.GestcvRTFServlet.java_38_1_0_2_id_ab8552a4-b755-44cf-ab4c-fe563b793dec.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>8159d1082a88a81b8db8072c3a138d81</hash>
+        </outputArtifact>
+        <outputArtifact producer="InjectionChecker" standalone="true" id="Artifact_40b5ff9a6857af7ed12b807d4f8623483bf1becc173df5ca005ef1d36fadf3ab">
+            <key>Injection_Trusted_UNTRUSTED.jaif</key>
+            <logicalType>JAIF</logicalType>
+            <hash>45a3cd5718ad809aff4a37ba77f5b00f</hash>
+        </outputArtifact>
+    </outputArtifacts>
+    <analysisSpecification>
+        <id>ab8552a4-b755-44cf-ab4c-fe563b793dec</id>
+        <solutionId>-1</solutionId>
+        <creationTimestamp>2019-08-07T11:52:28.550+02:00</creationTimestamp>
+        <sourceProjects>[]</sourceProjects>
+        <packages>
+            <package id="Artifact_8b899ad810f8b7208638d4404e78cba7144e98c7fa1b8c2fce448534a83ca2ca">
+                <key>gestcv\app.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>app.jar</moduleName>
+                <type>Application</type>
+            </package>
+        </packages>
+        <options name="Internal options">
+            <booleanOption value="true" label="Allow framework detection" name="allowFrameworkDetection" userVisible="true">
+                <description>Enables automatic framework detection</description>
+                <documentation>Enables automatic framework detection, allowing Julia to identify frameworks and optimize the analysis accordingly. A description of the frameworks automatically recognized by Julia is available in the documentation</documentation>
+                <syntax>-allowFrameworkDetection true|false</syntax>
+            </booleanOption>
+            <stringOption label="Type of splitter" name="applicationSplitter" userVisible="false">
+                <alternative name="ByPackage">
+                    <synopsis>split the application jars on the basis of their packages structure</synopsis>
+                </alternative>
+                <alternative name="KargerSteinCut">
+                    <synopsis>apply the Karger-Stein algorithm to partition the application jars</synopsis>
+                </alternative>
+                <alternative name="RandomDeterministic">
+                    <synopsis>randomly split the application jars</synopsis>
+                </alternative>
+                <alternative name="StoerWagnerMinimumCut">
+                    <synopsis>apply the Stoer-Wagner algorithm to partition the application jars</synopsis>
+                </alternative>
+                <description>Specify the application splitter</description>
+                <documentation>Specifies the application splitter that must be used to split the application jars. By deafult, the random splitter is selected.</documentation>
+                <syntax>-applicationSplitter XXX</syntax>
+            </stringOption>
+            <booleanOption value="false" label="classifyForCS" name="classifyForCS" userVisible="true">
+                <description>Add external classification for GrammaTech CodeSonar</description>
+                <documentation>If true, add the external classification CS-INT-CLASSIFICATION that is used by CodeSonarto categorize Security warnings</documentation>
+                <syntax>-classifyForCS true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="Dump call graph" name="dumpCallGraph" userVisible="false">
+                <description>Dump the call graph generated by the analysis</description>
+                <documentation>Specifies whether or not the call graph computed by the analysis should be dumped to a dot file</documentation>
+                <syntax>-dumpCallGraph true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="Dump generated annotations" name="dumpFrameworkAnnotations" userVisible="false">
+                <description>Dump annotations generated by framework specification</description>
+                <documentation>Specifies whether or not the annotations automatically generated by the application of a framework specification should be dumped or not</documentation>
+                <syntax>-dumpFrameworkAnnotations true|false</syntax>
+            </booleanOption>
+            <booleanOption value="true" label="dumpOutputToLog" name="dumpOutputToLog" userVisible="true">
+                <description>Dump warnings and remarks to standard output</description>
+                <documentation>If true, the complete list of warnings and remarks will be dumped to the standard output</documentation>
+                <syntax>-dumpOutputToLog true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="Enable assertions" name="ea" userVisible="true">
+                <description>Assume that assertions are turned on</description>
+                <documentation>Assume that assertion statements are executed, hence warnings should be reported about those statements and their effects on subsequent instructions must be taken into account</documentation>
+                <syntax>-ea true|false</syntax>
+            </booleanOption>
+            <enumOption value="ALL_ENTRIES" label="Entry points" name="entryPoint" userVisible="true">
+                <alternative name="ALL_ENTRIES">
+                    <synopsis>Assume that all public and protected methods and constructors are entry points</synopsis>
+                </alternative>
+                <alternative name="ALL_METHODS">
+                    <synopsis>Assume that all public, protected and private methods and constructors are entry points</synopsis>
+                </alternative>
+                <alternative name="LIBRARY">
+                    <synopsis>Run in library mode</synopsis>
+                </alternative>
+                <alternative name="ONLY_EXPLICIT_ENTRIES">
+                    <synopsis>Only consider entry points marked as @EntryPoint</synopsis>
+                </alternative>
+                <alternative name="ONLY_STANDARD_ENTRIES">
+                    <synopsis>Only consider default entry points like main methods, event handlers of Swing and Android</synopsis>
+                </alternative>
+                <description>The entry points of the application</description>
+                <documentation>Specify the entry point of the application the analysis starts from.</documentation>
+                <syntax>-entryPoint</syntax>
+            </enumOption>
+            <stringOption value="java8" label="Framework" name="framework" userVisible="true">
+                <alternative name="androidAPI1">
+                    <synopsis>use the framework of analysis for Android API 1</synopsis>
+                </alternative>
+                <alternative name="androidAPI10">
+                    <synopsis>use the framework of analysis for Android API 10</synopsis>
+                </alternative>
+                <alternative name="androidAPI11">
+                    <synopsis>use the framework of analysis for Android API 11</synopsis>
+                </alternative>
+                <alternative name="androidAPI12">
+                    <synopsis>use the framework of analysis for Android API 12</synopsis>
+                </alternative>
+                <alternative name="androidAPI13">
+                    <synopsis>use the framework of analysis for Android API 13</synopsis>
+                </alternative>
+                <alternative name="androidAPI14">
+                    <synopsis>use the framework of analysis for Android API 14</synopsis>
+                </alternative>
+                <alternative name="androidAPI15">
+                    <synopsis>use the framework of analysis for Android API 15</synopsis>
+                </alternative>
+                <alternative name="androidAPI16">
+                    <synopsis>use the framework of analysis for Android API 16</synopsis>
+                </alternative>
+                <alternative name="androidAPI17">
+                    <synopsis>use the framework of analysis for Android API 17</synopsis>
+                </alternative>
+                <alternative name="androidAPI18">
+                    <synopsis>use the framework of analysis for Android API 18</synopsis>
+                </alternative>
+                <alternative name="androidAPI19">
+                    <synopsis>use the framework of analysis for Android API 19</synopsis>
+                </alternative>
+                <alternative name="androidAPI2">
+                    <synopsis>use the framework of analysis for Android API 2</synopsis>
+                </alternative>
+                <alternative name="androidAPI20">
+                    <synopsis>use the framework of analysis for Android API 20</synopsis>
+                </alternative>
+                <alternative name="androidAPI21">
+                    <synopsis>use the framework of analysis for Android API 21</synopsis>
+                </alternative>
+                <alternative name="androidAPI22">
+                    <synopsis>use the framework of analysis for Android API 22</synopsis>
+                </alternative>
+                <alternative name="androidAPI23">
+                    <synopsis>use the framework of analysis for Android API 23</synopsis>
+                </alternative>
+                <alternative name="androidAPI24">
+                    <synopsis>use the framework of analysis for Android API 24</synopsis>
+                </alternative>
+                <alternative name="androidAPI25">
+                    <synopsis>use the framework of analysis for Android API 25</synopsis>
+                </alternative>
+                <alternative name="androidAPI3">
+                    <synopsis>use the framework of analysis for Android API 3</synopsis>
+                </alternative>
+                <alternative name="androidAPI4">
+                    <synopsis>use the framework of analysis for Android API 4</synopsis>
+                </alternative>
+                <alternative name="androidAPI5">
+                    <synopsis>use the framework of analysis for Android API 5</synopsis>
+                </alternative>
+                <alternative name="androidAPI6">
+                    <synopsis>use the framework of analysis for Android API 6</synopsis>
+                </alternative>
+                <alternative name="androidAPI7">
+                    <synopsis>use the framework of analysis for Android API 7</synopsis>
+                </alternative>
+                <alternative name="androidAPI8">
+                    <synopsis>use the framework of analysis for Android API 8</synopsis>
+                </alternative>
+                <alternative name="androidAPI9">
+                    <synopsis>use the framework of analysis for Android API 9</synopsis>
+                </alternative>
+                <alternative name="dotnet">
+                    <synopsis>use the framework of analysis for .NET</synopsis>
+                </alternative>
+                <alternative name="java1">
+                    <synopsis>use the framework of analysis for Java 1.1</synopsis>
+                </alternative>
+                <alternative name="java2">
+                    <synopsis>use the framework of analysis for Java 1.2</synopsis>
+                </alternative>
+                <alternative name="java3">
+                    <synopsis>use the framework of analysis for Java 1.3</synopsis>
+                </alternative>
+                <alternative name="java4">
+                    <synopsis>use the framework of analysis for Java 1.4</synopsis>
+                </alternative>
+                <alternative name="java5">
+                    <synopsis>use the framework of analysis for Java 1.5</synopsis>
+                </alternative>
+                <alternative name="java6">
+                    <synopsis>use the framework of analysis for Java 1.6</synopsis>
+                </alternative>
+                <alternative name="java7">
+                    <synopsis>use the framework of analysis for Java 1.7</synopsis>
+                </alternative>
+                <alternative name="java8">
+                    <synopsis>use the framework of analysis for Java 1.8</synopsis>
+                </alternative>
+                <description>Specify the framework of analysis</description>
+                <documentation>A framework specifies rules specific to the given programming context used for the application under analysis, such as the entry points for the analysis. The "java7" framework will work in most cases, but more specific frameworks might yield more precise results of analysis. The specification of the framework might also change the behavior of the checkers, since some checks might be sensible for some frameworks only</documentation>
+                <syntax>-framework XXX</syntax>
+            </stringOption>
+            <booleanOption value="false" label="help" name="help" userVisible="true">
+                <description>Display the help of the analyzer</description>
+                <syntax>-help true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="Ignore XML files" name="ignoreXMLFiles" userVisible="false">
+                <description>Ignore XML files regardless of content/type and support</description>
+                <documentation>Frameworks often rely on XML files to specify configuration and application behaviour.By default, Julia tries to parse common xml configuration files and simulate the implied runtime effects, this option forces Julia to ignore all input xml files regardless of the analysis support and optimizations provided by the selected framework.</documentation>
+                <syntax>-ignoreXMLFiles true|false</syntax>
+            </booleanOption>
+            <enumOption value="TYPES" label="Mode of library processing" name="libraryProcessingMode" userVisible="true">
+                <alternative name="TYPES">
+                    <synopsis>ignore the code of the non-runtime libraries</synopsis>
+                </alternative>
+                <alternative name="TYPES_AND_CODE">
+                    <synopsis>include the code of all classes during analysis</synopsis>
+                </alternative>
+                <description>Processing mode for library classes</description>
+                <documentation>Allow the analyzer to discard the implementation of library methods and only uses the hierarchy of the library classes during the analysis. This decreases the precision of the analysis and might occasionally make it unsound, but reduces the time of analysis.</documentation>
+                <syntax>-libraryProcessingMode</syntax>
+            </enumOption>
+            <booleanOption value="false" label="maniac" name="maniac" userVisible="true">
+                <description>Run in maniac mode</description>
+                <documentation>Applies very strict hypotheses about unknown code, such as reflective calls and calls with missing targets</documentation>
+                <syntax>-maniac true|false</syntax>
+            </booleanOption>
+            <intOption value="0" label="maxMethods" name="maxMethods" userVisible="true">
+                <description>Set the maximum number of extracted methods to N (0 means no limit)</description>
+                <documentation>After this threshold, the analysis aborts</documentation>
+                <syntax>-maxMethods N</syntax>
+            </intOption>
+            <booleanOption value="false" label="mergeArrays" name="mergeArrays" userVisible="true">
+                <description>Merge, during the extraction of the application, the arrays of the same type</description>
+                <documentation>This allows you to analyze applications that create a large number of arrays at many program points. This option might sometimes slightly reduce the precision of the analysis, by considering a larger number of methods and fields as reachable. However, it might be important for the analysis of some application, since it improves the scalability of the analyzer</documentation>
+                <syntax>-mergeArrays true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="mergeArraysInsideMethod" name="mergeArraysInsideMethod" userVisible="true">
+                <description>Merge, during the extraction of the application, the arrays of the same type created inside the same method or constructor</description>
+                <documentation>This allows the user to analyze applications that create a large number of arrays at many program points. This option might sometimes slightly reduce the precision of the analysis, by considering a larger number of methods and fields as reachable. However, it might be important for the analysis of some application, since it improves the scalability of the analyzer. This option is less radical than the -mergeArrays option, that is, it introduces less imprecison but also induces less scalability</documentation>
+                <syntax>-mergeArraysInsideMethod true|false</syntax>
+            </booleanOption>
+            <stringOption value="juliaOutput\ab8552a4-b755-44cf-ab4c-fe563b793dec\" label="outputPath" name="outputPath" userVisible="true">
+                <description>Set the directory where the output of the analyzer must be dumped</description>
+                <documentation>If that directory does not exist, it is automatically created by the analyzer</documentation>
+                <syntax>-outputPath PATH</syntax>
+            </stringOption>
+            <booleanOption value="false" label="Robust" name="robust" userVisible="false">
+                <description>Do not crash if a checker crashes</description>
+                <documentation>If a checker crashes (for any reason), the overall analysis goes ahead and terminates.A warning  stating that &lt;checker&gt; crashed is produced in the console.</documentation>
+                <syntax>-robust true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="rta" name="rta" userVisible="true">
+                <description>Use rapid type analysis to extract the application</description>
+                <documentation>This is rarely used and currently not optimized for large applications. The precision of rapid type analysis is worse than that of the standard extraction algorithm used by Julia but, in principle, should scale better. Please consider using the -mergeArrays and -mergeArraysInsideMethod options instead</documentation>
+                <syntax>-rta true|false</syntax>
+            </booleanOption>
+            <stringOption value="C:\Users\FerraraP\Desktop\runtime\java8\jce.jar;C:\Users\FerraraP\Desktop\runtime\java8\jsse.jar;C:\Users\FerraraP\Desktop\runtime\java8\rt.jar" label="runtime" name="runtime" userVisible="true">
+                <description>Specify the classpath used for loading the runtime classes</description>
+                <documentation>Runtime classes are normally loaded by using the default class loader. This option allows one to change this behavior, by specifying a specific class path to use for class loading of runtime classes</documentation>
+                <syntax>-runtime XXX</syntax>
+            </stringOption>
+            <booleanOption value="false" label="sequential" name="sequential" userVisible="true">
+                <description>Run checkers one after another</description>
+                <documentation>Instruct Julia to wait for the completion of a checker before starting running another checker</documentation>
+                <syntax>-sequential true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="silent" name="silent" userVisible="true">
+                <description>Run in silent mode</description>
+                <documentation>No textual output is produced with this option, but the analyses are run and output files are generated</documentation>
+                <syntax>-silent true|false</syntax>
+            </booleanOption>
+            <intOption value="1" label="Number of splits" name="splitApplicationJar" userVisible="false">
+                <description>Split statistically closed jars, containing the application to analyse, into the given number of partitions</description>
+                <documentation>Splits the jars containing the application to analyse. This decreases the precision of the analysis and might occasionally make it unsound, but reduces the time of analysis</documentation>
+                <syntax>-splitApplicationJar N</syntax>
+            </intOption>
+            <booleanOption value="false" label="verbose" name="verbose" userVisible="true">
+                <description>Run in verbose mode</description>
+                <documentation>This produces a longer and more detailed textual output. Mostly useful for debugging the analyzer</documentation>
+                <syntax>-verbose true|false</syntax>
+            </booleanOption>
+        </options>
+        <checkers>
+            <checker group="Advanced" level="Public" name="Injection">
+                <enumOption value="javaBDDs" label="bddType" name="bddType" userVisible="true">
+                    <alternative name="javaBDDs">
+                        <synopsis>use the JavaBDD binary decision diagram library. See http://javabdd.sourceforge.net/</synopsis>
+                    </alternative>
+                    <alternative name="juliaBDDs">
+                        <synopsis>use Julia's multithreaded binary decision diagram library</synopsis>
+                    </alternative>
+                    <alternative name="nativeBDDs">
+                        <synopsis>use the native C-based binary decision diagram library</synopsis>
+                    </alternative>
+                    <description>specify the binary decision diagram library that must be used</description>
+                    <documentation>The native binary decision diagrams (BDD) library is in general faster (10% time reduction) than the Java versions but requires that that library be compiled, into native code, on the machine where the analysis is performed. Note, moreover, that the native library cannot be used for concurrent executions (for instance, inside a servlet container). The Julia library is multithreaded and can consequently be shared by many concurrent analyses, which reduces the memory footprint</documentation>
+                    <syntax>bddType</syntax>
+                </enumOption>
+                <booleanOption value="true" label="dumpAnalysis" name="dumpAnalysis" userVisible="true">
+                    <description>dump extensive (very large!) log information about the analysis</description>
+                    <documentation>Only useful for debugging the analyzer</documentation>
+                    <syntax>dumpAnalysis true|false</syntax>
+                </booleanOption>
+                <booleanOption value="true" label="dumpCompleteGraphs" name="dumpCompleteGraphs" userVisible="true">
+                    <description>dump the complete backward flow graph derivated from a sink</description>
+                    <documentation>If set to true, it produces an archive with the complete backward flow graphs that are used for the extraction of source-sink subgraphs</documentation>
+                    <syntax>dumpCompleteGraphs true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="dumpDotWithInvariants" name="dumpDotWithInvariants" userVisible="true">
+                    <description>dump the analysed code in dot format, with flow information</description>
+                    <documentation>This option dumps a dot file for each method or constructor that is reachable from the entry points of the analysis. At the beginning of each code, a flow invariant is reported</documentation>
+                    <syntax>dumpDotWithInvariants true|false</syntax>
+                </booleanOption>
+                <booleanOption value="true" label="flow" name="flow" userVisible="true">
+                    <description>where possible, reconstructs the instruction flows leading to injection issues</description>
+                    <documentation>If true, it reconstructs the flow and provides detailed information on the warning if successful.</documentation>
+                    <syntax>flow true|false</syntax>
+                </booleanOption>
+                <enumOption value="AVERAGE" label="flowComputingSpeed" name="flowComputingSpeed" userVisible="true">
+                    <alternative name="AVERAGE">
+                        <synopsis>reconstruct graphs until max of 2000 nodes</synopsis>
+                    </alternative>
+                    <alternative name="FAST">
+                        <synopsis>reconstruct graphs until max of 1000 nodes</synopsis>
+                    </alternative>
+                    <alternative name="FASTEST">
+                        <synopsis>reconstruct graphs until max of 500 nodes</synopsis>
+                    </alternative>
+                    <alternative name="SLOW">
+                        <synopsis>reconstruct graphs until max of 4000 nodes</synopsis>
+                    </alternative>
+                    <alternative name="SLOWEST">
+                        <synopsis>reconstruct graphs until max of integer limit nodes</synopsis>
+                    </alternative>
+                    <description>efficiency of the flow reconstruction</description>
+                    <documentation>This speciefies the efficiency of the flow reconstruct. Interesting only if option flow is set to true. (AVERAGE by default)</documentation>
+                    <syntax>flowComputingSpeed</syntax>
+                </enumOption>
+                <booleanOption value="false" label="fullJaif" name="fullJaif" userVisible="true">
+                    <description>dump a jaif file with the information flow information of the program, containing both the selected properties of interest and their complement</description>
+                    <documentation>The generated jaif file is a compact report of the program places that might contain a secret (tainted) value. Differently from the -jaif option, this generates explicit information for the places that contain a non-secret value as well and is hence a more verbose version of the same information</documentation>
+                    <syntax>fullJaif true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="fullyQualifiedNames" name="fullyQualifiedNames" userVisible="true">
+                    <description>use fully qualified class names in the jaif files</description>
+                    <documentation>The generated jaif file is a compact report of the program places that might contain a secret (tainted) value. This option forces the use of fully qualified class names in the jaif file, also when referring to classes in the same package that is being reported</documentation>
+                    <syntax>fullyQualifiedNames true|false</syntax>
+                </booleanOption>
+                <booleanOption value="true" label="jaif" name="jaif" userVisible="true">
+                    <description>dump a jaif file with the information flow information of the program</description>
+                    <documentation>A jaif file is a compact report of the program places that might contain a secret (tainted) value. It can be used for reference and documentation, but can also be imported in the source code of the program by using the annotation file utilities (see http://types.cs.washington.edu/annotation-file-utilities)</documentation>
+                    <syntax>jaif true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="mergeCreations" name="mergeCreations" userVisible="true">
+                    <description>merge the creation points for the same type inside the same class</description>
+                    <documentation>This enhances the efficiency of the creation points analysis performed as part of flow analysis but, in general, reduces the precision of the analyzer. However, it can be an important option to select for the analysis of very large applications and in library mode, in the rare cases when the creation points analysis takes too long to complete. This option is automatically selected for large programs</documentation>
+                    <syntax>mergeCreations true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="noOracle" name="noOracle" userVisible="true">
+                    <description>do not use an oracle semantics for the fields</description>
+                    <documentation>This largely reduces the precision of the analysis, since Julia will not track anymore the fields that are  definitely initialized to a non-secret (non-tainted) value before being accessed. Mainly useful for profiling and statistics</documentation>
+                    <syntax>noOracle true|false</syntax>
+                </booleanOption>
+                <booleanOption value="true" label="noUnreachable" name="noUnreachable" userVisible="true">
+                    <description>do not dump information on unreachable code</description>
+                    <documentation>By selecting this option, the jaif files become smaller</documentation>
+                    <syntax>noUnreachable true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="reportLocals" name="reportLocals" userVisible="true">
+                    <description>dump information on local variables</description>
+                    <documentation>By selecting this option, the jaif file contains information on local variables as well and consequently becomes larger</documentation>
+                    <syntax>reportLocals true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="trustDatabase" name="trustDatabase" userVisible="true">
+                    <description>consider data coming from a database query as trusted</description>
+                    <documentation>This option lets Julia consider data coming from database queries as untainted and hence trusted. This is false by default</documentation>
+                    <syntax>trustDatabase true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="trustDevice" name="trustDevice" userVisible="true">
+                    <description>consider data about the specific device as trusted</description>
+                    <documentation>This option lets Julia consider data about the specific device running the application as untainted and hence trusted. This is false by default</documentation>
+                    <syntax>trustDevice true|false</syntax>
+                </booleanOption>
+                <booleanOption value="true" label="trustEnvironment" name="trustEnvironment" userVisible="true">
+                    <description>consider data coming from the running environment as trusted</description>
+                    <documentation>This option lets Julia consider data coming from files or properties as untainted and hence trusted. This is true by default</documentation>
+                    <syntax>trustEnvironment true|false</syntax>
+                </booleanOption>
+                <booleanOption value="true" label="trustExternalStreams" name="trustExternalStreams" userVisible="true">
+                    <description>consider data coming from external streams as trusted</description>
+                    <documentation>This option lets Julia consider data coming from external streams and sockets as untainted and hence trusted. This is true by default</documentation>
+                    <syntax>trustExternalStreams true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="trustUserInput" name="trustUserInput" userVisible="true">
+                    <description>consider data from servlet requests and console as trusted</description>
+                    <documentation>This option lets Julia consider data coming from servlet requests and console input as untainted and hence trusted. This is false by default</documentation>
+                    <syntax>trustUserInput true|false</syntax>
+                </booleanOption>
+                <synopsis>Identify potential security injections</synopsis>
+            </checker>
+        </checkers>
+    </analysisSpecification>
+    <formattedRunDuration>00:01:36.261</formattedRunDuration>
+</analysisReportResult>

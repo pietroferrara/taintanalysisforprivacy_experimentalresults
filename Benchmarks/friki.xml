@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<analysisReportResult>
+    <id>32d9dac8-3c13-4e97-8497-251fea3e781c</id>
+    <status>COMPLETED</status>
+    <creationTimestamp>2019-08-07T11:43:20.345+02:00</creationTimestamp>
+    <engineVersion>2.7.0</engineVersion>
+    <runDuration>237883</runDuration>
+    <warnings>
+        <warning kind="Injection" progressive="0" rank="3" aboutAField="false">
+            <artifacts>friki\app\friki-1.3.0-stringtree.jar</artifacts>
+            <CWEid>22</CWEid>
+            <className>org.stringtree.ziggurat.DirectorySite</className>
+            <line>60</line>
+            <memberName>init</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_9b9b483cb5093e9a2af8380417f06eaf1a0e55bc213f2f090aa316767742ca3d</outputArtifact>
+                <outputArtifact>Artifact_6ad6f77bbe83761f62d92cc7b2a9359dccbb8bf6e2c693574fb321d38ec7cabe</outputArtifact>
+                <outputArtifact>Artifact_bb568250a41425f89e338558f83626499ce7410664a17d75dd664c0892ddb5b0</outputArtifact>
+            </outputArtifacts>
+            <simpleName>PathInjectionWarningWithFlow</simpleName>
+            <source>org/stringtree/ziggurat/DirectorySite.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a file path creation method</warningDescription>
+            <warningMessage>Possible path-traversal injection into actual parameter "arg 0" of method "&lt;init&gt;"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="1" rank="3" aboutAField="false">
+            <artifacts>friki\app\friki-1.3.0-stringtree.jar</artifacts>
+            <CWEid>22</CWEid>
+            <className>org.stringtree.ziggurat.DirectorySiteGroup</className>
+            <line>24</line>
+            <memberName>init</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_d93fa2a2c485ec61e3893f4878cb60224645d27cab39bfa5100c7bffb70e6167</outputArtifact>
+                <outputArtifact>Artifact_60ce5cea3c4864200a08037e4ee7a7cbd54555a860ab9a05a8a8e61d71a1d259</outputArtifact>
+                <outputArtifact>Artifact_17d6f26e13ec1d5892b63b44c783b7121eddc5778496ef1f7772ad6c876b04e3</outputArtifact>
+            </outputArtifacts>
+            <simpleName>PathInjectionWarningWithFlow</simpleName>
+            <source>org/stringtree/ziggurat/DirectorySiteGroup.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a file path creation method</warningDescription>
+            <warningMessage>Possible path-traversal injection into actual parameter "arg 0" of method "&lt;init&gt;"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="2" rank="3" aboutAField="false">
+            <artifacts>friki\app\friki-1.3.0-stringtree.jar</artifacts>
+            <CWEid>22</CWEid>
+            <className>org.stringtree.factory.flatfiles.BasicRepositoryFilenameFilter</className>
+            <line>38</line>
+            <memberName>fileToRead</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_a496fbab610020f239f62cfbab81aded8cd2f4ffbfd843b48d057d48aaf3c50f</outputArtifact>
+                <outputArtifact>Artifact_26b10658da251d3836b0b109d95f05ec234398451ffb35c388c045965e248fcb</outputArtifact>
+                <outputArtifact>Artifact_6fa9c26e883163745f9997f9a13f69930b0668bfa84dc426a27136bf41dc28ac</outputArtifact>
+            </outputArtifacts>
+            <simpleName>PathInjectionWarningWithFlow</simpleName>
+            <source>org/stringtree/factory/flatfiles/BasicRepositoryFilenameFilter.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a file path creation method</warningDescription>
+            <warningMessage>Possible path-traversal injection into actual parameter "arg 1" of method "&lt;init&gt;"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="3" rank="3" aboutAField="false">
+            <artifacts>friki\app\friki-1.3.0-stringtree.jar</artifacts>
+            <CWEid>22</CWEid>
+            <className>org.stringtree.factory.flatfiles.BasicRepositoryFilenameFilter</className>
+            <line>43</line>
+            <memberName>fileToWrite</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_65842060bb890d59b16b8658a65f59b759c0bd22936f0a06517b2d05529dc424</outputArtifact>
+                <outputArtifact>Artifact_2d8e745c57a1b1e3210343820190415f7d3a87d81fe738f9dfe1128c3d3635a3</outputArtifact>
+                <outputArtifact>Artifact_0ccae46bf7677f5929a7541298f02eaa2992d08f926f30b3b7bd16ba679b2a33</outputArtifact>
+            </outputArtifacts>
+            <simpleName>PathInjectionWarningWithFlow</simpleName>
+            <source>org/stringtree/factory/flatfiles/BasicRepositoryFilenameFilter.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a file path creation method</warningDescription>
+            <warningMessage>Possible path-traversal injection into actual parameter "arg 1" of method "&lt;init&gt;"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="4" rank="3" aboutAField="false">
+            <artifacts>friki\app\friki-1.3.0-stringtree.jar</artifacts>
+            <CWEid>470</CWEid>
+            <className>org.stringtree.util.ClassUtils</className>
+            <line>13</line>
+            <memberName>rawCreate</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_f8608a67e168e9984dc1903de822473c7d15eb3725dfdb07f70653c4cd8c71eb</outputArtifact>
+                <outputArtifact>Artifact_d27c80e74b1d6fc7d912516cbe89526eff549976ca8da51561318f895794846d</outputArtifact>
+                <outputArtifact>Artifact_fc51a236273d1a47031a4c453d2bca04041e7c35b72c71e386c6721619398e95</outputArtifact>
+            </outputArtifacts>
+            <simpleName>ReflectionInjectionWarningWithFlow</simpleName>
+            <source>org/stringtree/util/ClassUtils.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a reflection method</warningDescription>
+            <warningMessage>Possible reflection-injection into actual parameter "arg 0" of method "forName"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="5" rank="3" aboutAField="false">
+            <artifacts>friki\app\friki-1.3.0-stringtree.jar</artifacts>
+            <CWEid>470</CWEid>
+            <className>org.stringtree.util.ParameterClassUtils</className>
+            <line>16</line>
+            <memberName>rawCreateWithParameters</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_1de2b776e288c1d81f746b15e498dd3fc2fb1b6387f3578f48c2968f9d5bb03b</outputArtifact>
+                <outputArtifact>Artifact_f5eb2682d87acd92aacdffad9349e7694964a0fb863d0268361e8aa5c2ac0a9d</outputArtifact>
+                <outputArtifact>Artifact_760a98dde8a25147df79e702f37d6c9cb9eff70b97140e4c986a8f3f2665ffc5</outputArtifact>
+            </outputArtifacts>
+            <simpleName>ReflectionInjectionWarningWithFlow</simpleName>
+            <source>org/stringtree/util/ParameterClassUtils.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a reflection method</warningDescription>
+            <warningMessage>Possible reflection-injection into actual parameter "arg 0" of method "forName"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="6" rank="3" aboutAField="false">
+            <artifacts>friki\app\friki-1.3.0-stringtree.jar</artifacts>
+            <CWEid>470</CWEid>
+            <className>org.stringtree.factory.memory.BeanStringFetcher</className>
+            <line>50</line>
+            <memberName>invoke</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_ca322332502468b74433ba2b69ef9dd6bfb4f21273db07244b1253709ac54579</outputArtifact>
+                <outputArtifact>Artifact_5a7aa4151908debc260fc81e3257f0b225f947b1a4c7bc0d6400fe1b0126de24</outputArtifact>
+                <outputArtifact>Artifact_827c8c630b4a401bfc2317616c5e1c7b6dc9e46f9153419a887e1b1de6d1f3f0</outputArtifact>
+            </outputArtifacts>
+            <simpleName>ReflectionInjectionWarningWithFlow</simpleName>
+            <source>org/stringtree/factory/memory/BeanStringFetcher.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a reflection method</warningDescription>
+            <warningMessage>Possible reflection-injection into actual parameter "arg 0" of method "invoke"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="7" rank="3" aboutAField="false">
+            <artifacts>friki\app\friki-1.3.0-stringtree.jar</artifacts>
+            <CWEid>470</CWEid>
+            <className>org.stringtree.util.ParameterClassUtils</className>
+            <line>29</line>
+            <memberName>rawCreateWithParameters</memberName>
+            <simpleName>ReflectionInjectionWarning</simpleName>
+            <source>org/stringtree/util/ParameterClassUtils.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a reflection method</warningDescription>
+            <warningMessage>Possible reflection-injection into actual parameter "arg 0" of method "newInstance"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="8" rank="3" aboutAField="false">
+            <artifacts>friki\app\friki-1.3.0-stringtree.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>org.stringtree.factory.servlet.HttpSessionStringRepository</className>
+            <line>62</line>
+            <memberName>remove</memberName>
+            <simpleName>SessionInjectionWarning</simpleName>
+            <source>org/stringtree/factory/servlet/HttpSessionStringRepository.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 0th actual parameter of method "removeAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="9" rank="3" aboutAField="false">
+            <artifacts>friki\app\friki-1.3.0-stringtree.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>org.stringtree.factory.servlet.HttpSessionStringRepository</className>
+            <line>57</line>
+            <memberName>put</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_7b8a31a0cfcfd2044efac66c6bdb5b57c94720aa2e90978e9d345b435ca7edd9</outputArtifact>
+                <outputArtifact>Artifact_e76626c3f46ad69d5199c9d76c91160a88a71c397e1015590446fec142d9804f</outputArtifact>
+                <outputArtifact>Artifact_ef20b55d7f4f528e632eee9723c729a92ea30155fa7708712477811949ea6cc3</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>org/stringtree/factory/servlet/HttpSessionStringRepository.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 0th actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="10" rank="3" aboutAField="false">
+            <artifacts>friki\app\friki-1.3.0-stringtree.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>org.stringtree.factory.servlet.HttpSessionStringRepository</className>
+            <line>57</line>
+            <memberName>put</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_3c8cedf441f9aff2e776da956aaf8a0e50d2ad35275f6b16dc88ec76127e66cf</outputArtifact>
+                <outputArtifact>Artifact_98f15fcd40482853e211617d1fc28ca1476004af0d9f9d6343cc1f265e690435</outputArtifact>
+                <outputArtifact>Artifact_0f0483949b720256eeb1732faf182d6f87c7a8d68f123f1f2fb0ad0d3297e470</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>org/stringtree/factory/servlet/HttpSessionStringRepository.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+    </warnings>
+    <remarks>
+        <remark tag="FRAMEWORKS">Are you using Servlet in your application? If yes, please provide the required libraries to improve the results of the analysis. Refer to the documentation of Julia's supported frameworks for further details</remark>
+    </remarks>
+    <metrics>
+        <entry>
+            <key>BYTECODES_REACHED</key>
+            <value>160393</value>
+        </entry>
+        <entry>
+            <key>BYTECODES_STATISTICALLY_CLOSED</key>
+            <value>21690</value>
+        </entry>
+        <entry>
+            <key>GRADE</key>
+            <value>0.8588548</value>
+        </entry>
+        <entry>
+            <key>HUMAN_FRIENDLY_GRADE</key>
+            <value>good</value>
+        </entry>
+        <entry>
+            <key>LOCS_REACHED_ESTIMATE</key>
+            <value>37663</value>
+        </entry>
+        <entry>
+            <key>LOCS_STATISTICALLY_CLOSED_ESTIMATE</key>
+            <value>7718</value>
+        </entry>
+    </metrics>
+    <outputArtifacts>
+        <outputArtifact producer="Julia 1.0" standalone="true" id="Artifact_8a1b32a0dc2b3b0588131e031e73ef2994235a5acfe884023903af429dea9e6f">
+            <key>FlowAnalysisForUNTRUSTED.zip</key>
+            <logicalType>LOGICAL_TYPE_FLOW_ANALYSIS_ARCHIVE</logicalType>
+            <hash>972b3e80affd7c9ced81c334cf5e0a31</hash>
+        </outputArtifact>
+        <outputArtifact producer="InjectionChecker" standalone="true" id="Artifact_672af21ffe4a2a03dbd3f5f8044197ce347d742df2b728bd4b144da1baf53562">
+            <key>FlowAnalysisForUNTRUSTED.zip/FlowAnalysisForUNTRUSTED.txt</key>
+            <logicalType>FLOW_TEXT</logicalType>
+            <hash>e7d2f21c16f5917239e84520ecf11936</hash>
+        </outputArtifact>
+        <outputArtifact producer="Julia 1.0" standalone="true" id="Artifact_b3973236e39f0e67344896530b755e54109f4384730164c6aff9e1186f3cf6e9">
+            <key>Injection_BackwardFlowsGraph.zip</key>
+            <logicalType>FLOW_GRAPHS_RESULT_ARCHIVE</logicalType>
+            <hash>ff8e630e2f2de7af0737655093259e84</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_a03f0d5545660a1e8ea12fa8f4e1dc9e0cfcb9fc2387b9b35e02d77890357ed5">
+            <key>Injection_BackwardFlowsGraph.zip/org.stringtree.factory.flatfiles.BasicRepositoryFilenameFilter.java_38_4.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>8e3e990df0c56585078148b1c33ecccc</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_f44435b2cc85eb07bddda467a9437bd61b081eda0f4f03db82947bb38b8ecf13">
+            <key>Injection_BackwardFlowsGraph.zip/org.stringtree.factory.flatfiles.BasicRepositoryFilenameFilter.java_43_8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>5e16f2b247773c2413f0bfd88128c22a</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_7df3c59299df38a35966ba320f96f5f47cf1d1a15976998b6e5a0e9e6a81fb07">
+            <key>Injection_BackwardFlowsGraph.zip/org.stringtree.factory.memory.BeanStringFetcher.java_50_1.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>47ddcaca79c72652b036e5e41bf736b7</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_a74c8a8bfc3f93aae3d9cfd4178adc237ca4e24de2b24b0768622d507543875b">
+            <key>Injection_BackwardFlowsGraph.zip/org.stringtree.factory.servlet.HttpSessionStringRepository.java_57_5.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>307056afcd3e58c675859ca05ee93093</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_cf195e4802637a573129deb72eed1af021d08bf1a7a641b559c48c38fe7c651d">
+            <key>Injection_BackwardFlowsGraph.zip/org.stringtree.factory.servlet.HttpSessionStringRepository.java_57_6.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>edc1c4578ab3623f687baa6f8362d4f5</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_0569d53dceec964e9b5dd7043e788992839efb1aed45ed4211b863471a26fda2">
+            <key>Injection_BackwardFlowsGraph.zip/org.stringtree.factory.servlet.HttpSessionStringRepository.java_62_2.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>0124fe69abf94eab10f738286d1ecc01</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_379fc60d3f5e5341a799e1bcc4f21e06ad002548b0d13a75f8c27441231e61c5">
+            <key>Injection_BackwardFlowsGraph.zip/org.stringtree.util.ClassUtils.java_13_11.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>df430438648081aeac40244cc17ed4b5</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_79fcc734d261af6326f4fada5eef2365507ee4c057b028b6d82ca04b4fec20a2">
+            <key>Injection_BackwardFlowsGraph.zip/org.stringtree.util.ParameterClassUtils.java_16_9.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>76266d5bfca23bf9498ae211da11fa15</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_a4da87c77f2d3f2eead8cd175db08339670b5435fa7d050f775bfbb6b7a7e59b">
+            <key>Injection_BackwardFlowsGraph.zip/org.stringtree.util.ParameterClassUtils.java_29_10.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>34cfd776384043251348b76a0a9e2c26</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_43ff22451de68a93eeae925c1db7faf509f2cfddea95e9298b0fed03fb7357c5">
+            <key>Injection_BackwardFlowsGraph.zip/org.stringtree.ziggurat.DirectorySite.java_60_7.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>4caefad85d27edf2c3b3179f965d125e</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_f527a5ac7b3055c4e0750006fefc8270b3a50c067ed6d629d7cf0ede53581fd6">
+            <key>Injection_BackwardFlowsGraph.zip/org.stringtree.ziggurat.DirectorySiteGroup.java_24_3.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>a6ccacd0fc072c4165824520ca8a6db2</hash>
+        </outputArtifact>
+        <outputArtifact producer="Julia 1.0" standalone="true" id="Artifact_c5b5861a53283ff6948f919b908a46ae7537da641282ba065739881d33541383">
+            <key>Injection_BackwardFlowsSubGraph.zip</key>
+            <logicalType>FLOW_GRAPHS_RESULT_ARCHIVE</logicalType>
+            <hash>57bc477d5ac81e128116c615cf57ebdc</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_a496fbab610020f239f62cfbab81aded8cd2f4ffbfd843b48d057d48aaf3c50f">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_org.stringtree.factory.flatfiles.BasicRepositoryFilenameFilter.java_38_3_2_0_id_32d9dac8-3c13-4e97-8497-251fea3e781c.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>e46c7a54804b3734eb58643e577683d5</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_26b10658da251d3836b0b109d95f05ec234398451ffb35c388c045965e248fcb">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_org.stringtree.factory.flatfiles.BasicRepositoryFilenameFilter.java_38_3_2_1_id_32d9dac8-3c13-4e97-8497-251fea3e781c.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>c79bd49a164b80acff9f2fc2407369d0</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_6fa9c26e883163745f9997f9a13f69930b0668bfa84dc426a27136bf41dc28ac">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_org.stringtree.factory.flatfiles.BasicRepositoryFilenameFilter.java_38_3_2_2_id_32d9dac8-3c13-4e97-8497-251fea3e781c.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>a2acb94f144009b94bd5a96f7be3f167</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_65842060bb890d59b16b8658a65f59b759c0bd22936f0a06517b2d05529dc424">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_org.stringtree.factory.flatfiles.BasicRepositoryFilenameFilter.java_43_4_3_0_id_32d9dac8-3c13-4e97-8497-251fea3e781c.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>6dbf0ded928cadeeb112ea25104145ea</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_2d8e745c57a1b1e3210343820190415f7d3a87d81fe738f9dfe1128c3d3635a3">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_org.stringtree.factory.flatfiles.BasicRepositoryFilenameFilter.java_43_4_3_1_id_32d9dac8-3c13-4e97-8497-251fea3e781c.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>92d2aa23c1224dadd6a86a31a5cdfa1d</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_0ccae46bf7677f5929a7541298f02eaa2992d08f926f30b3b7bd16ba679b2a33">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_org.stringtree.factory.flatfiles.BasicRepositoryFilenameFilter.java_43_4_3_2_id_32d9dac8-3c13-4e97-8497-251fea3e781c.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>8993ec82e1b5f1880226f94ed423f316</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_ca322332502468b74433ba2b69ef9dd6bfb4f21273db07244b1253709ac54579">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_org.stringtree.factory.memory.BeanStringFetcher.java_50_1_0_0_id_32d9dac8-3c13-4e97-8497-251fea3e781c.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>ae9cc78886181292dea967a0ca36a083</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_5a7aa4151908debc260fc81e3257f0b225f947b1a4c7bc0d6400fe1b0126de24">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_org.stringtree.factory.memory.BeanStringFetcher.java_50_1_0_1_id_32d9dac8-3c13-4e97-8497-251fea3e781c.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>0bfa77f4fac7b2c783b766939e66ad0f</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_827c8c630b4a401bfc2317616c5e1c7b6dc9e46f9153419a887e1b1de6d1f3f0">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_org.stringtree.factory.memory.BeanStringFetcher.java_50_1_0_2_id_32d9dac8-3c13-4e97-8497-251fea3e781c.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>9050371d639fdaa7af6408561d220444</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_7b8a31a0cfcfd2044efac66c6bdb5b57c94720aa2e90978e9d345b435ca7edd9">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_org.stringtree.factory.servlet.HttpSessionStringRepository.java_57_6_5_0_id_32d9dac8-3c13-4e97-8497-251fea3e781c.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>2501cf4aaa7b2d5f7c1b1c94c1e3e02f</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_e76626c3f46ad69d5199c9d76c91160a88a71c397e1015590446fec142d9804f">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_org.stringtree.factory.servlet.HttpSessionStringRepository.java_57_6_5_1_id_32d9dac8-3c13-4e97-8497-251fea3e781c.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>125a307d39386207ea2f50b0be97ef8d</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_ef20b55d7f4f528e632eee9723c729a92ea30155fa7708712477811949ea6cc3">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_org.stringtree.factory.servlet.HttpSessionStringRepository.java_57_6_5_2_id_32d9dac8-3c13-4e97-8497-251fea3e781c.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>fadca639bfbabb51539489cd4fd7f4f8</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_3c8cedf441f9aff2e776da956aaf8a0e50d2ad35275f6b16dc88ec76127e66cf">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_org.stringtree.factory.servlet.HttpSessionStringRepository.java_57_7_6_0_id_32d9dac8-3c13-4e97-8497-251fea3e781c.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>bd2c395d671e4f3d5fbb71cd8acf6bd4</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_98f15fcd40482853e211617d1fc28ca1476004af0d9f9d6343cc1f265e690435">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_org.stringtree.factory.servlet.HttpSessionStringRepository.java_57_7_6_1_id_32d9dac8-3c13-4e97-8497-251fea3e781c.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>59eece6eb5bd76f150433e817a8e779a</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_0f0483949b720256eeb1732faf182d6f87c7a8d68f123f1f2fb0ad0d3297e470">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_org.stringtree.factory.servlet.HttpSessionStringRepository.java_57_7_6_2_id_32d9dac8-3c13-4e97-8497-251fea3e781c.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>dfe40d8fb7931ade930952899e1eae9c</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_f8608a67e168e9984dc1903de822473c7d15eb3725dfdb07f70653c4cd8c71eb">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_org.stringtree.util.ClassUtils.java_13_10_9_0_id_32d9dac8-3c13-4e97-8497-251fea3e781c.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>b85c67246825d36b72d332840a11d319</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_d27c80e74b1d6fc7d912516cbe89526eff549976ca8da51561318f895794846d">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_org.stringtree.util.ClassUtils.java_13_10_9_1_id_32d9dac8-3c13-4e97-8497-251fea3e781c.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>012322122bf7bf8d9fb054de4edf6166</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_fc51a236273d1a47031a4c453d2bca04041e7c35b72c71e386c6721619398e95">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_org.stringtree.util.ClassUtils.java_13_10_9_2_id_32d9dac8-3c13-4e97-8497-251fea3e781c.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>318fc8871e0207edb1fa540fcaf254ff</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_1de2b776e288c1d81f746b15e498dd3fc2fb1b6387f3578f48c2968f9d5bb03b">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_org.stringtree.util.ParameterClassUtils.java_16_8_7_0_id_32d9dac8-3c13-4e97-8497-251fea3e781c.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>f1c62d53a0f01c6250cf00f1c6f817c6</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_f5eb2682d87acd92aacdffad9349e7694964a0fb863d0268361e8aa5c2ac0a9d">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_org.stringtree.util.ParameterClassUtils.java_16_8_7_1_id_32d9dac8-3c13-4e97-8497-251fea3e781c.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>93de1dda5812ae2b40fd037e71b11dba</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_760a98dde8a25147df79e702f37d6c9cb9eff70b97140e4c986a8f3f2665ffc5">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_org.stringtree.util.ParameterClassUtils.java_16_8_7_2_id_32d9dac8-3c13-4e97-8497-251fea3e781c.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>d72d28363def575aec75b304f0a4387d</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_9b9b483cb5093e9a2af8380417f06eaf1a0e55bc213f2f090aa316767742ca3d">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_org.stringtree.ziggurat.DirectorySite.java_60_5_4_0_id_32d9dac8-3c13-4e97-8497-251fea3e781c.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>decd491c53140a15981b8be983e6cd66</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_6ad6f77bbe83761f62d92cc7b2a9359dccbb8bf6e2c693574fb321d38ec7cabe">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_org.stringtree.ziggurat.DirectorySite.java_60_5_4_1_id_32d9dac8-3c13-4e97-8497-251fea3e781c.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>46a34cb2e899ba8f8b4bce29707b1794</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_bb568250a41425f89e338558f83626499ce7410664a17d75dd664c0892ddb5b0">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_org.stringtree.ziggurat.DirectorySite.java_60_5_4_2_id_32d9dac8-3c13-4e97-8497-251fea3e781c.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>14e3452f2b22fc4ca35005f753b40d1d</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_d93fa2a2c485ec61e3893f4878cb60224645d27cab39bfa5100c7bffb70e6167">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_org.stringtree.ziggurat.DirectorySiteGroup.java_24_2_1_0_id_32d9dac8-3c13-4e97-8497-251fea3e781c.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>dc1a02b88329fe2327d3e8836f9ca3a3</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_60ce5cea3c4864200a08037e4ee7a7cbd54555a860ab9a05a8a8e61d71a1d259">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_org.stringtree.ziggurat.DirectorySiteGroup.java_24_2_1_1_id_32d9dac8-3c13-4e97-8497-251fea3e781c.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>2450fe93740d29775a0f40e3b14720bb</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_17d6f26e13ec1d5892b63b44c783b7121eddc5778496ef1f7772ad6c876b04e3">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_org.stringtree.ziggurat.DirectorySiteGroup.java_24_2_1_2_id_32d9dac8-3c13-4e97-8497-251fea3e781c.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>021b80458d36f7c5f5a522d6c2e4c735</hash>
+        </outputArtifact>
+        <outputArtifact producer="InjectionChecker" standalone="true" id="Artifact_40b5ff9a6857af7ed12b807d4f8623483bf1becc173df5ca005ef1d36fadf3ab">
+            <key>Injection_Trusted_UNTRUSTED.jaif</key>
+            <logicalType>JAIF</logicalType>
+            <hash>f6dbd1c5a318180ffd8d22d37b10045e</hash>
+        </outputArtifact>
+    </outputArtifacts>
+    <analysisSpecification>
+        <id>32d9dac8-3c13-4e97-8497-251fea3e781c</id>
+        <solutionId>-1</solutionId>
+        <creationTimestamp>2019-08-07T11:43:19.712+02:00</creationTimestamp>
+        <sourceProjects>[]</sourceProjects>
+        <packages>
+            <package id="Artifact_79ad108dddcc7b675293c92af1f28276bf434910b852215a9e6e41f8d1898419">
+                <key>friki\app\friki-1.3.0-stringtree.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>friki-1.3.0-stringtree.jar</moduleName>
+                <type>Application</type>
+            </package>
+        </packages>
+        <options name="Internal options">
+            <booleanOption value="true" label="Allow framework detection" name="allowFrameworkDetection" userVisible="true">
+                <description>Enables automatic framework detection</description>
+                <documentation>Enables automatic framework detection, allowing Julia to identify frameworks and optimize the analysis accordingly. A description of the frameworks automatically recognized by Julia is available in the documentation</documentation>
+                <syntax>-allowFrameworkDetection true|false</syntax>
+            </booleanOption>
+            <stringOption label="Type of splitter" name="applicationSplitter" userVisible="false">
+                <alternative name="ByPackage">
+                    <synopsis>split the application jars on the basis of their packages structure</synopsis>
+                </alternative>
+                <alternative name="KargerSteinCut">
+                    <synopsis>apply the Karger-Stein algorithm to partition the application jars</synopsis>
+                </alternative>
+                <alternative name="RandomDeterministic">
+                    <synopsis>randomly split the application jars</synopsis>
+                </alternative>
+                <alternative name="StoerWagnerMinimumCut">
+                    <synopsis>apply the Stoer-Wagner algorithm to partition the application jars</synopsis>
+                </alternative>
+                <description>Specify the application splitter</description>
+                <documentation>Specifies the application splitter that must be used to split the application jars. By deafult, the random splitter is selected.</documentation>
+                <syntax>-applicationSplitter XXX</syntax>
+            </stringOption>
+            <booleanOption value="false" label="classifyForCS" name="classifyForCS" userVisible="true">
+                <description>Add external classification for GrammaTech CodeSonar</description>
+                <documentation>If true, add the external classification CS-INT-CLASSIFICATION that is used by CodeSonarto categorize Security warnings</documentation>
+                <syntax>-classifyForCS true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="Dump call graph" name="dumpCallGraph" userVisible="false">
+                <description>Dump the call graph generated by the analysis</description>
+                <documentation>Specifies whether or not the call graph computed by the analysis should be dumped to a dot file</documentation>
+                <syntax>-dumpCallGraph true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="Dump generated annotations" name="dumpFrameworkAnnotations" userVisible="false">
+                <description>Dump annotations generated by framework specification</description>
+                <documentation>Specifies whether or not the annotations automatically generated by the application of a framework specification should be dumped or not</documentation>
+                <syntax>-dumpFrameworkAnnotations true|false</syntax>
+            </booleanOption>
+            <booleanOption value="true" label="dumpOutputToLog" name="dumpOutputToLog" userVisible="true">
+                <description>Dump warnings and remarks to standard output</description>
+                <documentation>If true, the complete list of warnings and remarks will be dumped to the standard output</documentation>
+                <syntax>-dumpOutputToLog true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="Enable assertions" name="ea" userVisible="true">
+                <description>Assume that assertions are turned on</description>
+                <documentation>Assume that assertion statements are executed, hence warnings should be reported about those statements and their effects on subsequent instructions must be taken into account</documentation>
+                <syntax>-ea true|false</syntax>
+            </booleanOption>
+            <enumOption value="ALL_ENTRIES" label="Entry points" name="entryPoint" userVisible="true">
+                <alternative name="ALL_ENTRIES">
+                    <synopsis>Assume that all public and protected methods and constructors are entry points</synopsis>
+                </alternative>
+                <alternative name="ALL_METHODS">
+                    <synopsis>Assume that all public, protected and private methods and constructors are entry points</synopsis>
+                </alternative>
+                <alternative name="LIBRARY">
+                    <synopsis>Run in library mode</synopsis>
+                </alternative>
+                <alternative name="ONLY_EXPLICIT_ENTRIES">
+                    <synopsis>Only consider entry points marked as @EntryPoint</synopsis>
+                </alternative>
+                <alternative name="ONLY_STANDARD_ENTRIES">
+                    <synopsis>Only consider default entry points like main methods, event handlers of Swing and Android</synopsis>
+                </alternative>
+                <description>The entry points of the application</description>
+                <documentation>Specify the entry point of the application the analysis starts from.</documentation>
+                <syntax>-entryPoint</syntax>
+            </enumOption>
+            <stringOption value="java8" label="Framework" name="framework" userVisible="true">
+                <alternative name="androidAPI1">
+                    <synopsis>use the framework of analysis for Android API 1</synopsis>
+                </alternative>
+                <alternative name="androidAPI10">
+                    <synopsis>use the framework of analysis for Android API 10</synopsis>
+                </alternative>
+                <alternative name="androidAPI11">
+                    <synopsis>use the framework of analysis for Android API 11</synopsis>
+                </alternative>
+                <alternative name="androidAPI12">
+                    <synopsis>use the framework of analysis for Android API 12</synopsis>
+                </alternative>
+                <alternative name="androidAPI13">
+                    <synopsis>use the framework of analysis for Android API 13</synopsis>
+                </alternative>
+                <alternative name="androidAPI14">
+                    <synopsis>use the framework of analysis for Android API 14</synopsis>
+                </alternative>
+                <alternative name="androidAPI15">
+                    <synopsis>use the framework of analysis for Android API 15</synopsis>
+                </alternative>
+                <alternative name="androidAPI16">
+                    <synopsis>use the framework of analysis for Android API 16</synopsis>
+                </alternative>
+                <alternative name="androidAPI17">
+                    <synopsis>use the framework of analysis for Android API 17</synopsis>
+                </alternative>
+                <alternative name="androidAPI18">
+                    <synopsis>use the framework of analysis for Android API 18</synopsis>
+                </alternative>
+                <alternative name="androidAPI19">
+                    <synopsis>use the framework of analysis for Android API 19</synopsis>
+                </alternative>
+                <alternative name="androidAPI2">
+                    <synopsis>use the framework of analysis for Android API 2</synopsis>
+                </alternative>
+                <alternative name="androidAPI20">
+                    <synopsis>use the framework of analysis for Android API 20</synopsis>
+                </alternative>
+                <alternative name="androidAPI21">
+                    <synopsis>use the framework of analysis for Android API 21</synopsis>
+                </alternative>
+                <alternative name="androidAPI22">
+                    <synopsis>use the framework of analysis for Android API 22</synopsis>
+                </alternative>
+                <alternative name="androidAPI23">
+                    <synopsis>use the framework of analysis for Android API 23</synopsis>
+                </alternative>
+                <alternative name="androidAPI24">
+                    <synopsis>use the framework of analysis for Android API 24</synopsis>
+                </alternative>
+                <alternative name="androidAPI25">
+                    <synopsis>use the framework of analysis for Android API 25</synopsis>
+                </alternative>
+                <alternative name="androidAPI3">
+                    <synopsis>use the framework of analysis for Android API 3</synopsis>
+                </alternative>
+                <alternative name="androidAPI4">
+                    <synopsis>use the framework of analysis for Android API 4</synopsis>
+                </alternative>
+                <alternative name="androidAPI5">
+                    <synopsis>use the framework of analysis for Android API 5</synopsis>
+                </alternative>
+                <alternative name="androidAPI6">
+                    <synopsis>use the framework of analysis for Android API 6</synopsis>
+                </alternative>
+                <alternative name="androidAPI7">
+                    <synopsis>use the framework of analysis for Android API 7</synopsis>
+                </alternative>
+                <alternative name="androidAPI8">
+                    <synopsis>use the framework of analysis for Android API 8</synopsis>
+                </alternative>
+                <alternative name="androidAPI9">
+                    <synopsis>use the framework of analysis for Android API 9</synopsis>
+                </alternative>
+                <alternative name="dotnet">
+                    <synopsis>use the framework of analysis for .NET</synopsis>
+                </alternative>
+                <alternative name="java1">
+                    <synopsis>use the framework of analysis for Java 1.1</synopsis>
+                </alternative>
+                <alternative name="java2">
+                    <synopsis>use the framework of analysis for Java 1.2</synopsis>
+                </alternative>
+                <alternative name="java3">
+                    <synopsis>use the framework of analysis for Java 1.3</synopsis>
+                </alternative>
+                <alternative name="java4">
+                    <synopsis>use the framework of analysis for Java 1.4</synopsis>
+                </alternative>
+                <alternative name="java5">
+                    <synopsis>use the framework of analysis for Java 1.5</synopsis>
+                </alternative>
+                <alternative name="java6">
+                    <synopsis>use the framework of analysis for Java 1.6</synopsis>
+                </alternative>
+                <alternative name="java7">
+                    <synopsis>use the framework of analysis for Java 1.7</synopsis>
+                </alternative>
+                <alternative name="java8">
+                    <synopsis>use the framework of analysis for Java 1.8</synopsis>
+                </alternative>
+                <description>Specify the framework of analysis</description>
+                <documentation>A framework specifies rules specific to the given programming context used for the application under analysis, such as the entry points for the analysis. The "java7" framework will work in most cases, but more specific frameworks might yield more precise results of analysis. The specification of the framework might also change the behavior of the checkers, since some checks might be sensible for some frameworks only</documentation>
+                <syntax>-framework XXX</syntax>
+            </stringOption>
+            <booleanOption value="false" label="help" name="help" userVisible="true">
+                <description>Display the help of the analyzer</description>
+                <syntax>-help true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="Ignore XML files" name="ignoreXMLFiles" userVisible="false">
+                <description>Ignore XML files regardless of content/type and support</description>
+                <documentation>Frameworks often rely on XML files to specify configuration and application behaviour.By default, Julia tries to parse common xml configuration files and simulate the implied runtime effects, this option forces Julia to ignore all input xml files regardless of the analysis support and optimizations provided by the selected framework.</documentation>
+                <syntax>-ignoreXMLFiles true|false</syntax>
+            </booleanOption>
+            <enumOption value="TYPES" label="Mode of library processing" name="libraryProcessingMode" userVisible="true">
+                <alternative name="TYPES">
+                    <synopsis>ignore the code of the non-runtime libraries</synopsis>
+                </alternative>
+                <alternative name="TYPES_AND_CODE">
+                    <synopsis>include the code of all classes during analysis</synopsis>
+                </alternative>
+                <description>Processing mode for library classes</description>
+                <documentation>Allow the analyzer to discard the implementation of library methods and only uses the hierarchy of the library classes during the analysis. This decreases the precision of the analysis and might occasionally make it unsound, but reduces the time of analysis.</documentation>
+                <syntax>-libraryProcessingMode</syntax>
+            </enumOption>
+            <booleanOption value="false" label="maniac" name="maniac" userVisible="true">
+                <description>Run in maniac mode</description>
+                <documentation>Applies very strict hypotheses about unknown code, such as reflective calls and calls with missing targets</documentation>
+                <syntax>-maniac true|false</syntax>
+            </booleanOption>
+            <intOption value="0" label="maxMethods" name="maxMethods" userVisible="true">
+                <description>Set the maximum number of extracted methods to N (0 means no limit)</description>
+                <documentation>After this threshold, the analysis aborts</documentation>
+                <syntax>-maxMethods N</syntax>
+            </intOption>
+            <booleanOption value="false" label="mergeArrays" name="mergeArrays" userVisible="true">
+                <description>Merge, during the extraction of the application, the arrays of the same type</description>
+                <documentation>This allows you to analyze applications that create a large number of arrays at many program points. This option might sometimes slightly reduce the precision of the analysis, by considering a larger number of methods and fields as reachable. However, it might be important for the analysis of some application, since it improves the scalability of the analyzer</documentation>
+                <syntax>-mergeArrays true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="mergeArraysInsideMethod" name="mergeArraysInsideMethod" userVisible="true">
+                <description>Merge, during the extraction of the application, the arrays of the same type created inside the same method or constructor</description>
+                <documentation>This allows the user to analyze applications that create a large number of arrays at many program points. This option might sometimes slightly reduce the precision of the analysis, by considering a larger number of methods and fields as reachable. However, it might be important for the analysis of some application, since it improves the scalability of the analyzer. This option is less radical than the -mergeArrays option, that is, it introduces less imprecison but also induces less scalability</documentation>
+                <syntax>-mergeArraysInsideMethod true|false</syntax>
+            </booleanOption>
+            <stringOption value="juliaOutput\32d9dac8-3c13-4e97-8497-251fea3e781c\" label="outputPath" name="outputPath" userVisible="true">
+                <description>Set the directory where the output of the analyzer must be dumped</description>
+                <documentation>If that directory does not exist, it is automatically created by the analyzer</documentation>
+                <syntax>-outputPath PATH</syntax>
+            </stringOption>
+            <booleanOption value="false" label="Robust" name="robust" userVisible="false">
+                <description>Do not crash if a checker crashes</description>
+                <documentation>If a checker crashes (for any reason), the overall analysis goes ahead and terminates.A warning  stating that &lt;checker&gt; crashed is produced in the console.</documentation>
+                <syntax>-robust true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="rta" name="rta" userVisible="true">
+                <description>Use rapid type analysis to extract the application</description>
+                <documentation>This is rarely used and currently not optimized for large applications. The precision of rapid type analysis is worse than that of the standard extraction algorithm used by Julia but, in principle, should scale better. Please consider using the -mergeArrays and -mergeArraysInsideMethod options instead</documentation>
+                <syntax>-rta true|false</syntax>
+            </booleanOption>
+            <stringOption value="C:\Users\FerraraP\Desktop\runtime\java8\jce.jar;C:\Users\FerraraP\Desktop\runtime\java8\jsse.jar;C:\Users\FerraraP\Desktop\runtime\java8\rt.jar" label="runtime" name="runtime" userVisible="true">
+                <description>Specify the classpath used for loading the runtime classes</description>
+                <documentation>Runtime classes are normally loaded by using the default class loader. This option allows one to change this behavior, by specifying a specific class path to use for class loading of runtime classes</documentation>
+                <syntax>-runtime XXX</syntax>
+            </stringOption>
+            <booleanOption value="false" label="sequential" name="sequential" userVisible="true">
+                <description>Run checkers one after another</description>
+                <documentation>Instruct Julia to wait for the completion of a checker before starting running another checker</documentation>
+                <syntax>-sequential true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="silent" name="silent" userVisible="true">
+                <description>Run in silent mode</description>
+                <documentation>No textual output is produced with this option, but the analyses are run and output files are generated</documentation>
+                <syntax>-silent true|false</syntax>
+            </booleanOption>
+            <intOption value="1" label="Number of splits" name="splitApplicationJar" userVisible="false">
+                <description>Split statistically closed jars, containing the application to analyse, into the given number of partitions</description>
+                <documentation>Splits the jars containing the application to analyse. This decreases the precision of the analysis and might occasionally make it unsound, but reduces the time of analysis</documentation>
+                <syntax>-splitApplicationJar N</syntax>
+            </intOption>
+            <booleanOption value="false" label="verbose" name="verbose" userVisible="true">
+                <description>Run in verbose mode</description>
+                <documentation>This produces a longer and more detailed textual output. Mostly useful for debugging the analyzer</documentation>
+                <syntax>-verbose true|false</syntax>
+            </booleanOption>
+        </options>
+        <checkers>
+            <checker group="Advanced" level="Public" name="Injection">
+                <enumOption value="javaBDDs" label="bddType" name="bddType" userVisible="true">
+                    <alternative name="javaBDDs">
+                        <synopsis>use the JavaBDD binary decision diagram library. See http://javabdd.sourceforge.net/</synopsis>
+                    </alternative>
+                    <alternative name="juliaBDDs">
+                        <synopsis>use Julia's multithreaded binary decision diagram library</synopsis>
+                    </alternative>
+                    <alternative name="nativeBDDs">
+                        <synopsis>use the native C-based binary decision diagram library</synopsis>
+                    </alternative>
+                    <description>specify the binary decision diagram library that must be used</description>
+                    <documentation>The native binary decision diagrams (BDD) library is in general faster (10% time reduction) than the Java versions but requires that that library be compiled, into native code, on the machine where the analysis is performed. Note, moreover, that the native library cannot be used for concurrent executions (for instance, inside a servlet container). The Julia library is multithreaded and can consequently be shared by many concurrent analyses, which reduces the memory footprint</documentation>
+                    <syntax>bddType</syntax>
+                </enumOption>
+                <booleanOption value="true" label="dumpAnalysis" name="dumpAnalysis" userVisible="true">
+                    <description>dump extensive (very large!) log information about the analysis</description>
+                    <documentation>Only useful for debugging the analyzer</documentation>
+                    <syntax>dumpAnalysis true|false</syntax>
+                </booleanOption>
+                <booleanOption value="true" label="dumpCompleteGraphs" name="dumpCompleteGraphs" userVisible="true">
+                    <description>dump the complete backward flow graph derivated from a sink</description>
+                    <documentation>If set to true, it produces an archive with the complete backward flow graphs that are used for the extraction of source-sink subgraphs</documentation>
+                    <syntax>dumpCompleteGraphs true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="dumpDotWithInvariants" name="dumpDotWithInvariants" userVisible="true">
+                    <description>dump the analysed code in dot format, with flow information</description>
+                    <documentation>This option dumps a dot file for each method or constructor that is reachable from the entry points of the analysis. At the beginning of each code, a flow invariant is reported</documentation>
+                    <syntax>dumpDotWithInvariants true|false</syntax>
+                </booleanOption>
+                <booleanOption value="true" label="flow" name="flow" userVisible="true">
+                    <description>where possible, reconstructs the instruction flows leading to injection issues</description>
+                    <documentation>If true, it reconstructs the flow and provides detailed information on the warning if successful.</documentation>
+                    <syntax>flow true|false</syntax>
+                </booleanOption>
+                <enumOption value="AVERAGE" label="flowComputingSpeed" name="flowComputingSpeed" userVisible="true">
+                    <alternative name="AVERAGE">
+                        <synopsis>reconstruct graphs until max of 2000 nodes</synopsis>
+                    </alternative>
+                    <alternative name="FAST">
+                        <synopsis>reconstruct graphs until max of 1000 nodes</synopsis>
+                    </alternative>
+                    <alternative name="FASTEST">
+                        <synopsis>reconstruct graphs until max of 500 nodes</synopsis>
+                    </alternative>
+                    <alternative name="SLOW">
+                        <synopsis>reconstruct graphs until max of 4000 nodes</synopsis>
+                    </alternative>
+                    <alternative name="SLOWEST">
+                        <synopsis>reconstruct graphs until max of integer limit nodes</synopsis>
+                    </alternative>
+                    <description>efficiency of the flow reconstruction</description>
+                    <documentation>This speciefies the efficiency of the flow reconstruct. Interesting only if option flow is set to true. (AVERAGE by default)</documentation>
+                    <syntax>flowComputingSpeed</syntax>
+                </enumOption>
+                <booleanOption value="false" label="fullJaif" name="fullJaif" userVisible="true">
+                    <description>dump a jaif file with the information flow information of the program, containing both the selected properties of interest and their complement</description>
+                    <documentation>The generated jaif file is a compact report of the program places that might contain a secret (tainted) value. Differently from the -jaif option, this generates explicit information for the places that contain a non-secret value as well and is hence a more verbose version of the same information</documentation>
+                    <syntax>fullJaif true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="fullyQualifiedNames" name="fullyQualifiedNames" userVisible="true">
+                    <description>use fully qualified class names in the jaif files</description>
+                    <documentation>The generated jaif file is a compact report of the program places that might contain a secret (tainted) value. This option forces the use of fully qualified class names in the jaif file, also when referring to classes in the same package that is being reported</documentation>
+                    <syntax>fullyQualifiedNames true|false</syntax>
+                </booleanOption>
+                <booleanOption value="true" label="jaif" name="jaif" userVisible="true">
+                    <description>dump a jaif file with the information flow information of the program</description>
+                    <documentation>A jaif file is a compact report of the program places that might contain a secret (tainted) value. It can be used for reference and documentation, but can also be imported in the source code of the program by using the annotation file utilities (see http://types.cs.washington.edu/annotation-file-utilities)</documentation>
+                    <syntax>jaif true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="mergeCreations" name="mergeCreations" userVisible="true">
+                    <description>merge the creation points for the same type inside the same class</description>
+                    <documentation>This enhances the efficiency of the creation points analysis performed as part of flow analysis but, in general, reduces the precision of the analyzer. However, it can be an important option to select for the analysis of very large applications and in library mode, in the rare cases when the creation points analysis takes too long to complete. This option is automatically selected for large programs</documentation>
+                    <syntax>mergeCreations true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="noOracle" name="noOracle" userVisible="true">
+                    <description>do not use an oracle semantics for the fields</description>
+                    <documentation>This largely reduces the precision of the analysis, since Julia will not track anymore the fields that are  definitely initialized to a non-secret (non-tainted) value before being accessed. Mainly useful for profiling and statistics</documentation>
+                    <syntax>noOracle true|false</syntax>
+                </booleanOption>
+                <booleanOption value="true" label="noUnreachable" name="noUnreachable" userVisible="true">
+                    <description>do not dump information on unreachable code</description>
+                    <documentation>By selecting this option, the jaif files become smaller</documentation>
+                    <syntax>noUnreachable true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="reportLocals" name="reportLocals" userVisible="true">
+                    <description>dump information on local variables</description>
+                    <documentation>By selecting this option, the jaif file contains information on local variables as well and consequently becomes larger</documentation>
+                    <syntax>reportLocals true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="trustDatabase" name="trustDatabase" userVisible="true">
+                    <description>consider data coming from a database query as trusted</description>
+                    <documentation>This option lets Julia consider data coming from database queries as untainted and hence trusted. This is false by default</documentation>
+                    <syntax>trustDatabase true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="trustDevice" name="trustDevice" userVisible="true">
+                    <description>consider data about the specific device as trusted</description>
+                    <documentation>This option lets Julia consider data about the specific device running the application as untainted and hence trusted. This is false by default</documentation>
+                    <syntax>trustDevice true|false</syntax>
+                </booleanOption>
+                <booleanOption value="true" label="trustEnvironment" name="trustEnvironment" userVisible="true">
+                    <description>consider data coming from the running environment as trusted</description>
+                    <documentation>This option lets Julia consider data coming from files or properties as untainted and hence trusted. This is true by default</documentation>
+                    <syntax>trustEnvironment true|false</syntax>
+                </booleanOption>
+                <booleanOption value="true" label="trustExternalStreams" name="trustExternalStreams" userVisible="true">
+                    <description>consider data coming from external streams as trusted</description>
+                    <documentation>This option lets Julia consider data coming from external streams and sockets as untainted and hence trusted. This is true by default</documentation>
+                    <syntax>trustExternalStreams true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="trustUserInput" name="trustUserInput" userVisible="true">
+                    <description>consider data from servlet requests and console as trusted</description>
+                    <documentation>This option lets Julia consider data coming from servlet requests and console input as untainted and hence trusted. This is false by default</documentation>
+                    <syntax>trustUserInput true|false</syntax>
+                </booleanOption>
+                <synopsis>Identify potential security injections</synopsis>
+            </checker>
+        </checkers>
+    </analysisSpecification>
+    <formattedRunDuration>00:03:57.883</formattedRunDuration>
+</analysisReportResult>

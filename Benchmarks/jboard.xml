@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<analysisReportResult>
+    <id>3e320311-d27f-4ab3-ae03-cc05e6eddceb</id>
+    <status>COMPLETED</status>
+    <creationTimestamp>2019-08-07T11:54:44.188+02:00</creationTimestamp>
+    <engineVersion>2.7.0</engineVersion>
+    <runDuration>145945</runDuration>
+    <warnings>
+        <warning kind="Injection" progressive="0" rank="3" aboutAField="false">
+            <artifacts>jboard\app.jar</artifacts>
+            <CWEid>501</CWEid>
+            <className>net.sf.jboard.filters.AccessFilter</className>
+            <line>104</line>
+            <memberName>doFilter</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_5a41d21926d01e52ebb3f3788984bc7756135377c67580011266b5e44518c836</outputArtifact>
+                <outputArtifact>Artifact_620babdc15dd8c474bfea665636af5dc225f3498db6699fecc9a9473a9f0baac</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SessionInjectionWarningWithFlow</simpleName>
+            <source>net/sf/jboard/filters/AccessFilter.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into a session</warningDescription>
+            <warningMessage>Possible session-injection into the 1st actual parameter of method "setAttribute"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="1" rank="3" aboutAField="false">
+            <artifacts>jboard\app.jar</artifacts>
+            <CWEid>89</CWEid>
+            <className>net.sf.jboard.model.reg.dao.RegPostgresqlDAO</className>
+            <line>87</line>
+            <memberName>userAlreadyExists</memberName>
+            <simpleName>SqlInjectionWarning</simpleName>
+            <source>net/sf/jboard/model/reg/dao/RegPostgresqlDAO.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into an sql query, unsanitized</warningDescription>
+            <warningMessage>Possible SQL-injection into actual parameter "arg 0" of method "prepareStatement"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="2" rank="3" aboutAField="false">
+            <artifacts>jboard\app.jar</artifacts>
+            <CWEid>89</CWEid>
+            <className>net.sf.jboard.model.reg.dao.RegPostgresqlDAO</className>
+            <line>140</line>
+            <memberName>addNecessaryUsersAndRoles</memberName>
+            <simpleName>SqlInjectionWarning</simpleName>
+            <source>net/sf/jboard/model/reg/dao/RegPostgresqlDAO.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into an sql query, unsanitized</warningDescription>
+            <warningMessage>Possible SQL-injection into actual parameter "arg 0" of method "prepareStatement"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="3" rank="3" aboutAField="false">
+            <artifacts>jboard\app.jar</artifacts>
+            <CWEid>89</CWEid>
+            <className>net.sf.jboard.model.reg.dao.RegPostgresqlDAO</className>
+            <line>147</line>
+            <memberName>addNecessaryUsersAndRoles</memberName>
+            <simpleName>SqlInjectionWarning</simpleName>
+            <source>net/sf/jboard/model/reg/dao/RegPostgresqlDAO.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into an sql query, unsanitized</warningDescription>
+            <warningMessage>Possible SQL-injection into actual parameter "arg 0" of method "prepareStatement"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="4" rank="3" aboutAField="false">
+            <artifacts>jboard\app.jar</artifacts>
+            <CWEid>89</CWEid>
+            <className>net.sf.jboard.model.reg.dao.RegPostgresqlDAO</className>
+            <line>153</line>
+            <memberName>addNecessaryUsersAndRoles</memberName>
+            <simpleName>SqlInjectionWarning</simpleName>
+            <source>net/sf/jboard/model/reg/dao/RegPostgresqlDAO.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into an sql query, unsanitized</warningDescription>
+            <warningMessage>Possible SQL-injection into actual parameter "arg 0" of method "prepareStatement"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="5" rank="3" aboutAField="false">
+            <artifacts>jboard\app.jar</artifacts>
+            <CWEid>89</CWEid>
+            <className>net.sf.jboard.model.reg.dao.RegPostgresqlDAO</className>
+            <line>164</line>
+            <memberName>addNecessaryUsersAndRoles</memberName>
+            <simpleName>SqlInjectionWarning</simpleName>
+            <source>net/sf/jboard/model/reg/dao/RegPostgresqlDAO.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into an sql query, unsanitized</warningDescription>
+            <warningMessage>Possible SQL-injection into actual parameter "arg 0" of method "prepareStatement"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="6" rank="3" aboutAField="false">
+            <artifacts>jboard\app.jar</artifacts>
+            <CWEid>89</CWEid>
+            <className>net.sf.jboard.model.reg.dao.RegPostgresqlDAO</className>
+            <line>171</line>
+            <memberName>addNecessaryUsersAndRoles</memberName>
+            <simpleName>SqlInjectionWarning</simpleName>
+            <source>net/sf/jboard/model/reg/dao/RegPostgresqlDAO.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into an sql query, unsanitized</warningDescription>
+            <warningMessage>Possible SQL-injection into actual parameter "arg 0" of method "prepareStatement"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="7" rank="3" aboutAField="false">
+            <artifacts>jboard\app.jar</artifacts>
+            <CWEid>89</CWEid>
+            <className>net.sf.jboard.model.reg.dao.RegPostgresqlDAO</className>
+            <line>175</line>
+            <memberName>addNecessaryUsersAndRoles</memberName>
+            <simpleName>SqlInjectionWarning</simpleName>
+            <source>net/sf/jboard/model/reg/dao/RegPostgresqlDAO.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into an sql query, unsanitized</warningDescription>
+            <warningMessage>Possible SQL-injection into actual parameter "arg 0" of method "prepareStatement"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="8" rank="3" aboutAField="false">
+            <artifacts>jboard\app.jar</artifacts>
+            <CWEid>89</CWEid>
+            <className>net.sf.jboard.model.reg.dao.RegPostgresqlDAO</className>
+            <line>184</line>
+            <memberName>addNecessaryUsersAndRoles</memberName>
+            <simpleName>SqlInjectionWarning</simpleName>
+            <source>net/sf/jboard/model/reg/dao/RegPostgresqlDAO.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into an sql query, unsanitized</warningDescription>
+            <warningMessage>Possible SQL-injection into actual parameter "arg 0" of method "prepareStatement"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="9" rank="3" aboutAField="false">
+            <artifacts>jboard\app.jar</artifacts>
+            <CWEid>89</CWEid>
+            <className>net.sf.jboard.model.reg.dao.RegPostgresqlDAO</className>
+            <line>241</line>
+            <memberName>validateUser</memberName>
+            <simpleName>SqlInjectionWarning</simpleName>
+            <source>net/sf/jboard/model/reg/dao/RegPostgresqlDAO.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into an sql query, unsanitized</warningDescription>
+            <warningMessage>Possible SQL-injection into actual parameter "arg 0" of method "prepareStatement"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="10" rank="3" aboutAField="false">
+            <artifacts>jboard\app.jar</artifacts>
+            <CWEid>89</CWEid>
+            <className>net.sf.jboard.model.reg.dao.RegPostgresqlDAO</className>
+            <line>281</line>
+            <memberName>retrieveUserRoles</memberName>
+            <simpleName>SqlInjectionWarning</simpleName>
+            <source>net/sf/jboard/model/reg/dao/RegPostgresqlDAO.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into an sql query, unsanitized</warningDescription>
+            <warningMessage>Possible SQL-injection into actual parameter "arg 0" of method "prepareStatement"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="11" rank="3" aboutAField="false">
+            <artifacts>jboard\app.jar</artifacts>
+            <CWEid>89</CWEid>
+            <className>net.sf.jboard.model.reg.dao.RegPostgresqlDAO</className>
+            <line>330</line>
+            <memberName>register</memberName>
+            <simpleName>SqlInjectionWarning</simpleName>
+            <source>net/sf/jboard/model/reg/dao/RegPostgresqlDAO.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into an sql query, unsanitized</warningDescription>
+            <warningMessage>Possible SQL-injection into actual parameter "arg 0" of method "prepareStatement"</warningMessage>
+        </warning>
+        <warning kind="Injection" progressive="12" rank="3" aboutAField="false">
+            <artifacts>jboard\app.jar</artifacts>
+            <CWEid>89</CWEid>
+            <className>net.sf.jboard.model.reg.dao.RegPostgresqlDAO</className>
+            <line>194</line>
+            <memberName>addNecessaryUsersAndRoles</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_2164ec92cd61e648d97e5988a8f05a45b2c16c91be5fcdf689ba29d2055fca39</outputArtifact>
+                <outputArtifact>Artifact_04b64df04f3c4ff85e605ca2632db50ff29252e846656df9f55a6700cda4f6c5</outputArtifact>
+                <outputArtifact>Artifact_c7264b127848513b461c62817c67422ae63aa7c881ad54ff90303b0080be19fa</outputArtifact>
+                <outputArtifact>Artifact_26d328d4323a4f565b064a55debdcdddebc036ceb1c77910c9e38de08fc203aa</outputArtifact>
+            </outputArtifacts>
+            <simpleName>SqlInjectionWarningWithFlow</simpleName>
+            <source>net/sf/jboard/model/reg/dao/RegPostgresqlDAO.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>tainted data might flow into an sql query, unsanitized</warningDescription>
+            <warningMessage>Possible SQL-injection into actual parameter "arg 0" of method "prepareStatement"</warningMessage>
+        </warning>
+    </warnings>
+    <remarks/>
+    <metrics>
+        <entry>
+            <key>BYTECODES_REACHED</key>
+            <value>144779</value>
+        </entry>
+        <entry>
+            <key>BYTECODES_STATISTICALLY_CLOSED</key>
+            <value>11446</value>
+        </entry>
+        <entry>
+            <key>GRADE</key>
+            <value>0.71120936</value>
+        </entry>
+        <entry>
+            <key>HUMAN_FRIENDLY_GRADE</key>
+            <value>average</value>
+        </entry>
+        <entry>
+            <key>LOCS_REACHED_ESTIMATE</key>
+            <value>32425</value>
+        </entry>
+        <entry>
+            <key>LOCS_STATISTICALLY_CLOSED_ESTIMATE</key>
+            <value>3397</value>
+        </entry>
+    </metrics>
+    <outputArtifacts>
+        <outputArtifact producer="Julia 1.0" standalone="true" id="Artifact_8a1b32a0dc2b3b0588131e031e73ef2994235a5acfe884023903af429dea9e6f">
+            <key>FlowAnalysisForUNTRUSTED.zip</key>
+            <logicalType>LOGICAL_TYPE_FLOW_ANALYSIS_ARCHIVE</logicalType>
+            <hash>90a2dee087369bfb9c94cf50e1b8875a</hash>
+        </outputArtifact>
+        <outputArtifact producer="InjectionChecker" standalone="true" id="Artifact_672af21ffe4a2a03dbd3f5f8044197ce347d742df2b728bd4b144da1baf53562">
+            <key>FlowAnalysisForUNTRUSTED.zip/FlowAnalysisForUNTRUSTED.txt</key>
+            <logicalType>FLOW_TEXT</logicalType>
+            <hash>78514f5beeef1e8660acec1ed98f1ab6</hash>
+        </outputArtifact>
+        <outputArtifact producer="Julia 1.0" standalone="true" id="Artifact_b3973236e39f0e67344896530b755e54109f4384730164c6aff9e1186f3cf6e9">
+            <key>Injection_BackwardFlowsGraph.zip</key>
+            <logicalType>FLOW_GRAPHS_RESULT_ARCHIVE</logicalType>
+            <hash>31cf36ae902f34992fc20d8ac95be29a</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_a6b786c083e6709115e99fa1c182c1fc0d56fd2ad54960009d7d47263901e46a">
+            <key>Injection_BackwardFlowsGraph.zip/net.sf.jboard.filters.AccessFilter.java_104_12.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>c5b95005984c70c67a46e23231d34576</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_7be7f907fb22538399cfe19f865511d47e7680437c5aed7b9ef707a86d9bc77b">
+            <key>Injection_BackwardFlowsGraph.zip/net.sf.jboard.model.reg.dao.RegPostgresqlDAO.java_140_1.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>eb2b5f9edcb75cba4589cd57c412b46d</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_d9283ba1d16ed6bd515f5f44fc2d6eb42fa975d47789f3c5a872cde459d169c9">
+            <key>Injection_BackwardFlowsGraph.zip/net.sf.jboard.model.reg.dao.RegPostgresqlDAO.java_147_7.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>cba86fdf6f69083cad263a5fcbbba1df</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_418fbf14222dd8c38aede6662a7ac985cbd35efbf33deee0449fae0ca16f1e2d">
+            <key>Injection_BackwardFlowsGraph.zip/net.sf.jboard.model.reg.dao.RegPostgresqlDAO.java_153_8.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>666c55b2a5275398e72d6661936199da</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_bf0f9eb0986a23cad9416be2eade078a16a5aa9670f29df539ef2ff4c35154a2">
+            <key>Injection_BackwardFlowsGraph.zip/net.sf.jboard.model.reg.dao.RegPostgresqlDAO.java_164_2.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>58f0cd45b78d63ab1dcdf8b10bcf20ba</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_5a02b3a1e82ba24aaf1d76faf6dd4fcb83c67ffac76f0fd0cd45b5d8bf98f1be">
+            <key>Injection_BackwardFlowsGraph.zip/net.sf.jboard.model.reg.dao.RegPostgresqlDAO.java_171_5.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>2dcb434508e6ca09b88cc58cd96db311</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_ffa111dfb86c16fe72bb15bc05b7a6db02fd0c57530e39169d8784abfdc6dd0b">
+            <key>Injection_BackwardFlowsGraph.zip/net.sf.jboard.model.reg.dao.RegPostgresqlDAO.java_175_6.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>cf87305895222bd642d6535ace4d146a</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_cf7cfa88606fdc4846838528da2b8a0cb6b95f9b03a5c926e30d77b419c17afc">
+            <key>Injection_BackwardFlowsGraph.zip/net.sf.jboard.model.reg.dao.RegPostgresqlDAO.java_184_3.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>23af44f20a61a609359230013f2c3ddc</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_5b300e8246ae87abad67daffbb7fb436e5813e3964c3c883482ff326cf793502">
+            <key>Injection_BackwardFlowsGraph.zip/net.sf.jboard.model.reg.dao.RegPostgresqlDAO.java_194_4.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>704978f32c2bd7f78ee3cac3c92813cf</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_352d94d9661ade00e32b31c1a9433ba6c735ee621b21545ec923a316975ba476">
+            <key>Injection_BackwardFlowsGraph.zip/net.sf.jboard.model.reg.dao.RegPostgresqlDAO.java_241_9.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>38f46c4aaeb79b7b12a91f6979f5960c</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_613ca447a3b6552bf3e67bc70c6411e2574763688e4cc10f50c772e088bd8497">
+            <key>Injection_BackwardFlowsGraph.zip/net.sf.jboard.model.reg.dao.RegPostgresqlDAO.java_281_10.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>3f4188fbdd860c7f2d8cdfd6b683ccd5</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_c3206bdaa59db8b96caa0505162faf717a68a0a75be6ca2aed8620f9b812109c">
+            <key>Injection_BackwardFlowsGraph.zip/net.sf.jboard.model.reg.dao.RegPostgresqlDAO.java_330_13.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>128c9acf740cd8fb61a0a5b87df448f4</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_fffa5baa72396ee3726a3a1c5c0b3b331655682afd45dd3b0fb508602e03535c">
+            <key>Injection_BackwardFlowsGraph.zip/net.sf.jboard.model.reg.dao.RegPostgresqlDAO.java_87_11.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>97676900349082fb3256b7e8624f27ee</hash>
+        </outputArtifact>
+        <outputArtifact producer="Julia 1.0" standalone="true" id="Artifact_c5b5861a53283ff6948f919b908a46ae7537da641282ba065739881d33541383">
+            <key>Injection_BackwardFlowsSubGraph.zip</key>
+            <logicalType>FLOW_GRAPHS_RESULT_ARCHIVE</logicalType>
+            <hash>492ad6df1bcbcff65363d0d75c1c847c</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_5a41d21926d01e52ebb3f3788984bc7756135377c67580011266b5e44518c836">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.sf.jboard.filters.AccessFilter.java_104_9_8_0_id_3e320311-d27f-4ab3-ae03-cc05e6eddceb.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>a837c707b89679307e3885c871b76f1b</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_620babdc15dd8c474bfea665636af5dc225f3498db6699fecc9a9473a9f0baac">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.sf.jboard.filters.AccessFilter.java_104_9_8_1_id_3e320311-d27f-4ab3-ae03-cc05e6eddceb.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>6f6fda0ffe0ff13f4b55c0e6f63ab282</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_2164ec92cd61e648d97e5988a8f05a45b2c16c91be5fcdf689ba29d2055fca39">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.sf.jboard.model.reg.dao.RegPostgresqlDAO.java_194_8_7_0_id_3e320311-d27f-4ab3-ae03-cc05e6eddceb.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>48ca81db6beccec600664c098f70cea5</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_04b64df04f3c4ff85e605ca2632db50ff29252e846656df9f55a6700cda4f6c5">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.sf.jboard.model.reg.dao.RegPostgresqlDAO.java_194_8_7_1_id_3e320311-d27f-4ab3-ae03-cc05e6eddceb.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>11ac16b87422b49b7d797f7bea7ac388</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_c7264b127848513b461c62817c67422ae63aa7c881ad54ff90303b0080be19fa">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.sf.jboard.model.reg.dao.RegPostgresqlDAO.java_194_8_7_2_id_3e320311-d27f-4ab3-ae03-cc05e6eddceb.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>91420bf58618da2756ca4b663ff06b35</hash>
+        </outputArtifact>
+        <outputArtifact producer="FlowAnalysis" standalone="false" id="Artifact_26d328d4323a4f565b064a55debdcdddebc036ceb1c77910c9e38de08fc203aa">
+            <key>Injection_BackwardFlowsSubGraph.zip/FlowSubGraph_net.sf.jboard.model.reg.dao.RegPostgresqlDAO.java_194_8_7_3_id_3e320311-d27f-4ab3-ae03-cc05e6eddceb.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>b2a8732fac4bc7fbe27b34ee7d6e2d13</hash>
+        </outputArtifact>
+        <outputArtifact producer="InjectionChecker" standalone="true" id="Artifact_40b5ff9a6857af7ed12b807d4f8623483bf1becc173df5ca005ef1d36fadf3ab">
+            <key>Injection_Trusted_UNTRUSTED.jaif</key>
+            <logicalType>JAIF</logicalType>
+            <hash>a496697c56c5db4f386acc8627dbc560</hash>
+        </outputArtifact>
+    </outputArtifacts>
+    <analysisSpecification>
+        <id>3e320311-d27f-4ab3-ae03-cc05e6eddceb</id>
+        <solutionId>-1</solutionId>
+        <creationTimestamp>2019-08-07T11:54:43.273+02:00</creationTimestamp>
+        <sourceProjects>[]</sourceProjects>
+        <packages>
+            <package id="Artifact_a22f616da897c8a3dfe16636bfa169415f08d353b0b6b364b953770bf10c957b">
+                <key>jboard\app.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>app.jar</moduleName>
+                <type>Application</type>
+            </package>
+        </packages>
+        <options name="Internal options">
+            <booleanOption value="true" label="Allow framework detection" name="allowFrameworkDetection" userVisible="true">
+                <description>Enables automatic framework detection</description>
+                <documentation>Enables automatic framework detection, allowing Julia to identify frameworks and optimize the analysis accordingly. A description of the frameworks automatically recognized by Julia is available in the documentation</documentation>
+                <syntax>-allowFrameworkDetection true|false</syntax>
+            </booleanOption>
+            <stringOption label="Type of splitter" name="applicationSplitter" userVisible="false">
+                <alternative name="ByPackage">
+                    <synopsis>split the application jars on the basis of their packages structure</synopsis>
+                </alternative>
+                <alternative name="KargerSteinCut">
+                    <synopsis>apply the Karger-Stein algorithm to partition the application jars</synopsis>
+                </alternative>
+                <alternative name="RandomDeterministic">
+                    <synopsis>randomly split the application jars</synopsis>
+                </alternative>
+                <alternative name="StoerWagnerMinimumCut">
+                    <synopsis>apply the Stoer-Wagner algorithm to partition the application jars</synopsis>
+                </alternative>
+                <description>Specify the application splitter</description>
+                <documentation>Specifies the application splitter that must be used to split the application jars. By deafult, the random splitter is selected.</documentation>
+                <syntax>-applicationSplitter XXX</syntax>
+            </stringOption>
+            <booleanOption value="false" label="classifyForCS" name="classifyForCS" userVisible="true">
+                <description>Add external classification for GrammaTech CodeSonar</description>
+                <documentation>If true, add the external classification CS-INT-CLASSIFICATION that is used by CodeSonarto categorize Security warnings</documentation>
+                <syntax>-classifyForCS true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="Dump call graph" name="dumpCallGraph" userVisible="false">
+                <description>Dump the call graph generated by the analysis</description>
+                <documentation>Specifies whether or not the call graph computed by the analysis should be dumped to a dot file</documentation>
+                <syntax>-dumpCallGraph true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="Dump generated annotations" name="dumpFrameworkAnnotations" userVisible="false">
+                <description>Dump annotations generated by framework specification</description>
+                <documentation>Specifies whether or not the annotations automatically generated by the application of a framework specification should be dumped or not</documentation>
+                <syntax>-dumpFrameworkAnnotations true|false</syntax>
+            </booleanOption>
+            <booleanOption value="true" label="dumpOutputToLog" name="dumpOutputToLog" userVisible="true">
+                <description>Dump warnings and remarks to standard output</description>
+                <documentation>If true, the complete list of warnings and remarks will be dumped to the standard output</documentation>
+                <syntax>-dumpOutputToLog true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="Enable assertions" name="ea" userVisible="true">
+                <description>Assume that assertions are turned on</description>
+                <documentation>Assume that assertion statements are executed, hence warnings should be reported about those statements and their effects on subsequent instructions must be taken into account</documentation>
+                <syntax>-ea true|false</syntax>
+            </booleanOption>
+            <enumOption value="ALL_ENTRIES" label="Entry points" name="entryPoint" userVisible="true">
+                <alternative name="ALL_ENTRIES">
+                    <synopsis>Assume that all public and protected methods and constructors are entry points</synopsis>
+                </alternative>
+                <alternative name="ALL_METHODS">
+                    <synopsis>Assume that all public, protected and private methods and constructors are entry points</synopsis>
+                </alternative>
+                <alternative name="LIBRARY">
+                    <synopsis>Run in library mode</synopsis>
+                </alternative>
+                <alternative name="ONLY_EXPLICIT_ENTRIES">
+                    <synopsis>Only consider entry points marked as @EntryPoint</synopsis>
+                </alternative>
+                <alternative name="ONLY_STANDARD_ENTRIES">
+                    <synopsis>Only consider default entry points like main methods, event handlers of Swing and Android</synopsis>
+                </alternative>
+                <description>The entry points of the application</description>
+                <documentation>Specify the entry point of the application the analysis starts from.</documentation>
+                <syntax>-entryPoint</syntax>
+            </enumOption>
+            <stringOption value="java8" label="Framework" name="framework" userVisible="true">
+                <alternative name="androidAPI1">
+                    <synopsis>use the framework of analysis for Android API 1</synopsis>
+                </alternative>
+                <alternative name="androidAPI10">
+                    <synopsis>use the framework of analysis for Android API 10</synopsis>
+                </alternative>
+                <alternative name="androidAPI11">
+                    <synopsis>use the framework of analysis for Android API 11</synopsis>
+                </alternative>
+                <alternative name="androidAPI12">
+                    <synopsis>use the framework of analysis for Android API 12</synopsis>
+                </alternative>
+                <alternative name="androidAPI13">
+                    <synopsis>use the framework of analysis for Android API 13</synopsis>
+                </alternative>
+                <alternative name="androidAPI14">
+                    <synopsis>use the framework of analysis for Android API 14</synopsis>
+                </alternative>
+                <alternative name="androidAPI15">
+                    <synopsis>use the framework of analysis for Android API 15</synopsis>
+                </alternative>
+                <alternative name="androidAPI16">
+                    <synopsis>use the framework of analysis for Android API 16</synopsis>
+                </alternative>
+                <alternative name="androidAPI17">
+                    <synopsis>use the framework of analysis for Android API 17</synopsis>
+                </alternative>
+                <alternative name="androidAPI18">
+                    <synopsis>use the framework of analysis for Android API 18</synopsis>
+                </alternative>
+                <alternative name="androidAPI19">
+                    <synopsis>use the framework of analysis for Android API 19</synopsis>
+                </alternative>
+                <alternative name="androidAPI2">
+                    <synopsis>use the framework of analysis for Android API 2</synopsis>
+                </alternative>
+                <alternative name="androidAPI20">
+                    <synopsis>use the framework of analysis for Android API 20</synopsis>
+                </alternative>
+                <alternative name="androidAPI21">
+                    <synopsis>use the framework of analysis for Android API 21</synopsis>
+                </alternative>
+                <alternative name="androidAPI22">
+                    <synopsis>use the framework of analysis for Android API 22</synopsis>
+                </alternative>
+                <alternative name="androidAPI23">
+                    <synopsis>use the framework of analysis for Android API 23</synopsis>
+                </alternative>
+                <alternative name="androidAPI24">
+                    <synopsis>use the framework of analysis for Android API 24</synopsis>
+                </alternative>
+                <alternative name="androidAPI25">
+                    <synopsis>use the framework of analysis for Android API 25</synopsis>
+                </alternative>
+                <alternative name="androidAPI3">
+                    <synopsis>use the framework of analysis for Android API 3</synopsis>
+                </alternative>
+                <alternative name="androidAPI4">
+                    <synopsis>use the framework of analysis for Android API 4</synopsis>
+                </alternative>
+                <alternative name="androidAPI5">
+                    <synopsis>use the framework of analysis for Android API 5</synopsis>
+                </alternative>
+                <alternative name="androidAPI6">
+                    <synopsis>use the framework of analysis for Android API 6</synopsis>
+                </alternative>
+                <alternative name="androidAPI7">
+                    <synopsis>use the framework of analysis for Android API 7</synopsis>
+                </alternative>
+                <alternative name="androidAPI8">
+                    <synopsis>use the framework of analysis for Android API 8</synopsis>
+                </alternative>
+                <alternative name="androidAPI9">
+                    <synopsis>use the framework of analysis for Android API 9</synopsis>
+                </alternative>
+                <alternative name="dotnet">
+                    <synopsis>use the framework of analysis for .NET</synopsis>
+                </alternative>
+                <alternative name="java1">
+                    <synopsis>use the framework of analysis for Java 1.1</synopsis>
+                </alternative>
+                <alternative name="java2">
+                    <synopsis>use the framework of analysis for Java 1.2</synopsis>
+                </alternative>
+                <alternative name="java3">
+                    <synopsis>use the framework of analysis for Java 1.3</synopsis>
+                </alternative>
+                <alternative name="java4">
+                    <synopsis>use the framework of analysis for Java 1.4</synopsis>
+                </alternative>
+                <alternative name="java5">
+                    <synopsis>use the framework of analysis for Java 1.5</synopsis>
+                </alternative>
+                <alternative name="java6">
+                    <synopsis>use the framework of analysis for Java 1.6</synopsis>
+                </alternative>
+                <alternative name="java7">
+                    <synopsis>use the framework of analysis for Java 1.7</synopsis>
+                </alternative>
+                <alternative name="java8">
+                    <synopsis>use the framework of analysis for Java 1.8</synopsis>
+                </alternative>
+                <description>Specify the framework of analysis</description>
+                <documentation>A framework specifies rules specific to the given programming context used for the application under analysis, such as the entry points for the analysis. The "java7" framework will work in most cases, but more specific frameworks might yield more precise results of analysis. The specification of the framework might also change the behavior of the checkers, since some checks might be sensible for some frameworks only</documentation>
+                <syntax>-framework XXX</syntax>
+            </stringOption>
+            <booleanOption value="false" label="help" name="help" userVisible="true">
+                <description>Display the help of the analyzer</description>
+                <syntax>-help true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="Ignore XML files" name="ignoreXMLFiles" userVisible="false">
+                <description>Ignore XML files regardless of content/type and support</description>
+                <documentation>Frameworks often rely on XML files to specify configuration and application behaviour.By default, Julia tries to parse common xml configuration files and simulate the implied runtime effects, this option forces Julia to ignore all input xml files regardless of the analysis support and optimizations provided by the selected framework.</documentation>
+                <syntax>-ignoreXMLFiles true|false</syntax>
+            </booleanOption>
+            <enumOption value="TYPES" label="Mode of library processing" name="libraryProcessingMode" userVisible="true">
+                <alternative name="TYPES">
+                    <synopsis>ignore the code of the non-runtime libraries</synopsis>
+                </alternative>
+                <alternative name="TYPES_AND_CODE">
+                    <synopsis>include the code of all classes during analysis</synopsis>
+                </alternative>
+                <description>Processing mode for library classes</description>
+                <documentation>Allow the analyzer to discard the implementation of library methods and only uses the hierarchy of the library classes during the analysis. This decreases the precision of the analysis and might occasionally make it unsound, but reduces the time of analysis.</documentation>
+                <syntax>-libraryProcessingMode</syntax>
+            </enumOption>
+            <booleanOption value="false" label="maniac" name="maniac" userVisible="true">
+                <description>Run in maniac mode</description>
+                <documentation>Applies very strict hypotheses about unknown code, such as reflective calls and calls with missing targets</documentation>
+                <syntax>-maniac true|false</syntax>
+            </booleanOption>
+            <intOption value="0" label="maxMethods" name="maxMethods" userVisible="true">
+                <description>Set the maximum number of extracted methods to N (0 means no limit)</description>
+                <documentation>After this threshold, the analysis aborts</documentation>
+                <syntax>-maxMethods N</syntax>
+            </intOption>
+            <booleanOption value="false" label="mergeArrays" name="mergeArrays" userVisible="true">
+                <description>Merge, during the extraction of the application, the arrays of the same type</description>
+                <documentation>This allows you to analyze applications that create a large number of arrays at many program points. This option might sometimes slightly reduce the precision of the analysis, by considering a larger number of methods and fields as reachable. However, it might be important for the analysis of some application, since it improves the scalability of the analyzer</documentation>
+                <syntax>-mergeArrays true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="mergeArraysInsideMethod" name="mergeArraysInsideMethod" userVisible="true">
+                <description>Merge, during the extraction of the application, the arrays of the same type created inside the same method or constructor</description>
+                <documentation>This allows the user to analyze applications that create a large number of arrays at many program points. This option might sometimes slightly reduce the precision of the analysis, by considering a larger number of methods and fields as reachable. However, it might be important for the analysis of some application, since it improves the scalability of the analyzer. This option is less radical than the -mergeArrays option, that is, it introduces less imprecison but also induces less scalability</documentation>
+                <syntax>-mergeArraysInsideMethod true|false</syntax>
+            </booleanOption>
+            <stringOption value="juliaOutput\3e320311-d27f-4ab3-ae03-cc05e6eddceb\" label="outputPath" name="outputPath" userVisible="true">
+                <description>Set the directory where the output of the analyzer must be dumped</description>
+                <documentation>If that directory does not exist, it is automatically created by the analyzer</documentation>
+                <syntax>-outputPath PATH</syntax>
+            </stringOption>
+            <booleanOption value="false" label="Robust" name="robust" userVisible="false">
+                <description>Do not crash if a checker crashes</description>
+                <documentation>If a checker crashes (for any reason), the overall analysis goes ahead and terminates.A warning  stating that &lt;checker&gt; crashed is produced in the console.</documentation>
+                <syntax>-robust true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="rta" name="rta" userVisible="true">
+                <description>Use rapid type analysis to extract the application</description>
+                <documentation>This is rarely used and currently not optimized for large applications. The precision of rapid type analysis is worse than that of the standard extraction algorithm used by Julia but, in principle, should scale better. Please consider using the -mergeArrays and -mergeArraysInsideMethod options instead</documentation>
+                <syntax>-rta true|false</syntax>
+            </booleanOption>
+            <stringOption value="C:\Users\FerraraP\Desktop\runtime\java8\jce.jar;C:\Users\FerraraP\Desktop\runtime\java8\jsse.jar;C:\Users\FerraraP\Desktop\runtime\java8\rt.jar" label="runtime" name="runtime" userVisible="true">
+                <description>Specify the classpath used for loading the runtime classes</description>
+                <documentation>Runtime classes are normally loaded by using the default class loader. This option allows one to change this behavior, by specifying a specific class path to use for class loading of runtime classes</documentation>
+                <syntax>-runtime XXX</syntax>
+            </stringOption>
+            <booleanOption value="false" label="sequential" name="sequential" userVisible="true">
+                <description>Run checkers one after another</description>
+                <documentation>Instruct Julia to wait for the completion of a checker before starting running another checker</documentation>
+                <syntax>-sequential true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="silent" name="silent" userVisible="true">
+                <description>Run in silent mode</description>
+                <documentation>No textual output is produced with this option, but the analyses are run and output files are generated</documentation>
+                <syntax>-silent true|false</syntax>
+            </booleanOption>
+            <intOption value="1" label="Number of splits" name="splitApplicationJar" userVisible="false">
+                <description>Split statistically closed jars, containing the application to analyse, into the given number of partitions</description>
+                <documentation>Splits the jars containing the application to analyse. This decreases the precision of the analysis and might occasionally make it unsound, but reduces the time of analysis</documentation>
+                <syntax>-splitApplicationJar N</syntax>
+            </intOption>
+            <booleanOption value="false" label="verbose" name="verbose" userVisible="true">
+                <description>Run in verbose mode</description>
+                <documentation>This produces a longer and more detailed textual output. Mostly useful for debugging the analyzer</documentation>
+                <syntax>-verbose true|false</syntax>
+            </booleanOption>
+        </options>
+        <checkers>
+            <checker group="Advanced" level="Public" name="Injection">
+                <enumOption value="javaBDDs" label="bddType" name="bddType" userVisible="true">
+                    <alternative name="javaBDDs">
+                        <synopsis>use the JavaBDD binary decision diagram library. See http://javabdd.sourceforge.net/</synopsis>
+                    </alternative>
+                    <alternative name="juliaBDDs">
+                        <synopsis>use Julia's multithreaded binary decision diagram library</synopsis>
+                    </alternative>
+                    <alternative name="nativeBDDs">
+                        <synopsis>use the native C-based binary decision diagram library</synopsis>
+                    </alternative>
+                    <description>specify the binary decision diagram library that must be used</description>
+                    <documentation>The native binary decision diagrams (BDD) library is in general faster (10% time reduction) than the Java versions but requires that that library be compiled, into native code, on the machine where the analysis is performed. Note, moreover, that the native library cannot be used for concurrent executions (for instance, inside a servlet container). The Julia library is multithreaded and can consequently be shared by many concurrent analyses, which reduces the memory footprint</documentation>
+                    <syntax>bddType</syntax>
+                </enumOption>
+                <booleanOption value="true" label="dumpAnalysis" name="dumpAnalysis" userVisible="true">
+                    <description>dump extensive (very large!) log information about the analysis</description>
+                    <documentation>Only useful for debugging the analyzer</documentation>
+                    <syntax>dumpAnalysis true|false</syntax>
+                </booleanOption>
+                <booleanOption value="true" label="dumpCompleteGraphs" name="dumpCompleteGraphs" userVisible="true">
+                    <description>dump the complete backward flow graph derivated from a sink</description>
+                    <documentation>If set to true, it produces an archive with the complete backward flow graphs that are used for the extraction of source-sink subgraphs</documentation>
+                    <syntax>dumpCompleteGraphs true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="dumpDotWithInvariants" name="dumpDotWithInvariants" userVisible="true">
+                    <description>dump the analysed code in dot format, with flow information</description>
+                    <documentation>This option dumps a dot file for each method or constructor that is reachable from the entry points of the analysis. At the beginning of each code, a flow invariant is reported</documentation>
+                    <syntax>dumpDotWithInvariants true|false</syntax>
+                </booleanOption>
+                <booleanOption value="true" label="flow" name="flow" userVisible="true">
+                    <description>where possible, reconstructs the instruction flows leading to injection issues</description>
+                    <documentation>If true, it reconstructs the flow and provides detailed information on the warning if successful.</documentation>
+                    <syntax>flow true|false</syntax>
+                </booleanOption>
+                <enumOption value="AVERAGE" label="flowComputingSpeed" name="flowComputingSpeed" userVisible="true">
+                    <alternative name="AVERAGE">
+                        <synopsis>reconstruct graphs until max of 2000 nodes</synopsis>
+                    </alternative>
+                    <alternative name="FAST">
+                        <synopsis>reconstruct graphs until max of 1000 nodes</synopsis>
+                    </alternative>
+                    <alternative name="FASTEST">
+                        <synopsis>reconstruct graphs until max of 500 nodes</synopsis>
+                    </alternative>
+                    <alternative name="SLOW">
+                        <synopsis>reconstruct graphs until max of 4000 nodes</synopsis>
+                    </alternative>
+                    <alternative name="SLOWEST">
+                        <synopsis>reconstruct graphs until max of integer limit nodes</synopsis>
+                    </alternative>
+                    <description>efficiency of the flow reconstruction</description>
+                    <documentation>This speciefies the efficiency of the flow reconstruct. Interesting only if option flow is set to true. (AVERAGE by default)</documentation>
+                    <syntax>flowComputingSpeed</syntax>
+                </enumOption>
+                <booleanOption value="false" label="fullJaif" name="fullJaif" userVisible="true">
+                    <description>dump a jaif file with the information flow information of the program, containing both the selected properties of interest and their complement</description>
+                    <documentation>The generated jaif file is a compact report of the program places that might contain a secret (tainted) value. Differently from the -jaif option, this generates explicit information for the places that contain a non-secret value as well and is hence a more verbose version of the same information</documentation>
+                    <syntax>fullJaif true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="fullyQualifiedNames" name="fullyQualifiedNames" userVisible="true">
+                    <description>use fully qualified class names in the jaif files</description>
+                    <documentation>The generated jaif file is a compact report of the program places that might contain a secret (tainted) value. This option forces the use of fully qualified class names in the jaif file, also when referring to classes in the same package that is being reported</documentation>
+                    <syntax>fullyQualifiedNames true|false</syntax>
+                </booleanOption>
+                <booleanOption value="true" label="jaif" name="jaif" userVisible="true">
+                    <description>dump a jaif file with the information flow information of the program</description>
+                    <documentation>A jaif file is a compact report of the program places that might contain a secret (tainted) value. It can be used for reference and documentation, but can also be imported in the source code of the program by using the annotation file utilities (see http://types.cs.washington.edu/annotation-file-utilities)</documentation>
+                    <syntax>jaif true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="mergeCreations" name="mergeCreations" userVisible="true">
+                    <description>merge the creation points for the same type inside the same class</description>
+                    <documentation>This enhances the efficiency of the creation points analysis performed as part of flow analysis but, in general, reduces the precision of the analyzer. However, it can be an important option to select for the analysis of very large applications and in library mode, in the rare cases when the creation points analysis takes too long to complete. This option is automatically selected for large programs</documentation>
+                    <syntax>mergeCreations true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="noOracle" name="noOracle" userVisible="true">
+                    <description>do not use an oracle semantics for the fields</description>
+                    <documentation>This largely reduces the precision of the analysis, since Julia will not track anymore the fields that are  definitely initialized to a non-secret (non-tainted) value before being accessed. Mainly useful for profiling and statistics</documentation>
+                    <syntax>noOracle true|false</syntax>
+                </booleanOption>
+                <booleanOption value="true" label="noUnreachable" name="noUnreachable" userVisible="true">
+                    <description>do not dump information on unreachable code</description>
+                    <documentation>By selecting this option, the jaif files become smaller</documentation>
+                    <syntax>noUnreachable true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="reportLocals" name="reportLocals" userVisible="true">
+                    <description>dump information on local variables</description>
+                    <documentation>By selecting this option, the jaif file contains information on local variables as well and consequently becomes larger</documentation>
+                    <syntax>reportLocals true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="trustDatabase" name="trustDatabase" userVisible="true">
+                    <description>consider data coming from a database query as trusted</description>
+                    <documentation>This option lets Julia consider data coming from database queries as untainted and hence trusted. This is false by default</documentation>
+                    <syntax>trustDatabase true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="trustDevice" name="trustDevice" userVisible="true">
+                    <description>consider data about the specific device as trusted</description>
+                    <documentation>This option lets Julia consider data about the specific device running the application as untainted and hence trusted. This is false by default</documentation>
+                    <syntax>trustDevice true|false</syntax>
+                </booleanOption>
+                <booleanOption value="true" label="trustEnvironment" name="trustEnvironment" userVisible="true">
+                    <description>consider data coming from the running environment as trusted</description>
+                    <documentation>This option lets Julia consider data coming from files or properties as untainted and hence trusted. This is true by default</documentation>
+                    <syntax>trustEnvironment true|false</syntax>
+                </booleanOption>
+                <booleanOption value="true" label="trustExternalStreams" name="trustExternalStreams" userVisible="true">
+                    <description>consider data coming from external streams as trusted</description>
+                    <documentation>This option lets Julia consider data coming from external streams and sockets as untainted and hence trusted. This is true by default</documentation>
+                    <syntax>trustExternalStreams true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="trustUserInput" name="trustUserInput" userVisible="true">
+                    <description>consider data from servlet requests and console as trusted</description>
+                    <documentation>This option lets Julia consider data coming from servlet requests and console input as untainted and hence trusted. This is false by default</documentation>
+                    <syntax>trustUserInput true|false</syntax>
+                </booleanOption>
+                <synopsis>Identify potential security injections</synopsis>
+            </checker>
+        </checkers>
+    </analysisSpecification>
+    <formattedRunDuration>00:02:25.945</formattedRunDuration>
+</analysisReportResult>
