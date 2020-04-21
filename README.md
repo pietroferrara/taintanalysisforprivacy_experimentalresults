@@ -16,9 +16,11 @@ The repository contains the XML results of the analysis of
 - photov 2.1
 - roller 0.9.6
 - snipsnap 0.7
+- UBCBench
 
 and taint graphs of
 - WebGoat 6.0.1
+- UBCBench
 
 ## How to view the taint graphs
 

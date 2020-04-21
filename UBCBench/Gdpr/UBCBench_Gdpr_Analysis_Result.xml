@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<analysisReportResult>
+    <id>UBCBench_Gdpr_Analysis_Result</id>
+    <status>COMPLETED</status>
+    <creationTimestamp>2020-04-21T16:31:16.469+02:00</creationTimestamp>
+    <engineVersion>1.0</engineVersion>
+    <runDuration>2074858</runDuration>
+    <warnings>
+        <warning kind="Gdpr" progressive="0" rank="1" aboutAField="false">
+            <artifacts>UBCBench.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>lina.ubc.setgethint.MainActivity</className>
+            <line>53</line>
+            <memberName>leakInfoViaHint</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>lina/ubc/setgethint/MainActivity.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to type=DEFAULT LEAK (android.util.Log) through parameter actual parameter "msg" of method "i"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="1" rank="1" aboutAField="false">
+            <artifacts>UBCBench.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>lina.ubc.sharedpreference2.MainActivity$1</className>
+            <line>68</line>
+            <memberName>onSharedPreferenceChanged</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>lina/ubc/sharedpreference2/MainActivity.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to type=DEFAULT LEAK (android.util.Log) through parameter actual parameter "msg" of method "i"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="2" rank="1" aboutAField="false">
+            <artifacts>UBCBench.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>lina.ubc.sharedpreference3.MainActivity$1</className>
+            <line>67</line>
+            <memberName>onSharedPreferenceChanged</memberName>
+            <simpleName>LeakageOfPrivateDataThroughParameterUnknownSourceWarning</simpleName>
+            <source>lina/ubc/sharedpreference3/MainActivity.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data from an unknown source is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of unknown type to type=DEFAULT LEAK (android.util.Log) through parameter actual parameter "msg" of method "i"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="3" rank="3" aboutAField="false">
+            <artifacts>UBCBench.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>lina.ubc.contexttaintissue.MainActivity</className>
+            <line>40</line>
+            <memberName>onCreate</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_43f713c0d71e439dec9d0a6e820faf59835ad4a2d9fdd153dcd0e9cfb1753348</outputArtifact>
+            </outputArtifacts>
+            <simpleName>LeakageOfPrivateDataThroughParameterWarning</simpleName>
+            <source>lina/ubc/contexttaintissue/MainActivity.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of type IMEI to type=DEFAULT LEAK (android.telephony.SmsManager) through parameter actual parameter "text" of method "sendTextMessage"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="4" rank="3" aboutAField="false">
+            <artifacts>UBCBench.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>lina.ubc.contextsensitivity.ContextSensitivity</className>
+            <line>48</line>
+            <memberName>fun1</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_5541cd10c0cc7772d39062042ab2158aa04baa5a14e4981f55686234662ebb2c</outputArtifact>
+            </outputArtifacts>
+            <simpleName>LeakageOfPrivateDataThroughParameterWarning</simpleName>
+            <source>lina/ubc/contextsensitivity/ContextSensitivity.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of type IMEI to type=DEFAULT LEAK (android.util.Log) through parameter actual parameter "msg" of method "e"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="5" rank="3" aboutAField="false">
+            <artifacts>UBCBench.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>lina.ubc.fieldsensitivity.FieldSensitivity</className>
+            <line>42</line>
+            <memberName>onCreate</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_7fd24b7a9d55cb84e1774183f7470ccb3201dcd8dc6def3fdf8ba3b4327fff13</outputArtifact>
+            </outputArtifacts>
+            <simpleName>LeakageOfPrivateDataThroughParameterWarning</simpleName>
+            <source>lina/ubc/fieldsensitivity/FieldSensitivity.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of type IMEI to type=DEFAULT LEAK (android.util.Log) through parameter actual parameter "msg" of method "e"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="6" rank="3" aboutAField="false">
+            <artifacts>UBCBench.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>lina.ubc.flowsensitivity.FlowSensitivity</className>
+            <line>37</line>
+            <memberName>onCreate</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_00a404e8d6b2cd65db2e7f8b323a6630fd5271ebae7332bec3a467506eda280b</outputArtifact>
+            </outputArtifacts>
+            <simpleName>LeakageOfPrivateDataThroughParameterWarning</simpleName>
+            <source>lina/ubc/flowsensitivity/FlowSensitivity.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of type IMEI to type=DEFAULT LEAK (android.util.Log) through parameter actual parameter "msg" of method "e"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="7" rank="3" aboutAField="false">
+            <artifacts>UBCBench.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>lina.ubc.eventorderingtest.ActivityWithFlow</className>
+            <line>49</line>
+            <memberName>onCreate</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_b70f1edc394aea29ea4bb94fbbafc9774298d6c91801f29c1a89ac0c4614bc1a</outputArtifact>
+            </outputArtifacts>
+            <simpleName>LeakageOfPrivateDataThroughParameterWarning</simpleName>
+            <source>lina/ubc/eventorderingtest/ActivityWithFlow.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of type IMEI to type=DEFAULT LEAK (android.util.Log) through parameter actual parameter "msg" of method "i"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="8" rank="3" aboutAField="false">
+            <artifacts>UBCBench.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>lina.ubc.multientryissue1.ActivityWithThread$MyThread</className>
+            <line>55</line>
+            <memberName>run</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_4f3c8ceea1a2e65770dcbb3816bd0d274e9ccb7c57bc182906ea3469245e380b</outputArtifact>
+            </outputArtifacts>
+            <simpleName>LeakageOfPrivateDataThroughParameterWarning</simpleName>
+            <source>lina/ubc/multientryissue1/ActivityWithThread.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of type IMEI to type=DEFAULT LEAK (android.util.Log) through parameter actual parameter "msg" of method "i"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="9" rank="3" aboutAField="false">
+            <artifacts>UBCBench.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>lina.ubc.multientryissue2.ActivityWithRunnable$MyRunnable</className>
+            <line>55</line>
+            <memberName>run</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_66d24c0b2173b5f5298ea63987fa5c45800dab98b31661c421ae5ec14eea591b</outputArtifact>
+            </outputArtifacts>
+            <simpleName>LeakageOfPrivateDataThroughParameterWarning</simpleName>
+            <source>lina/ubc/multientryissue2/ActivityWithRunnable.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of type IMEI to type=DEFAULT LEAK (android.util.Log) through parameter actual parameter "msg" of method "i"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="10" rank="3" aboutAField="false">
+            <artifacts>UBCBench.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>lina.ubc.objectsensitivity.ObjectSensitivity</className>
+            <line>46</line>
+            <memberName>onCreate</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_0621cc99dd922e2155ec295e586deb476527ba4097b8bad5ebaa7ab4a9eb71c2</outputArtifact>
+            </outputArtifacts>
+            <simpleName>LeakageOfPrivateDataThroughParameterWarning</simpleName>
+            <source>lina/ubc/objectsensitivity/ObjectSensitivity.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of type IMEI to type=DEFAULT LEAK (android.util.Log) through parameter actual parameter "msg" of method "i"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="11" rank="3" aboutAField="false">
+            <artifacts>UBCBench.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>lina.ubc.pathsensitivity.PathSensitivity</className>
+            <line>51</line>
+            <memberName>onCreate</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_1302b52dcafd9fd0d8472e0b0c0ea09631e167d9fdaa4f01d744bcfdefe9374f</outputArtifact>
+            </outputArtifacts>
+            <simpleName>LeakageOfPrivateDataThroughParameterWarning</simpleName>
+            <source>lina/ubc/pathsensitivity/PathSensitivity.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of type IMEI to type=DEFAULT LEAK (android.util.Log) through parameter actual parameter "msg" of method "i"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="12" rank="3" aboutAField="false">
+            <artifacts>UBCBench.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>lina.ubc.sharedpreference1.MainActivity</className>
+            <line>50</line>
+            <memberName>onCreate</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_74c9aba60b4129fe033326e15fc3141c45b0d4dcd4b381da930fc258f123289e</outputArtifact>
+            </outputArtifacts>
+            <simpleName>LeakageOfPrivateDataThroughParameterWarning</simpleName>
+            <source>lina/ubc/sharedpreference1/MainActivity.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of type IMEI to type=DEFAULT LEAK (android.util.Log) through parameter actual parameter "msg" of method "i"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="13" rank="3" aboutAField="false">
+            <artifacts>UBCBench.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>lina.ubc.contextsensitivity.ContextSensitivity</className>
+            <line>54</line>
+            <memberName>fun2</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_6f58bbb02ec5d19dec6689a3230d41f4f5d2b7fe2d1aa486301a83fe7d315f66</outputArtifact>
+            </outputArtifacts>
+            <simpleName>LeakageOfPrivateDataThroughParameterWarning</simpleName>
+            <source>lina/ubc/contextsensitivity/ContextSensitivity.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of type SIM_SERIAL_NUMBER to type=DEFAULT LEAK (android.util.Log) through parameter actual parameter "msg" of method "e"</warningMessage>
+        </warning>
+    </warnings>
+    <remarks>
+        <remark tag="ANDROID">Android layout element not found</remark>
+        <remark tag="ANDROID">Android manifest not found</remark>
+        <remark tag="ANDROID">Android preference element not found</remark>
+        <remark tag="ARTIFACTS">Only 9% of UBCBench.jar is used by the analyzed application</remark>
+        <remark tag="CHECKERS">GDPR annotations file could not found: the specification file is missing</remark>
+        <remark tag="CHECKERS">GDPR policy not provided. All leakages of sensitive data are considered as not allowed</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.callbacksintenthandling.BuildConfig has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.callbacksintenthandling.R has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.callbacksintenthandling.R$anim has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.callbacksintenthandling.R$attr has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.callbacksintenthandling.R$bool has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.callbacksintenthandling.R$color has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.callbacksintenthandling.R$dimen has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.callbacksintenthandling.R$drawable has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.callbacksintenthandling.R$id has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.callbacksintenthandling.R$integer has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.callbacksintenthandling.R$layout has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.callbacksintenthandling.R$mipmap has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.callbacksintenthandling.R$string has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.callbacksintenthandling.R$style has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.callbacksintenthandling.R$styleable has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.contextsensitivity.BuildConfig has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.contextsensitivity.R has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.contextsensitivity.R$anim has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.contextsensitivity.R$attr has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.contextsensitivity.R$bool has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.contextsensitivity.R$color has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.contextsensitivity.R$dimen has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.contextsensitivity.R$drawable has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.contextsensitivity.R$id has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.contextsensitivity.R$integer has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.contextsensitivity.R$layout has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.contextsensitivity.R$mipmap has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.contextsensitivity.R$string has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.contextsensitivity.R$style has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.contextsensitivity.R$styleable has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.contexttaintissue.BuildConfig has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.contexttaintissue.R has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.contexttaintissue.R$attr has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.contexttaintissue.R$color has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.contexttaintissue.R$dimen has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.contexttaintissue.R$id has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.contexttaintissue.R$layout has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.contexttaintissue.R$mipmap has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.contexttaintissue.R$string has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.contexttaintissue.R$style has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.eventorderingtest.BuildConfig has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.eventorderingtest.R has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.eventorderingtest.R$anim has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.eventorderingtest.R$attr has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.eventorderingtest.R$bool has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.eventorderingtest.R$color has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.eventorderingtest.R$dimen has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.eventorderingtest.R$drawable has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.eventorderingtest.R$id has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.eventorderingtest.R$integer has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.eventorderingtest.R$layout has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.eventorderingtest.R$mipmap has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.eventorderingtest.R$string has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.eventorderingtest.R$style has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.eventorderingtest.R$styleable has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.fieldsensitivity.BuildConfig has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.fieldsensitivity.R has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.fieldsensitivity.R$anim has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.fieldsensitivity.R$attr has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.fieldsensitivity.R$bool has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.fieldsensitivity.R$color has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.fieldsensitivity.R$dimen has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.fieldsensitivity.R$drawable has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.fieldsensitivity.R$id has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.fieldsensitivity.R$integer has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.fieldsensitivity.R$layout has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.fieldsensitivity.R$mipmap has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.fieldsensitivity.R$string has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.fieldsensitivity.R$style has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.fieldsensitivity.R$styleable has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.flowsensitivity.BuildConfig has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.flowsensitivity.R has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.flowsensitivity.R$anim has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.flowsensitivity.R$attr has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.flowsensitivity.R$bool has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.flowsensitivity.R$color has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.flowsensitivity.R$dimen has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.flowsensitivity.R$drawable has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.flowsensitivity.R$id has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.flowsensitivity.R$integer has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.flowsensitivity.R$layout has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.flowsensitivity.R$mipmap has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.flowsensitivity.R$string has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.flowsensitivity.R$style has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.flowsensitivity.R$styleable has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.hardcodedlocationtest.BuildConfig has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.hardcodedlocationtest.R has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.hardcodedlocationtest.R$attr has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.hardcodedlocationtest.R$color has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.hardcodedlocationtest.R$dimen has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.hardcodedlocationtest.R$id has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.hardcodedlocationtest.R$layout has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.hardcodedlocationtest.R$mipmap has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.hardcodedlocationtest.R$string has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.hardcodedlocationtest.R$style has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.locationfieldsensitivity.BuildConfig has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.locationfieldsensitivity.R has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.locationfieldsensitivity.R$attr has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.locationfieldsensitivity.R$color has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.locationfieldsensitivity.R$dimen has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.locationfieldsensitivity.R$id has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.locationfieldsensitivity.R$layout has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.locationfieldsensitivity.R$mipmap has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.locationfieldsensitivity.R$string has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.locationfieldsensitivity.R$style has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.multientryissue1.BuildConfig has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.multientryissue1.R has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.multientryissue1.R$attr has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.multientryissue1.R$color has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.multientryissue1.R$dimen has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.multientryissue1.R$id has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.multientryissue1.R$layout has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.multientryissue1.R$mipmap has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.multientryissue1.R$string has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.multientryissue1.R$style has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.multientryissue2.BuildConfig has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.multientryissue2.R has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.multientryissue2.R$attr has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.multientryissue2.R$color has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.multientryissue2.R$dimen has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.multientryissue2.R$id has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.multientryissue2.R$layout has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.multientryissue2.R$mipmap has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.multientryissue2.R$string has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.multientryissue2.R$style has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.objectsensitivity.BuildConfig has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.objectsensitivity.R has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.objectsensitivity.R$anim has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.objectsensitivity.R$attr has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.objectsensitivity.R$bool has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.objectsensitivity.R$color has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.objectsensitivity.R$dimen has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.objectsensitivity.R$drawable has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.objectsensitivity.R$id has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.objectsensitivity.R$integer has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.objectsensitivity.R$layout has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.objectsensitivity.R$mipmap has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.objectsensitivity.R$string has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.objectsensitivity.R$style has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.objectsensitivity.R$styleable has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.pathsensitivity.BuildConfig has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.pathsensitivity.R has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.pathsensitivity.R$anim has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.pathsensitivity.R$attr has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.pathsensitivity.R$bool has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.pathsensitivity.R$color has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.pathsensitivity.R$dimen has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.pathsensitivity.R$drawable has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.pathsensitivity.R$id has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.pathsensitivity.R$integer has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.pathsensitivity.R$layout has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.pathsensitivity.R$mipmap has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.pathsensitivity.R$string has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.pathsensitivity.R$style has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.pathsensitivity.R$styleable has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.setgethint.BuildConfig has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.setgethint.R has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.setgethint.R$attr has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.setgethint.R$color has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.setgethint.R$dimen has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.setgethint.R$id has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.setgethint.R$layout has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.setgethint.R$mipmap has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.setgethint.R$string has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.setgethint.R$style has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference1.BuildConfig has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference1.R has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference1.R$anim has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference1.R$attr has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference1.R$bool has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference1.R$color has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference1.R$dimen has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference1.R$drawable has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference1.R$id has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference1.R$integer has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference1.R$layout has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference1.R$mipmap has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference1.R$string has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference1.R$style has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference1.R$styleable has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference2.BuildConfig has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference2.R has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference2.R$anim has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference2.R$attr has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference2.R$bool has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference2.R$color has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference2.R$dimen has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference2.R$drawable has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference2.R$id has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference2.R$integer has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference2.R$layout has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference2.R$mipmap has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference2.R$string has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference2.R$style has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference2.R$styleable has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference3.BuildConfig has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference3.R has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference3.R$attr has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference3.R$dimen has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference3.R$id has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference3.R$layout has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference3.R$mipmap has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference3.R$string has been considered as compiler-generated, hence warnings will not be reported there</remark>
+        <remark tag="EXTRACTION">Class lina.ubc.sharedpreference3.R$style has been considered as compiler-generated, hence warnings will not be reported there</remark>
+    </remarks>
+    <metrics>
+        <entry>
+            <key>BYTECODES_REACHED</key>
+            <value>871738</value>
+        </entry>
+        <entry>
+            <key>BYTECODES_STATISTICALLY_CLOSED</key>
+            <value>1084</value>
+        </entry>
+        <entry>
+            <key>GRADE</key>
+            <value>0.009268631</value>
+        </entry>
+        <entry>
+            <key>HUMAN_FRIENDLY_GRADE</key>
+            <value>poor</value>
+        </entry>
+        <entry>
+            <key>LOCS_REACHED_ESTIMATE</key>
+            <value>217958</value>
+        </entry>
+        <entry>
+            <key>LOCS_STATISTICALLY_CLOSED_ESTIMATE</key>
+            <value>383</value>
+        </entry>
+    </metrics>
+    <outputArtifacts>
+        <outputArtifact producer="Julia 1.0" standalone="true" id="Artifact_a8b8431c9a74d145a8c4d394c82c2d102876d1011eeb41b95f3cc79dfa0a69a4">
+            <key>GDPR_Results.zip</key>
+            <logicalType>GDPR_RESULT_ARCHIVE</logicalType>
+            <hash>62f061c505361903575f3af984748279</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_43f713c0d71e439dec9d0a6e820faf59835ad4a2d9fdd153dcd0e9cfb1753348">
+            <key>GDPR_Results.zip/IMEI_type=DEFAULT LEAK (android.telephony.SmsManager)_FlowSubGraph_1_id_0082e86e-0d0c-4114-bd71-2964bd701dfe.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>8b405472f6a0f59230850851e7e37e75</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_7fd24b7a9d55cb84e1774183f7470ccb3201dcd8dc6def3fdf8ba3b4327fff13">
+            <key>GDPR_Results.zip/IMEI_type=DEFAULT LEAK (android.util.Log)_FlowSubGraph_0_id_0082e86e-0d0c-4114-bd71-2964bd701dfe.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>70564c39d9662cda801068fb9b7cb224</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_4f3c8ceea1a2e65770dcbb3816bd0d274e9ccb7c57bc182906ea3469245e380b">
+            <key>GDPR_Results.zip/IMEI_type=DEFAULT LEAK (android.util.Log)_FlowSubGraph_10_id_0082e86e-0d0c-4114-bd71-2964bd701dfe.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>2af59b95ca78a2c359bfd1c399106bce</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_00a404e8d6b2cd65db2e7f8b323a6630fd5271ebae7332bec3a467506eda280b">
+            <key>GDPR_Results.zip/IMEI_type=DEFAULT LEAK (android.util.Log)_FlowSubGraph_13_id_0082e86e-0d0c-4114-bd71-2964bd701dfe.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>5a6d18724bffd7bd518ab6bcb3b9a0ae</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_74c9aba60b4129fe033326e15fc3141c45b0d4dcd4b381da930fc258f123289e">
+            <key>GDPR_Results.zip/IMEI_type=DEFAULT LEAK (android.util.Log)_FlowSubGraph_2_id_0082e86e-0d0c-4114-bd71-2964bd701dfe.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>a044b8c0c335884d6cc15778559cea5c</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_1302b52dcafd9fd0d8472e0b0c0ea09631e167d9fdaa4f01d744bcfdefe9374f">
+            <key>GDPR_Results.zip/IMEI_type=DEFAULT LEAK (android.util.Log)_FlowSubGraph_3_id_0082e86e-0d0c-4114-bd71-2964bd701dfe.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>d943016ed68cf44e2ba7c4a0805c2a8f</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_0621cc99dd922e2155ec295e586deb476527ba4097b8bad5ebaa7ab4a9eb71c2">
+            <key>GDPR_Results.zip/IMEI_type=DEFAULT LEAK (android.util.Log)_FlowSubGraph_5_id_0082e86e-0d0c-4114-bd71-2964bd701dfe.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>84372047bd232c195a33147445bc96a8</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_5541cd10c0cc7772d39062042ab2158aa04baa5a14e4981f55686234662ebb2c">
+            <key>GDPR_Results.zip/IMEI_type=DEFAULT LEAK (android.util.Log)_FlowSubGraph_6_id_0082e86e-0d0c-4114-bd71-2964bd701dfe.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>ee08072438d9b5759deca1ab3435a2e7</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_b70f1edc394aea29ea4bb94fbbafc9774298d6c91801f29c1a89ac0c4614bc1a">
+            <key>GDPR_Results.zip/IMEI_type=DEFAULT LEAK (android.util.Log)_FlowSubGraph_7_id_0082e86e-0d0c-4114-bd71-2964bd701dfe.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>aa61f85968d85d620325df2a904abfc2</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_66d24c0b2173b5f5298ea63987fa5c45800dab98b31661c421ae5ec14eea591b">
+            <key>GDPR_Results.zip/IMEI_type=DEFAULT LEAK (android.util.Log)_FlowSubGraph_9_id_0082e86e-0d0c-4114-bd71-2964bd701dfe.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>cc4a39ad3c3b26fbbf3a753fc5141a34</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="true" id="Artifact_7a6b03612d7530bde49ca936f4b298c5ac4679232bfdb1f5bd72cdc03645923a">
+            <key>GDPR_Results.zip/Report.xml</key>
+            <logicalType>OUTPUT_GDPR_INDEX</logicalType>
+            <hash>10e9a05f75ae673f6fa594638c555b0f</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_6f58bbb02ec5d19dec6689a3230d41f4f5d2b7fe2d1aa486301a83fe7d315f66">
+            <key>GDPR_Results.zip/SIM_SERIAL_NUMBER_type=DEFAULT LEAK (android.util.Log)_FlowSubGraph_8_id_0082e86e-0d0c-4114-bd71-2964bd701dfe.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>be02317d9ef203d395b039f13d450a2d</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_b7a3372cb5efffa5e64c7e0ac536d9c66affa89cc85b64afef31e58259528e99">
+            <key>GDPR_Results.zip/SummaryOfLeakages.xml</key>
+            <logicalType>GDPR_SUMMARY</logicalType>
+            <hash>a93eb4ac6349badd35490b1ef170d390</hash>
+        </outputArtifact>
+    </outputArtifacts>
+    <analysisSpecification>
+        <id>UBCBench_Gdpr_Analysis_Result</id>
+        <solutionId>-1</solutionId>
+        <creationTimestamp>2020-04-21T16:31:14.589+02:00</creationTimestamp>
+        <sourceProjects>[test-runtimes\androidAPI17\android-4.2.2_r1.jar]</sourceProjects>
+        <packages>
+            <package id="Artifact_5f19e3c0238ae274dfa03bdafd704da50c6dc24881f50abf1a3eb4e3e9fad525">
+                <key>test-runtimes\androidAPI17\android-4.2.2_r1.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>android-4.2.2_r1.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_5732076544db184c1a34f8ecc87b398dc60abbaff5ce8291db41d6b96cccc484">
+                <key>UBCBench.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>UBCBench.jar</moduleName>
+                <type>Application</type>
+            </package>
+        </packages>
+        <options name="Internal options">
+            <booleanOption value="true" label="Allow framework detection" name="allowFrameworkDetection" userVisible="true">
+                <description>Enables automatic framework detection</description>
+                <documentation>Enables automatic framework detection, allowing Julia to identify frameworks and optimize the analysis accordingly. A description of the frameworks automatically recognized by Julia is available in the documentation.</documentation>
+                <syntax>-allowFrameworkDetection true|false</syntax>
+            </booleanOption>
+            <stringOption label="Type of splitter" name="applicationSplitter" userVisible="false">
+                <alternative name="ByPackage">
+                    <synopsis>split the application jars on the basis of their packages structure</synopsis>
+                </alternative>
+                <alternative name="KargerSteinCut">
+                    <synopsis>apply the Karger-Stein algorithm to partition the application jars</synopsis>
+                </alternative>
+                <alternative name="RandomDeterministic">
+                    <synopsis>randomly split the application jars</synopsis>
+                </alternative>
+                <alternative name="StoerWagnerMinimumCut">
+                    <synopsis>apply the Stoer-Wagner algorithm to partition the application jars</synopsis>
+                </alternative>
+                <description>Specify the application splitter</description>
+                <documentation>Specifies the application splitter that must be used to split the application jars. By deafult, the random splitter is selected.</documentation>
+                <syntax>-applicationSplitter XXX</syntax>
+            </stringOption>
+            <booleanOption value="false" label="classifyForCS" name="classifyForCS" userVisible="true">
+                <description>Add external classification for GrammaTech CodeSonar</description>
+                <documentation>If true, add the external classification CS-INT-CLASSIFICATION that is used by CodeSonarto categorize Security warnings</documentation>
+                <syntax>-classifyForCS true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="Dump call graph" name="dumpCallGraph" userVisible="false">
+                <description>Dump the call graph generated by the analysis</description>
+                <documentation>Specifies whether or not the call graph computed by the analysis should be dumped to a dot file.</documentation>
+                <syntax>-dumpCallGraph true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="Dump generated annotations" name="dumpFrameworkAnnotations" userVisible="false">
+                <description>Dump annotations generated by framework specification</description>
+                <documentation>Specifies whether or not the annotations automatically generated by the application of a framework specification should be dumped or not.</documentation>
+                <syntax>-dumpFrameworkAnnotations true|false</syntax>
+            </booleanOption>
+            <booleanOption value="true" label="dumpOutputToLog" name="dumpOutputToLog" userVisible="true">
+                <description>Dump warnings and remarks to standard output</description>
+                <documentation>If true, the complete list of warnings and remarks will be dumped to the standard output</documentation>
+                <syntax>-dumpOutputToLog true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="Enable assertions" name="ea" userVisible="true">
+                <description>Assume that assertions are turned on</description>
+                <documentation>Assume that assertion statements are executed, hence warnings should be reported about those statements and their effects on subsequent instructions must be taken into account.</documentation>
+                <syntax>-ea true|false</syntax>
+            </booleanOption>
+            <enumOption value="ALL_ENTRIES" label="Entry points" name="entryPoint" userVisible="true">
+                <alternative name="ALL_ENTRIES">
+                    <synopsis>Assume that all public and protected methods and constructors are entry points</synopsis>
+                </alternative>
+                <alternative name="ALL_METHODS">
+                    <synopsis>Assume that all public, protected and private methods and constructors are entry points</synopsis>
+                </alternative>
+                <alternative name="LIBRARY">
+                    <synopsis>Assume that all public and protected methods and constructors are entry points, and assume that non-final classes might be redefined in the future</synopsis>
+                </alternative>
+                <alternative name="ONLY_EXPLICIT_ENTRIES">
+                    <synopsis>Only consider entry points marked as @EntryPoint</synopsis>
+                </alternative>
+                <alternative name="ONLY_STANDARD_ENTRIES">
+                    <synopsis>Only consider default entry points like main methods, event handlers of Swing and Android</synopsis>
+                </alternative>
+                <description>The entry points of the application</description>
+                <documentation>Specify the entry point of the application the analysis starts from.</documentation>
+                <syntax>-entryPoint</syntax>
+            </enumOption>
+            <stringOption value="androidAPI1" label="Framework" name="framework" userVisible="true">
+                <alternative name="androidAPI1">
+                    <synopsis>use the framework of analysis for Android API 1</synopsis>
+                </alternative>
+                <alternative name="androidAPI10">
+                    <synopsis>use the framework of analysis for Android API 10</synopsis>
+                </alternative>
+                <alternative name="androidAPI11">
+                    <synopsis>use the framework of analysis for Android API 11</synopsis>
+                </alternative>
+                <alternative name="androidAPI12">
+                    <synopsis>use the framework of analysis for Android API 12</synopsis>
+                </alternative>
+                <alternative name="androidAPI13">
+                    <synopsis>use the framework of analysis for Android API 13</synopsis>
+                </alternative>
+                <alternative name="androidAPI14">
+                    <synopsis>use the framework of analysis for Android API 14</synopsis>
+                </alternative>
+                <alternative name="androidAPI15">
+                    <synopsis>use the framework of analysis for Android API 15</synopsis>
+                </alternative>
+                <alternative name="androidAPI16">
+                    <synopsis>use the framework of analysis for Android API 16</synopsis>
+                </alternative>
+                <alternative name="androidAPI17">
+                    <synopsis>use the framework of analysis for Android API 17</synopsis>
+                </alternative>
+                <alternative name="androidAPI18">
+                    <synopsis>use the framework of analysis for Android API 18</synopsis>
+                </alternative>
+                <alternative name="androidAPI19">
+                    <synopsis>use the framework of analysis for Android API 19</synopsis>
+                </alternative>
+                <alternative name="androidAPI2">
+                    <synopsis>use the framework of analysis for Android API 2</synopsis>
+                </alternative>
+                <alternative name="androidAPI20">
+                    <synopsis>use the framework of analysis for Android API 20</synopsis>
+                </alternative>
+                <alternative name="androidAPI21">
+                    <synopsis>use the framework of analysis for Android API 21</synopsis>
+                </alternative>
+                <alternative name="androidAPI22">
+                    <synopsis>use the framework of analysis for Android API 22</synopsis>
+                </alternative>
+                <alternative name="androidAPI23">
+                    <synopsis>use the framework of analysis for Android API 23</synopsis>
+                </alternative>
+                <alternative name="androidAPI24">
+                    <synopsis>use the framework of analysis for Android API 24</synopsis>
+                </alternative>
+                <alternative name="androidAPI25">
+                    <synopsis>use the framework of analysis for Android API 25</synopsis>
+                </alternative>
+                <alternative name="androidAPI26">
+                    <synopsis>use the framework of analysis for Android API 26</synopsis>
+                </alternative>
+                <alternative name="androidAPI27">
+                    <synopsis>use the framework of analysis for Android API 27</synopsis>
+                </alternative>
+                <alternative name="androidAPI28">
+                    <synopsis>use the framework of analysis for Android API 28</synopsis>
+                </alternative>
+                <alternative name="androidAPI3">
+                    <synopsis>use the framework of analysis for Android API 3</synopsis>
+                </alternative>
+                <alternative name="androidAPI4">
+                    <synopsis>use the framework of analysis for Android API 4</synopsis>
+                </alternative>
+                <alternative name="androidAPI5">
+                    <synopsis>use the framework of analysis for Android API 5</synopsis>
+                </alternative>
+                <alternative name="androidAPI6">
+                    <synopsis>use the framework of analysis for Android API 6</synopsis>
+                </alternative>
+                <alternative name="androidAPI7">
+                    <synopsis>use the framework of analysis for Android API 7</synopsis>
+                </alternative>
+                <alternative name="androidAPI8">
+                    <synopsis>use the framework of analysis for Android API 8</synopsis>
+                </alternative>
+                <alternative name="androidAPI9">
+                    <synopsis>use the framework of analysis for Android API 9</synopsis>
+                </alternative>
+                <alternative name="dotnet">
+                    <synopsis>use the framework of analysis for .NET</synopsis>
+                </alternative>
+                <alternative name="java1">
+                    <synopsis>use the framework of analysis for Java 1.1</synopsis>
+                </alternative>
+                <alternative name="java10">
+                    <synopsis>use the framework of analysis for Java 1.10</synopsis>
+                </alternative>
+                <alternative name="java11">
+                    <synopsis>use the framework of analysis for Java 1.11</synopsis>
+                </alternative>
+                <alternative name="java2">
+                    <synopsis>use the framework of analysis for Java 1.2</synopsis>
+                </alternative>
+                <alternative name="java3">
+                    <synopsis>use the framework of analysis for Java 1.3</synopsis>
+                </alternative>
+                <alternative name="java4">
+                    <synopsis>use the framework of analysis for Java 1.4</synopsis>
+                </alternative>
+                <alternative name="java5">
+                    <synopsis>use the framework of analysis for Java 1.5</synopsis>
+                </alternative>
+                <alternative name="java6">
+                    <synopsis>use the framework of analysis for Java 1.6</synopsis>
+                </alternative>
+                <alternative name="java7">
+                    <synopsis>use the framework of analysis for Java 1.7</synopsis>
+                </alternative>
+                <alternative name="java8">
+                    <synopsis>use the framework of analysis for Java 1.8</synopsis>
+                </alternative>
+                <alternative name="java9">
+                    <synopsis>use the framework of analysis for Java 1.9</synopsis>
+                </alternative>
+                <description>Specify the framework of analysis</description>
+                <documentation>A framework specifies rules specific to the given programming context used for the application under analysis, such as the entry points for the analysis. The "java7" framework will work in most cases, but more specific frameworks might yield more precise results of analysis. The specification of the framework might also change the behavior of the checkers, since some checks might be sensible for some frameworks only.</documentation>
+                <syntax>-framework XXX</syntax>
+            </stringOption>
+            <booleanOption value="false" label="help" name="help" userVisible="true">
+                <description>Display the help of the analyzer</description>
+                <syntax>-help true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="Ignore XML files" name="ignoreXMLFiles" userVisible="false">
+                <description>Ignore XML files regardless of content/type and support</description>
+                <documentation>Frameworks often rely on XML files to specify configuration and application behaviour.By default, Julia tries to parse common xml configuration files and simulate the implied runtime effects, this option forces Julia to ignore all input xml files regardless of the analysis support and optimizations provided by the selected framework.</documentation>
+                <syntax>-ignoreXMLFiles true|false</syntax>
+            </booleanOption>
+            <enumOption value="TYPES" label="Mode of library processing" name="libraryProcessingMode" userVisible="true">
+                <alternative name="TYPES">
+                    <synopsis>ignore the code of the non-runtime libraries</synopsis>
+                </alternative>
+                <alternative name="TYPES_AND_CODE">
+                    <synopsis>include the code of all classes during analysis</synopsis>
+                </alternative>
+                <description>Processing mode for library classes</description>
+                <documentation>Allow the analyzer to discard the implementation of library methods and only uses the hierarchy of the library classes during the analysis. This decreases the precision of the analysis and might occasionally make it unsound, but reduces the time of analysis.</documentation>
+                <syntax>-libraryProcessingMode</syntax>
+            </enumOption>
+            <booleanOption value="false" label="maniac" name="maniac" userVisible="true">
+                <description>Run in maniac mode</description>
+                <documentation>Applies very strict hypotheses about unknown code, such as reflective calls and calls with missing targets</documentation>
+                <syntax>-maniac true|false</syntax>
+            </booleanOption>
+            <intOption value="0" label="maxMethods" name="maxMethods" userVisible="true">
+                <description>Set the maximum number of extracted methods to N (0 means no limit)</description>
+                <documentation>After this threshold, the analysis aborts</documentation>
+                <syntax>-maxMethods N</syntax>
+            </intOption>
+            <booleanOption value="false" label="mergeArrays" name="mergeArrays" userVisible="true">
+                <description>Merge, during the extraction of the application, the arrays of the same type</description>
+                <documentation>This allows you to analyze applications that create a large number of arrays at many program points. This option might sometimes slightly reduce the precision of the analysis, by considering a larger number of methods and fields as reachable. However, it might be important for the analysis of some application, since it improves the scalability of the analyzer</documentation>
+                <syntax>-mergeArrays true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="mergeArraysInsideMethod" name="mergeArraysInsideMethod" userVisible="true">
+                <description>Merge, during the extraction of the application, the arrays of the same type created inside the same method or constructor</description>
+                <documentation>This allows the user to analyze applications that create a large number of arrays at many program points. This option might sometimes slightly reduce the precision of the analysis, by considering a larger number of methods and fields as reachable. However, it might be important for the analysis of some application, since it improves the scalability of the analyzer. This option is less radical than the -mergeArrays option, that is, it introduces less imprecison but also induces less scalability</documentation>
+                <syntax>-mergeArraysInsideMethod true|false</syntax>
+            </booleanOption>
+            <stringOption value="juliaOutput\0082e86e-0d0c-4114-bd71-2964bd701dfe\" label="outputPath" name="outputPath" userVisible="true">
+                <description>Set the directory where the output of the analyzer must be dumped</description>
+                <documentation>If that directory does not exist, it is automatically created by the analyzer</documentation>
+                <syntax>-outputPath PATH</syntax>
+            </stringOption>
+            <booleanOption value="false" label="Robust" name="robust" userVisible="false">
+                <description>Do not crash if a checker crashes</description>
+                <documentation>If a checker crashes (for any reason), the overall analysis goes ahead and terminates.A warning  stating that &lt;checker&gt; crashed is produced in the console.</documentation>
+                <syntax>-robust true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="rta" name="rta" userVisible="true">
+                <description>Use rapid type analysis to extract the application</description>
+                <documentation>This is rarely used and currently not optimized for large applications. The precision of rapid type analysis is worse than that of the standard extraction algorithm used by Julia but, in principle, should scale better. Please consider using the -mergeArrays and -mergeArraysInsideMethod options instead</documentation>
+                <syntax>-rta true|false</syntax>
+            </booleanOption>
+            <stringOption label="runtime" name="runtime" userVisible="true">
+                <description>Specify the classpath used for loading the runtime classes</description>
+                <documentation>Runtime classes are normally loaded by using the default class loader. This option allows one to change this behavior, by specifying a specific class path to use for class loading of runtime classes</documentation>
+                <syntax>-runtime XXX</syntax>
+            </stringOption>
+            <booleanOption value="false" label="sequential" name="sequential" userVisible="true">
+                <description>Run checkers one after another</description>
+                <documentation>Instruct Julia to wait for the completion of a checker before starting running another checker</documentation>
+                <syntax>-sequential true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="silent" name="silent" userVisible="true">
+                <description>Run in silent mode</description>
+                <documentation>No textual output is produced with this option, but the analyses are run and output files are generated</documentation>
+                <syntax>-silent true|false</syntax>
+            </booleanOption>
+            <intOption value="1" label="Number of splits" name="splitApplicationJar" userVisible="false">
+                <description>Split statistically closed jars, containing the application to analyse, into the given number of partitions</description>
+                <documentation>Splits the jars containing the application to analyse. This decreases the precision of the analysis and might occasionally make it unsound, but reduces the time of analysis.</documentation>
+                <syntax>-splitApplicationJar N</syntax>
+            </intOption>
+            <booleanOption value="false" label="verbose" name="verbose" userVisible="true">
+                <description>Run in verbose mode</description>
+                <documentation>This produces a longer and more detailed textual output. Mostly useful for debugging the analyzer</documentation>
+                <syntax>-verbose true|false</syntax>
+            </booleanOption>
+        </options>
+        <checkers>
+            <checker group="Advanced" level="Public" name="Gdpr">
+                <booleanOption value="false" label="compileLeakagePoints" name="compileLeakagePoints" userVisible="true">
+                    <description>allow to identify and tag automatically the leakage points of analized code.It is disabled in the case of an initial phase with the File specific in active option</description>
+                    <documentation>If set to true, it produces a specification file with the leakage points already compiled with a list ofthe most critical common leakage points</documentation>
+                    <syntax>compileLeakagePoints true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="dumpAnalysis" name="dumpAnalysis" userVisible="true">
+                    <description>dump extensive (very large!) log information about the analysis</description>
+                    <documentation>Only useful for debugging the analyzer</documentation>
+                    <syntax>dumpAnalysis true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="dumpCompleteGraphs" name="dumpCompleteGraphs" userVisible="true">
+                    <description>dump the complete backward flow graph derivated from a leakage point</description>
+                    <documentation>If set to true, it produces an archive with the complete backward flow graphs that are used for the extraction of source-sink subgraphs</documentation>
+                    <syntax>dumpCompleteGraphs true|false</syntax>
+                </booleanOption>
+                <enumOption value="AVERAGE" label="flowComputingSpeed" name="flowComputingSpeed" userVisible="true">
+                    <alternative name="AVERAGE">
+                        <synopsis>reconstruct graphs until max of 2000 nodes</synopsis>
+                    </alternative>
+                    <alternative name="FAST">
+                        <synopsis>reconstruct graphs until max of 1000 nodes</synopsis>
+                    </alternative>
+                    <alternative name="FASTEST">
+                        <synopsis>reconstruct graphs until max of 500 nodes</synopsis>
+                    </alternative>
+                    <alternative name="SLOW">
+                        <synopsis>reconstruct graphs until max of 4000 nodes</synopsis>
+                    </alternative>
+                    <alternative name="SLOWEST">
+                        <synopsis>reconstruct graphs until max of integer limit nodes</synopsis>
+                    </alternative>
+                    <description>efficiency of the flow reconstruction</description>
+                    <documentation>This speciefies the efficiency of the flow reconstruct. Interesting only if option flow is set to true. (AVERAGE by default)</documentation>
+                    <syntax>flowComputingSpeed</syntax>
+                </enumOption>
+                <enumOption value="Report" label="phase" name="phase" userVisible="true">
+                    <alternative name="Init">
+                        <synopsis>option to execute Init phase</synopsis>
+                    </alternative>
+                    <alternative name="Report">
+                        <synopsis>option to execute Report phase</synopsis>
+                    </alternative>
+                    <description>phase of the Gdpr analysis</description>
+                    <documentation>If set to Init, it produces the excel file used to annotate sources of sensitive data, leakage points and set a policy.If set to Report (default), it runs the analysis and produces the output files.</documentation>
+                    <syntax>phase</syntax>
+                </enumOption>
+                <fileOption label="specificationFile" name="specificationFile" userVisible="true">
+                    <description>Gdpr specification file</description>
+                    <documentation>This is the Gdpr specification file and contains settings and information for the analysis</documentation>
+                    <syntax>specificationFile XXX</syntax>
+                    <allowedFileExtension>*.xlsx</allowedFileExtension>
+                    <allowedFileExtension>*.xls</allowedFileExtension>
+                    <allowedFileExtensionName>Excel Workbook</allowedFileExtensionName>
+                    <allowedFileExtensionName>Excel 97-2003 Workbook</allowedFileExtensionName>
+                    <logicalType>GDPR_SPECIFICATION</logicalType>
+                </fileOption>
+                <synopsis>Identify privacy issues for GDPR compliance, and produce a detailed report</synopsis>
+            </checker>
+        </checkers>
+    </analysisSpecification>
+    <formattedRunDuration>00:34:34.858</formattedRunDuration>
+</analysisReportResult>
