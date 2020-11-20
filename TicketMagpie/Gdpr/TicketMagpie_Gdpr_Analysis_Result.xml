@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<analysisReportResult>
+    <id>TicketMagpie_Gdpr_Analysis_Result</id>
+    <status>COMPLETED</status>
+    <creationTimestamp>2020-04-22T16:35:12.463+02:00</creationTimestamp>
+    <engineVersion>1.0</engineVersion>
+    <runDuration>1780805</runDuration>
+    <warnings>
+        <warning kind="Gdpr" progressive="0" rank="3" aboutAField="false">
+            <artifacts>ticketmagpie-0.1.0.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>com.ticketmagpie.infrastructure.persistence.TicketRepository</className>
+            <line>25</line>
+            <memberName>save</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_3f8402f12794fad05dd658a7e4ff60d23b897c97a0db48aced09a3abf0ed5b73</outputArtifact>
+                <outputArtifact>Artifact_80ac32eaaf79213d3e59d8e927eab2a0c084b6cdfbc94c1ed12a020fb51b1341</outputArtifact>
+                <outputArtifact>Artifact_40296c59e4337424a3d622267f0599584621748a77797068a9ff5b48c90f3341</outputArtifact>
+            </outputArtifacts>
+            <simpleName>LeakageOfPrivateDataThroughParameterWarning</simpleName>
+            <source>com/ticketmagpie/infrastructure/persistence/TicketRepository.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of type CreditCardInfo to DB through parameter actual parameter "args" of method "update"</warningMessage>
+        </warning>
+        <warning kind="Gdpr" progressive="1" rank="3" aboutAField="false">
+            <artifacts>ticketmagpie-0.1.0.jar</artifacts>
+            <CWEid>359</CWEid>
+            <className>com.ticketmagpie.infrastructure.MailService</className>
+            <line>48</line>
+            <memberName>sendEmail</memberName>
+            <outputArtifacts>
+                <outputArtifact>Artifact_544663cf3043d838a94eab14e598d3880e7a4255092c66c097c0dd2d6e2dcf83</outputArtifact>
+            </outputArtifacts>
+            <simpleName>LeakageOfPrivateDataThroughParameterWarning</simpleName>
+            <source>com/ticketmagpie/infrastructure/MailService.java</source>
+            <warningCWECategory>Security_Features</warningCWECategory>
+            <warningCategory>BUG</warningCategory>
+            <warningDescription>some private data is leaked through a parameter of a method call</warningDescription>
+            <warningMessage>Possible leakage of private data of type Password to Internet through parameter actual parameter "msg" of method "send"</warningMessage>
+        </warning>
+    </warnings>
+    <remarks>
+        <remark tag="ARTIFACTS">Class javax.persistence.PersistenceContext is multiply provided in lib\hibernate-jpa-2.1-api-1.0.0.Final.jar, lib\tomcat-embed-core-8.0.30.jar, considering only the one in lib\hibernate-jpa-2.1-api-1.0.0.Final.jar</remark>
+        <remark tag="ARTIFACTS">Class javax.persistence.PersistenceContextType is multiply provided in lib\hibernate-jpa-2.1-api-1.0.0.Final.jar, lib\tomcat-embed-core-8.0.30.jar, considering only the one in lib\hibernate-jpa-2.1-api-1.0.0.Final.jar</remark>
+        <remark tag="ARTIFACTS">Class javax.persistence.PersistenceContexts is multiply provided in lib\hibernate-jpa-2.1-api-1.0.0.Final.jar, lib\tomcat-embed-core-8.0.30.jar, considering only the one in lib\hibernate-jpa-2.1-api-1.0.0.Final.jar</remark>
+        <remark tag="ARTIFACTS">Class javax.persistence.PersistenceProperty is multiply provided in lib\hibernate-jpa-2.1-api-1.0.0.Final.jar, lib\tomcat-embed-core-8.0.30.jar, considering only the one in lib\hibernate-jpa-2.1-api-1.0.0.Final.jar</remark>
+        <remark tag="ARTIFACTS">Class javax.persistence.PersistenceUnit is multiply provided in lib\hibernate-jpa-2.1-api-1.0.0.Final.jar, lib\tomcat-embed-core-8.0.30.jar, considering only the one in lib\hibernate-jpa-2.1-api-1.0.0.Final.jar</remark>
+        <remark tag="ARTIFACTS">Class javax.persistence.PersistenceUnits is multiply provided in lib\hibernate-jpa-2.1-api-1.0.0.Final.jar, lib\tomcat-embed-core-8.0.30.jar, considering only the one in lib\hibernate-jpa-2.1-api-1.0.0.Final.jar</remark>
+        <remark tag="ARTIFACTS">Class org.apache.juli.AsyncFileHandler is multiply provided in lib\tomcat-embed-logging-juli-8.0.30.jar, lib\tomcat-juli-8.0.30.jar, considering only the one in lib\tomcat-embed-logging-juli-8.0.30.jar</remark>
+        <remark tag="ARTIFACTS">Class org.apache.juli.AsyncFileHandler$LogEntry is multiply provided in lib\tomcat-embed-logging-juli-8.0.30.jar, lib\tomcat-juli-8.0.30.jar, considering only the one in lib\tomcat-embed-logging-juli-8.0.30.jar</remark>
+        <remark tag="ARTIFACTS">Class org.apache.juli.AsyncFileHandler$LoggerThread is multiply provided in lib\tomcat-embed-logging-juli-8.0.30.jar, lib\tomcat-juli-8.0.30.jar, considering only the one in lib\tomcat-embed-logging-juli-8.0.30.jar</remark>
+        <remark tag="ARTIFACTS">Class org.apache.juli.ClassLoaderLogManager is multiply provided in lib\tomcat-embed-logging-juli-8.0.30.jar, lib\tomcat-juli-8.0.30.jar, considering only the one in lib\tomcat-embed-logging-juli-8.0.30.jar</remark>
+        <remark tag="ARTIFACTS">Class org.apache.juli.ClassLoaderLogManager$1 is multiply provided in lib\tomcat-embed-logging-juli-8.0.30.jar, lib\tomcat-juli-8.0.30.jar, considering only the one in lib\tomcat-embed-logging-juli-8.0.30.jar</remark>
+        <remark tag="ARTIFACTS">Class org.apache.juli.ClassLoaderLogManager$2 is multiply provided in lib\tomcat-embed-logging-juli-8.0.30.jar, lib\tomcat-juli-8.0.30.jar, considering only the one in lib\tomcat-embed-logging-juli-8.0.30.jar</remark>
+        <remark tag="ARTIFACTS">Class org.apache.juli.ClassLoaderLogManager$3 is multiply provided in lib\tomcat-embed-logging-juli-8.0.30.jar, lib\tomcat-juli-8.0.30.jar, considering only the one in lib\tomcat-embed-logging-juli-8.0.30.jar</remark>
+        <remark tag="ARTIFACTS">Class org.apache.juli.ClassLoaderLogManager$ClassLoaderLogInfo is multiply provided in lib\tomcat-embed-logging-juli-8.0.30.jar, lib\tomcat-juli-8.0.30.jar, considering only the one in lib\tomcat-embed-logging-juli-8.0.30.jar</remark>
+        <remark tag="ARTIFACTS">Class org.apache.juli.ClassLoaderLogManager$Cleaner is multiply provided in lib\tomcat-embed-logging-juli-8.0.30.jar, lib\tomcat-juli-8.0.30.jar, considering only the one in lib\tomcat-embed-logging-juli-8.0.30.jar</remark>
+        <remark tag="ARTIFACTS">Class org.apache.juli.ClassLoaderLogManager$LogNode is multiply provided in lib\tomcat-embed-logging-juli-8.0.30.jar, lib\tomcat-juli-8.0.30.jar, considering only the one in lib\tomcat-embed-logging-juli-8.0.30.jar</remark>
+        <remark tag="ARTIFACTS">Class org.apache.juli.ClassLoaderLogManager$RootLogger is multiply provided in lib\tomcat-embed-logging-juli-8.0.30.jar, lib\tomcat-juli-8.0.30.jar, considering only the one in lib\tomcat-embed-logging-juli-8.0.30.jar</remark>
+        <remark tag="ARTIFACTS">Class org.apache.juli.DateFormatCache is multiply provided in lib\tomcat-embed-logging-juli-8.0.30.jar, lib\tomcat-juli-8.0.30.jar, considering only the one in lib\tomcat-embed-logging-juli-8.0.30.jar</remark>
+        <remark tag="ARTIFACTS">Class org.apache.juli.DateFormatCache$1 is multiply provided in lib\tomcat-embed-logging-juli-8.0.30.jar, lib\tomcat-juli-8.0.30.jar, considering only the one in lib\tomcat-embed-logging-juli-8.0.30.jar</remark>
+        <remark tag="ARTIFACTS">Class org.apache.juli.DateFormatCache$Cache is multiply provided in lib\tomcat-embed-logging-juli-8.0.30.jar, lib\tomcat-juli-8.0.30.jar, considering only the one in lib\tomcat-embed-logging-juli-8.0.30.jar</remark>
+        <remark tag="ARTIFACTS">Class org.apache.juli.FileHandler is multiply provided in lib\tomcat-embed-logging-juli-8.0.30.jar, lib\tomcat-juli-8.0.30.jar, considering only the one in lib\tomcat-embed-logging-juli-8.0.30.jar</remark>
+        <remark tag="ARTIFACTS">Class org.apache.juli.JdkLoggerFormatter is multiply provided in lib\tomcat-embed-logging-juli-8.0.30.jar, lib\tomcat-juli-8.0.30.jar, considering only the one in lib\tomcat-embed-logging-juli-8.0.30.jar</remark>
+        <remark tag="ARTIFACTS">Class org.apache.juli.OneLineFormatter is multiply provided in lib\tomcat-embed-logging-juli-8.0.30.jar, lib\tomcat-juli-8.0.30.jar, considering only the one in lib\tomcat-embed-logging-juli-8.0.30.jar</remark>
+        <remark tag="ARTIFACTS">Class org.apache.juli.OneLineFormatter$1 is multiply provided in lib\tomcat-embed-logging-juli-8.0.30.jar, lib\tomcat-juli-8.0.30.jar, considering only the one in lib\tomcat-embed-logging-juli-8.0.30.jar</remark>
+        <remark tag="ARTIFACTS">Class org.apache.juli.OneLineFormatter$1$1 is multiply provided in lib\tomcat-embed-logging-juli-8.0.30.jar, lib\tomcat-juli-8.0.30.jar, considering only the one in lib\tomcat-embed-logging-juli-8.0.30.jar</remark>
+        <remark tag="ARTIFACTS">Class org.apache.juli.OneLineFormatter$2 is multiply provided in lib\tomcat-embed-logging-juli-8.0.30.jar, lib\tomcat-juli-8.0.30.jar, considering only the one in lib\tomcat-embed-logging-juli-8.0.30.jar</remark>
+        <remark tag="ARTIFACTS">Class org.apache.juli.VerbatimFormatter is multiply provided in lib\tomcat-embed-logging-juli-8.0.30.jar, lib\tomcat-juli-8.0.30.jar, considering only the one in lib\tomcat-embed-logging-juli-8.0.30.jar</remark>
+        <remark tag="ARTIFACTS">Class org.apache.juli.logging.DirectJDKLog is multiply provided in lib\tomcat-embed-logging-juli-8.0.30.jar, lib\tomcat-juli-8.0.30.jar, considering only the one in lib\tomcat-embed-logging-juli-8.0.30.jar</remark>
+        <remark tag="ARTIFACTS">Class org.apache.juli.logging.Log is multiply provided in lib\tomcat-embed-logging-juli-8.0.30.jar, lib\tomcat-juli-8.0.30.jar, considering only the one in lib\tomcat-embed-logging-juli-8.0.30.jar</remark>
+        <remark tag="ARTIFACTS">Class org.apache.juli.logging.LogConfigurationException is multiply provided in lib\tomcat-embed-logging-juli-8.0.30.jar, lib\tomcat-juli-8.0.30.jar, considering only the one in lib\tomcat-embed-logging-juli-8.0.30.jar</remark>
+        <remark tag="ARTIFACTS">Class org.apache.juli.logging.LogFactory is multiply provided in lib\tomcat-embed-logging-juli-8.0.30.jar, lib\tomcat-juli-8.0.30.jar, considering only the one in lib\tomcat-embed-logging-juli-8.0.30.jar</remark>
+        <remark tag="FRAMEWORKS">Julia detected that your application uses Spring and will improve the results of the analysis according to it</remark>
+    </remarks>
+    <metrics>
+        <entry>
+            <key>BYTECODES_REACHED</key>
+            <value>648949</value>
+        </entry>
+        <entry>
+            <key>BYTECODES_STATISTICALLY_CLOSED</key>
+            <value>12588</value>
+        </entry>
+        <entry>
+            <key>GRADE</key>
+            <value>0.866751</value>
+        </entry>
+        <entry>
+            <key>HUMAN_FRIENDLY_GRADE</key>
+            <value>good</value>
+        </entry>
+        <entry>
+            <key>LOCS_REACHED_ESTIMATE</key>
+            <value>153409</value>
+        </entry>
+        <entry>
+            <key>LOCS_STATISTICALLY_CLOSED_ESTIMATE</key>
+            <value>3452</value>
+        </entry>
+    </metrics>
+    <outputArtifacts>
+        <outputArtifact producer="Julia" standalone="true" id="Artifact_a8b8431c9a74d145a8c4d394c82c2d102876d1011eeb41b95f3cc79dfa0a69a4">
+            <key>GDPR_Results.zip</key>
+            <logicalType>GDPR_RESULT_ARCHIVE</logicalType>
+            <hash>0125c4056f1b1b4473ca4d985cc69708</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_07c0f7b0f581b015ab72dd50fb6756b2c5fc16870becf316ed913ae9f59ceb25">
+            <key>GDPR_Results.zip/Address_DB_FlowSubGraph_1_3_id_2c921b87-9526-467e-a83a-7ebaa0b09f5b.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>f66a2b80678f4bbe70c85c97671892c1</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_458180e357c4de693b866f57e211d43013c396480c558ab583fc3d694a9dbf85">
+            <key>GDPR_Results.zip/Address_DB_FlowSubGraph_1_4_id_2c921b87-9526-467e-a83a-7ebaa0b09f5b.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>407502b8af091294a88647b0f4d0effd</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_5af0a751f3a1c8a7833e338e4c787ade7ca98aa33d302afe0739fa89b25c9b60">
+            <key>GDPR_Results.zip/Address_DB_FlowSubGraph_1_5_id_2c921b87-9526-467e-a83a-7ebaa0b09f5b.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>9371c8658f819b8907811b768a3fa764</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_3f8402f12794fad05dd658a7e4ff60d23b897c97a0db48aced09a3abf0ed5b73">
+            <key>GDPR_Results.zip/CreditCardInfo_DB_FlowSubGraph_1_6_id_2c921b87-9526-467e-a83a-7ebaa0b09f5b.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>03ea697fdfbb986faf9c5012ee9e10b6</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_80ac32eaaf79213d3e59d8e927eab2a0c084b6cdfbc94c1ed12a020fb51b1341">
+            <key>GDPR_Results.zip/CreditCardInfo_DB_FlowSubGraph_1_7_id_2c921b87-9526-467e-a83a-7ebaa0b09f5b.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>7c6e805188745f43e0bf763b9b0bc3cf</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_40296c59e4337424a3d622267f0599584621748a77797068a9ff5b48c90f3341">
+            <key>GDPR_Results.zip/CreditCardInfo_DB_FlowSubGraph_1_8_id_2c921b87-9526-467e-a83a-7ebaa0b09f5b.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>5a9f7633cf59f1337a453b76ebcb8340</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_2fc5a531a432a73aa7f4b1ea4be748d69f00dbadae8655d8111f7b994f78d7d4">
+            <key>GDPR_Results.zip/Name_DB_FlowSubGraph_1_1_id_2c921b87-9526-467e-a83a-7ebaa0b09f5b.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>ad05cd627acdf977f3d9a39b44e12407</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_8b6d695b811cbc46bce251cdeba3dcff9b46e14bbaa91431d7461430214c66a5">
+            <key>GDPR_Results.zip/Password_DB_FlowSubGraph_0_id_2c921b87-9526-467e-a83a-7ebaa0b09f5b.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>1d53664230c31f6b501d8dfa2076739f</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_544663cf3043d838a94eab14e598d3880e7a4255092c66c097c0dd2d6e2dcf83">
+            <key>GDPR_Results.zip/Password_Internet_FlowSubGraph_2_id_2c921b87-9526-467e-a83a-7ebaa0b09f5b.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>f54dd510bd52f669fe52f962c87d87d2</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="true" id="Artifact_7a6b03612d7530bde49ca936f4b298c5ac4679232bfdb1f5bd72cdc03645923a">
+            <key>GDPR_Results.zip/Report.xml</key>
+            <logicalType>OUTPUT_GDPR_INDEX</logicalType>
+            <hash>1db3a58188111da309b8136d6028e87c</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_b7a3372cb5efffa5e64c7e0ac536d9c66affa89cc85b64afef31e58259528e99">
+            <key>GDPR_Results.zip/SummaryOfLeakages.xml</key>
+            <logicalType>GDPR_SUMMARY</logicalType>
+            <hash>93cd2f64584ae8c792beefef3e2c5645</hash>
+        </outputArtifact>
+        <outputArtifact producer="GdprChecker" standalone="false" id="Artifact_1d8eaed68dfe9183e26fc49f41fe4ee5ff2613f39e586bab311a5856cd9d3197">
+            <key>GDPR_Results.zip/Surname_DB_FlowSubGraph_1_2_id_2c921b87-9526-467e-a83a-7ebaa0b09f5b.graphml</key>
+            <logicalType>FLOW_GRAPH</logicalType>
+            <hash>f7d352deb9bd5ec0cbd8e91a135e3dfe</hash>
+        </outputArtifact>
+    </outputArtifacts>
+    <analysisSpecification>
+        <id>2c921b87-9526-467e-a83a-7ebaa0b09f5b</id>
+        <solutionId>-1</solutionId>
+        <creationTimestamp>2020-11-20T10:32:45.260+01:00</creationTimestamp>
+        <sourceProjects>[lib\jboss-logging-3.3.0.Final.jar, lib\spring-data-commons-1.11.2.RELEASE.jar, lib\spring-boot-starter-data-jpa-1.3.1.RELEASE.jar, lib\hsqldb-2.3.3.jar, lib\spring-security-config-4.0.3.RELEASE.jar, lib\spring-aop-4.2.4.RELEASE.jar, lib\spring-boot-starter-actuator-1.3.1.RELEASE.jar, lib\hibernate-entitymanager-4.3.11.Final.jar, lib\spring-boot-starter-aop-1.3.1.RELEASE.jar, lib\jcl-over-slf4j-1.7.13.jar, lib\spring-tx-4.2.4.RELEASE.jar, lib\thymeleaf-spring4-2.1.4.RELEASE.jar, lib\antlr-2.7.7.jar, lib\logback-classic-1.1.3.jar, lib\spring-aspects-4.2.4.RELEASE.jar, lib\ognl-3.0.8.jar, lib\log4j-over-slf4j-1.7.13.jar, lib\spring-boot-starter-jdbc-1.3.1.RELEASE.jar, lib\spring-boot-starter-tomcat-1.3.1.RELEASE.jar, lib\aopalliance-1.0.jar, lib\groovy-2.4.4.jar, lib\thymeleaf-2.1.4.RELEASE.jar, lib\tomcat-juli-8.0.30.jar, lib\javax.transaction-api-1.2.jar, lib\spring-security-core-4.0.3.RELEASE.jar, lib\thymeleaf-layout-dialect-1.3.1.jar, lib\dom4j-1.6.1.jar, lib\javassist-3.18.1-GA.jar, lib\jackson-core-2.6.4.jar, lib\spring-boot-starter-logging-1.3.1.RELEASE.jar, lib\classmate-1.1.0.jar, lib\thymeleaf-extras-springsecurity4-2.1.2.RELEASE.jar, lib\jackson-annotations-2.6.4.jar, lib\logback-core-1.1.3.jar, lib\javax.mail-1.5.5.jar, lib\tomcat-embed-el-8.0.30.jar, lib\spring-boot-starter-web-1.3.1.RELEASE.jar, lib\spring-expression-4.2.4.RELEASE.jar, lib\hibernate-validator-5.2.2.Final.jar, lib\spring-boot-1.3.1.RELEASE.jar, lib\spring-boot-autoconfigure-1.3.1.RELEASE.jar, lib\spring-boot-actuator-1.3.1.RELEASE.jar, lib\spring-boot-starter-thymeleaf-1.3.1.RELEASE.jar, lib\jandex-1.1.0.Final.jar, lib\snakeyaml-1.16.jar, lib\jul-to-slf4j-1.7.13.jar, lib\spring-boot-starter-security-1.3.1.RELEASE.jar, lib\spring-web-4.2.4.RELEASE.jar, lib\spring-security-web-4.0.3.RELEASE.jar, lib\jboss-logging-annotations-1.2.0.Beta1.jar, lib\hibernate-jpa-2.1-api-1.0.0.Final.jar, lib\spring-context-4.2.4.RELEASE.jar, lib\tomcat-jdbc-8.0.30.jar, lib\spring-webmvc-4.2.4.RELEASE.jar, lib\spring-beans-4.2.4.RELEASE.jar, lib\jackson-databind-2.6.4.jar, lib\spring-orm-4.2.4.RELEASE.jar, lib\spring-boot-starter-1.3.1.RELEASE.jar, lib\spring-boot-starter-validation-1.3.1.RELEASE.jar, lib\tomcat-embed-logging-juli-8.0.30.jar, lib\spring-boot-devtools-1.3.1.RELEASE.jar, lib\validation-api-1.1.0.Final.jar, lib\aspectjweaver-1.8.7.jar, lib\mysql-connector-java-5.1.38.jar, lib\tomcat-embed-core-8.0.30.jar, lib\spring-jdbc-4.2.4.RELEASE.jar, lib\hibernate-commons-annotations-4.0.5.Final.jar, lib\spring-data-jpa-1.9.2.RELEASE.jar, lib\unbescape-1.1.0.RELEASE.jar, lib\activation-1.1.jar, lib\tomcat-embed-websocket-8.0.30.jar, lib\spring-core-4.2.4.RELEASE.jar, lib\hibernate-core-4.3.11.Final.jar, lib\slf4j-api-1.7.13.jar, lib\xml-apis-1.0.b2.jar]</sourceProjects>
+        <packages>
+            <package id="Artifact_6eb4295090b3ac1841f2859326d5d310a9b2cd62a9db50e5666f150a8410b27f">
+                <key>lib\jboss-logging-3.3.0.Final.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>jboss-logging-3.3.0.Final.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_ec51b398ac685ccd951407e0532d5a36a9e7a0795590decc0d1fb7f7a6dcbe12">
+                <key>lib\spring-data-commons-1.11.2.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>spring-data-commons-1.11.2.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_1f96ba580b75ec825036177978a1a31110e3b7b29edea9121f28f5ac196a55ed">
+                <key>lib\spring-boot-starter-data-jpa-1.3.1.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>spring-boot-starter-data-jpa-1.3.1.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_5638dca83c42294ac265b73f759698f5b269d6b2a793ceb43e8a9d304d01f980">
+                <key>lib\hsqldb-2.3.3.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>hsqldb-2.3.3.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_7ac0e750817746486c381e9bdbadfee04e275d989f774a316357262ab0c03918">
+                <key>lib\spring-security-config-4.0.3.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>spring-security-config-4.0.3.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_07a5508a1e3e4056914d93fd834a3bfc1547fae6de1dd146ce6695e6c0fa3de3">
+                <key>lib\spring-aop-4.2.4.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>spring-aop-4.2.4.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_eb9e82df9eb68e77f6350bd5ed42c6d9f5ee4344fcaa390befaec85eebeca9eb">
+                <key>lib\spring-boot-starter-actuator-1.3.1.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>spring-boot-starter-actuator-1.3.1.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_372e9b27045f05d1767e6a0c389edd135ece77fed503a5742f0046d9872cc34b">
+                <key>lib\hibernate-entitymanager-4.3.11.Final.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>hibernate-entitymanager-4.3.11.Final.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_f2e3efe01a11195c3a917b2891147de33b3f0fd1ddcf36ef24d8c89135d16e80">
+                <key>lib\spring-boot-starter-aop-1.3.1.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>spring-boot-starter-aop-1.3.1.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_3f687a53f308319c08b7028cb58d505dd493260d9a167272d402e047f705f138">
+                <key>lib\jcl-over-slf4j-1.7.13.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>jcl-over-slf4j-1.7.13.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_7817a8afbc49d416ca22439b787eb85cf51825cbb2c89accd35520123fee8bec">
+                <key>lib\spring-tx-4.2.4.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>spring-tx-4.2.4.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_b1e54750c1733cccf27ead18860ecb0332ff1ad7c9aa06bb33171f85a2e9ec4c">
+                <key>lib\thymeleaf-spring4-2.1.4.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>thymeleaf-spring4-2.1.4.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_d7f826d2017ccdeb2855babf584a0699508b96f1e40fe2a0d53378a0d46e8766">
+                <key>lib\antlr-2.7.7.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>antlr-2.7.7.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_ef6ba70ddb4539636426ea43ba7bb668fb1cebc08ec0108a5f5182cb5ae2b36b">
+                <key>lib\logback-classic-1.1.3.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>logback-classic-1.1.3.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_33d7933ab28c6f94f26ddb6bf0bee9ab7c18f2e18ae01b5ec46cb3fcf14a5bbc">
+                <key>lib\spring-aspects-4.2.4.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>spring-aspects-4.2.4.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_7a2091f0d50fe525a8cebb712bc7574c4b527c600bd5c526651f4006f6e581f3">
+                <key>lib\ognl-3.0.8.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>ognl-3.0.8.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_757169276ae054794a65031e5c4d3af52339d3da3bdf0fbacbd36cdd198d9fa9">
+                <key>lib\log4j-over-slf4j-1.7.13.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>log4j-over-slf4j-1.7.13.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_a1dd13efbe799272110a2129cb134e835cf8331ac8a15236c03ca601446a8e8c">
+                <key>lib\spring-boot-starter-jdbc-1.3.1.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>spring-boot-starter-jdbc-1.3.1.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_35b5ba3e211e3f69e8dc60894bb473b48088b9b7b0714c8d67bee2eb6f3ef605">
+                <key>lib\spring-boot-starter-tomcat-1.3.1.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>spring-boot-starter-tomcat-1.3.1.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_afcb3c7ce950d8bd3d2f9475737902cd8e06865297b7d137d9aa763072274d4a">
+                <key>lib\aopalliance-1.0.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>aopalliance-1.0.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_d0e93942f8dbc9394116072682bd9e7aa531b5cbf27ed381c8b06c43eaacff7d">
+                <key>lib\groovy-2.4.4.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>groovy-2.4.4.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_f2ef52a758b91f5639d85dd9b339d30ad713cd344293cb5c751ec4e542c92c15">
+                <key>lib\thymeleaf-2.1.4.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>thymeleaf-2.1.4.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_cb524a5e5452e04f5b8e7e17ded5f29262f29ab4388738196954f66b1cbfb2fc">
+                <key>lib\tomcat-juli-8.0.30.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>tomcat-juli-8.0.30.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_15031d4e5ff959bd1ce65e0fb139bd0c87720f0bbd5ce676fa2a7080e1491fdd">
+                <key>lib\javax.transaction-api-1.2.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>javax.transaction-api-1.2.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_3299744d1e8bc014beda7efdf5d866e0d74cc074b3feb2b8c17dccec5c7dce0d">
+                <key>lib\spring-security-core-4.0.3.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>spring-security-core-4.0.3.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_eb6b28821cc76b1de52277a1435e6ddfcbcea321a9ee724b949628ed2516d57e">
+                <key>lib\thymeleaf-layout-dialect-1.3.1.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>thymeleaf-layout-dialect-1.3.1.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_185976913e66694c9455aa63972c4ce734a3420cb8c76ef8398f20eb830be058">
+                <key>lib\dom4j-1.6.1.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>dom4j-1.6.1.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_144694f0048930b336debcc85dc3a42b33cbf737046ef883d935cba70f74fe56">
+                <key>lib\javassist-3.18.1-GA.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>javassist-3.18.1-GA.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_0375e70427a7faea42934f27471ec432fe4be2088852f4d30390f0b57df0eb92">
+                <key>lib\jackson-core-2.6.4.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>jackson-core-2.6.4.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_90e06e561522128a7a6ffb277af8418e6fae39560c17fa428dd13d9ee3117993">
+                <key>lib\spring-boot-starter-logging-1.3.1.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>spring-boot-starter-logging-1.3.1.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_bffbe3e8d165e4e86e4e2f31e50ba8b2188bffdd3946f5f9a242464ae5e94604">
+                <key>lib\classmate-1.1.0.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>classmate-1.1.0.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_3774cd5b4fcdaec9282278404edcf7b431d763c8b57b42f3080102d92ac77c64">
+                <key>lib\thymeleaf-extras-springsecurity4-2.1.2.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>thymeleaf-extras-springsecurity4-2.1.2.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_ba340144d40e0cd5add2b1bba83c1135489762f26d2ab6b1f16eb0ed6c8027f3">
+                <key>lib\jackson-annotations-2.6.4.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>jackson-annotations-2.6.4.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_7f3fcf8825b62bb0d10867ea00418961e0e1159a03d0b27cac5fc7cf4d308011">
+                <key>lib\logback-core-1.1.3.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>logback-core-1.1.3.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_7dc0e464393aba6b9caa273aa7e4a9c4a82f0c4a24e7934e26da52ae45aa3406">
+                <key>lib\javax.mail-1.5.5.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>javax.mail-1.5.5.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_92b7c641384b2bb2d7717dddc0becbed04df0ea1e4b05cd9a9280dea51c8a6aa">
+                <key>lib\tomcat-embed-el-8.0.30.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>tomcat-embed-el-8.0.30.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_771453920c9c4bfd33fdf2e2cdb1a05c01bd8ef057600596c9887d3596d0832a">
+                <key>lib\spring-boot-starter-web-1.3.1.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>spring-boot-starter-web-1.3.1.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_d9c1463ad044fd6353caf54aae774bbc5cd00be8119e5231da879d5f9cc26c02">
+                <key>lib\spring-expression-4.2.4.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>spring-expression-4.2.4.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_3747a0bb5ea2109dfa8d196098bbc387e05b4d08d0f330b552c8e57b59814788">
+                <key>lib\hibernate-validator-5.2.2.Final.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>hibernate-validator-5.2.2.Final.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_f1621ac3d4c2ddf853ba8d040c2fe8b28af11d5756fe4dc139a76aeb2e91e49d">
+                <key>lib\spring-boot-1.3.1.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>spring-boot-1.3.1.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_f36c316ff572a3c87316d58524b431555652afc3fbdf9caf6e543c4940988acd">
+                <key>lib\spring-boot-autoconfigure-1.3.1.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>spring-boot-autoconfigure-1.3.1.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_fa7586f0b386a9015964fd4894dfe655e84250f1b32f8d79243e384680f79346">
+                <key>lib\spring-boot-actuator-1.3.1.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>spring-boot-actuator-1.3.1.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_100ca6e7b11e115e93c1d11f8fe82e3494059e8697df4c9931cd3a89f918ab9f">
+                <key>lib\spring-boot-starter-thymeleaf-1.3.1.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>spring-boot-starter-thymeleaf-1.3.1.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_a085fa69f4a82416a9a84c27e11babea2ace3f2238c3e16398468c03981a7120">
+                <key>lib\jandex-1.1.0.Final.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>jandex-1.1.0.Final.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_df6d5cd0625771497a21e2d55d0ed0f6539517ed00a3f006ddc1138df1235b76">
+                <key>lib\snakeyaml-1.16.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>snakeyaml-1.16.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_8e1a42c8e1c0aa88b54554ad6e5b302bc114907a10bfe718756138ca2c643372">
+                <key>lib\jul-to-slf4j-1.7.13.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>jul-to-slf4j-1.7.13.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_b9c5307d8a5793c4f014264ba0c1224b1c7d1510da2f5b457642c614fce4b61f">
+                <key>lib\spring-boot-starter-security-1.3.1.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>spring-boot-starter-security-1.3.1.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_3d6ec7c7654235b3dd698e7ba077b4faebb1ad51b3ca94ad6f11c333c192ddc4">
+                <key>lib\spring-web-4.2.4.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>spring-web-4.2.4.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_8f146beed1415944479476716a661225f540ce1899c15722f3d79ec5026f4f55">
+                <key>lib\spring-security-web-4.0.3.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>spring-security-web-4.0.3.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_113db4880ae9de9dfda0c2a9a0d1425f078a6a2bd680034943002646696f2bac">
+                <key>lib\jboss-logging-annotations-1.2.0.Beta1.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>jboss-logging-annotations-1.2.0.Beta1.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_694d3ded988430dc89f4f34317b5bf9c7e05548862ad013cc5a96757b7bf1ea8">
+                <key>lib\hibernate-jpa-2.1-api-1.0.0.Final.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>hibernate-jpa-2.1-api-1.0.0.Final.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_fa2262f93f86bb98318a4b4a1ca63b4d76671fc0b19e87ce390c106a4ae6c5c4">
+                <key>lib\spring-context-4.2.4.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>spring-context-4.2.4.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_a5846dbd3b696ec27f6fd6d8848bace88deebd86b9ecc0f68dd37744143b01f2">
+                <key>lib\tomcat-jdbc-8.0.30.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>tomcat-jdbc-8.0.30.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_238ad0711a69823953dad5d5200bd23dd67efb8c9654e1d6ba9d930266bd76fe">
+                <key>lib\spring-webmvc-4.2.4.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>spring-webmvc-4.2.4.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_a7261768de17e3c72509e07d943f4c12157883ac15d79d7520c45178cd85b7c7">
+                <key>lib\spring-beans-4.2.4.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>spring-beans-4.2.4.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_dd5e749c796a63dec171a44d24394986b60a23367ec27bf55b23bc0137751f2a">
+                <key>lib\jackson-databind-2.6.4.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>jackson-databind-2.6.4.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_915c0b9bcdaf424ca979f421e02b12f718744205c348e896491f580879350fbb">
+                <key>lib\spring-orm-4.2.4.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>spring-orm-4.2.4.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_f2c033c48461e4c289a869e43036763d4233d8f22a21715185e513645afefe8d">
+                <key>lib\spring-boot-starter-1.3.1.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>spring-boot-starter-1.3.1.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_53b81b759be8bb37cd4d71fdd6a0c188629e44fcd8b8cdaeda64fb7eac2f1737">
+                <key>lib\spring-boot-starter-validation-1.3.1.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>spring-boot-starter-validation-1.3.1.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_3760018a2cea49ff06835aa219f6977bc4a7205134ba973dfedd5f8ea782038d">
+                <key>lib\tomcat-embed-logging-juli-8.0.30.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>tomcat-embed-logging-juli-8.0.30.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_9d27f052ba0b53bffed6ec3bf9264068ec760c7edf5e2f86104687ec1d1d60e4">
+                <key>lib\spring-boot-devtools-1.3.1.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>spring-boot-devtools-1.3.1.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_51b02a8c44520299160034231d4300d9fbffa4e0a6179d5a77de53bae55f6bf2">
+                <key>lib\validation-api-1.1.0.Final.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>validation-api-1.1.0.Final.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_fab847a04745090b51f42356b6e0d3ca9bf03932f95fbdc74561e71610ba1474">
+                <key>lib\aspectjweaver-1.8.7.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>aspectjweaver-1.8.7.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_7647510cc4072d1d596da73c101b2f1acd5808f7466076edaf58691a2eb28d2f">
+                <key>lib\mysql-connector-java-5.1.38.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>mysql-connector-java-5.1.38.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_710bcfb0b2251f27cc7d8133fc86464e94bd0b5d14d0b47c70e86158ec2b4a24">
+                <key>lib\tomcat-embed-core-8.0.30.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>tomcat-embed-core-8.0.30.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_9d92a36e93faf602bb0a474fbe9826cc4505c319aac15683498de3f9f7bb8ff2">
+                <key>lib\spring-jdbc-4.2.4.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>spring-jdbc-4.2.4.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_4d6c9a8d65352edd42c5deb28e01196208e5f34ad8752a14d0bb0462287b6ab5">
+                <key>lib\hibernate-commons-annotations-4.0.5.Final.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>hibernate-commons-annotations-4.0.5.Final.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_101cdd7e626acf221777c82d67bcd32133c527f1180b99b73ea36d5480903e7a">
+                <key>lib\spring-data-jpa-1.9.2.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>spring-data-jpa-1.9.2.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_e94395bbe4195cb4c83d20ad67acbab16533506a618a382607a1e3ae2ffed900">
+                <key>lib\unbescape-1.1.0.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>unbescape-1.1.0.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_81a33b7a68cfeb11fb9da76d1f56fe18be1bc412f988c6d48dbac4db5dd507f1">
+                <key>lib\activation-1.1.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>activation-1.1.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_a2d6573cefc783d432e7cced9eb000a0494e30df42a3afe6ffbb8d6bec2afada">
+                <key>lib\tomcat-embed-websocket-8.0.30.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>tomcat-embed-websocket-8.0.30.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_f5eafe6b59380d6c5918d828fed748af31d0639dfb950be8bfe9480182ec0601">
+                <key>lib\spring-core-4.2.4.RELEASE.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>spring-core-4.2.4.RELEASE.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_0af7bf29d59a239ef12126ba949d554a73a20772613dbaf00978438793b3eec9">
+                <key>lib\hibernate-core-4.3.11.Final.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>hibernate-core-4.3.11.Final.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_05e5ee900ca2bc3392021bfcad033a622343bf479cee80411e04f7873c4d1b80">
+                <key>lib\slf4j-api-1.7.13.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>slf4j-api-1.7.13.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_cec696f4e8437e39bbb44153a55640708a1b431b809782db84f50da5bb710f98">
+                <key>lib\xml-apis-1.0.b2.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>xml-apis-1.0.b2.jar</moduleName>
+                <type>Library</type>
+            </package>
+            <package id="Artifact_0a20d99f2545572117851e261cd25ed82e73079236ef1d6acbca6883a3620bca">
+                <key>ticketmagpie-0.1.0.jar</key>
+                <logicalType>JAVA_ARCHIVE</logicalType>
+                <moduleName>ticketmagpie-0.1.0.jar</moduleName>
+                <type>Application</type>
+            </package>
+            <package id="Artifact_9f49e67e41a31bf7f4b6218e965ca22fe94c1fdf0e78b6321c33d930b8759636">
+                <key>spec.xml</key>
+                <logicalType>XML_ANNOTATION</logicalType>
+                <moduleName>spec.xml</moduleName>
+                <type>Other</type>
+            </package>
+            <package id="Artifact_f76f3e2492802254efe04e5d8cb8bf09086616c224d52e68f25d9c5a7be88b70">
+                <key>policy.xml</key>
+                <logicalType>GDPR_POLICY</logicalType>
+                <moduleName>policy.xml</moduleName>
+                <type>Other</type>
+            </package>
+        </packages>
+        <options name="Internal options">
+            <booleanOption value="true" label="Allow framework detection" name="allowFrameworkDetection" userVisible="true">
+                <description>Enables automatic framework detection</description>
+                <documentation>Enables automatic framework detection, allowing Julia to identify frameworks and optimize the analysis accordingly. A description of the frameworks automatically recognized by Julia is available in the documentation.</documentation>
+                <syntax>-allowFrameworkDetection true|false</syntax>
+            </booleanOption>
+            <stringOption label="Type of splitter" name="applicationSplitter" userVisible="false">
+                <alternative name="ByPackage">
+                    <synopsis>split the application jars on the basis of their packages structure</synopsis>
+                </alternative>
+                <alternative name="KargerSteinCut">
+                    <synopsis>apply the Karger-Stein algorithm to partition the application jars</synopsis>
+                </alternative>
+                <alternative name="RandomDeterministic">
+                    <synopsis>randomly split the application jars</synopsis>
+                </alternative>
+                <alternative name="StoerWagnerMinimumCut">
+                    <synopsis>apply the Stoer-Wagner algorithm to partition the application jars</synopsis>
+                </alternative>
+                <description>Specify the application splitter</description>
+                <documentation>Specifies the application splitter that must be used to split the application jars. By deafult, the random splitter is selected.</documentation>
+                <syntax>-applicationSplitter XXX</syntax>
+            </stringOption>
+            <booleanOption value="false" label="Dump call graph" name="dumpCallGraph" userVisible="false">
+                <description>Dump the call graph generated by the analysis</description>
+                <documentation>Specifies whether or not the call graph computed by the analysis should be dumped to a dot file.</documentation>
+                <syntax>-dumpCallGraph true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="Dump generated annotations" name="dumpFrameworkAnnotations" userVisible="false">
+                <description>Dump annotations generated by framework specification</description>
+                <documentation>Specifies whether or not the annotations automatically generated by the application of a framework specification should be dumped or not.</documentation>
+                <syntax>-dumpFrameworkAnnotations true|false</syntax>
+            </booleanOption>
+            <booleanOption value="true" label="dumpOutputToLog" name="dumpOutputToLog" userVisible="true">
+                <description>Dump warnings and remarks to standard output</description>
+                <documentation>If true, the complete list of warnings and remarks will be dumped to the standard output</documentation>
+                <syntax>-dumpOutputToLog true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="Enable assertions" name="ea" userVisible="true">
+                <description>Assume that assertions are turned on</description>
+                <documentation>Assume that assertion statements are executed, hence warnings should be reported about those statements and their effects on subsequent instructions must be taken into account.</documentation>
+                <syntax>-ea true|false</syntax>
+            </booleanOption>
+            <enumOption value="ALL_ENTRIES" label="Entry points" name="entryPoint" userVisible="true">
+                <alternative name="ALL_ENTRIES">
+                    <synopsis>Assume that all public and protected methods and constructors are entry points</synopsis>
+                </alternative>
+                <alternative name="ALL_METHODS">
+                    <synopsis>Assume that all public, protected and private methods and constructors are entry points</synopsis>
+                </alternative>
+                <alternative name="LIBRARY">
+                    <synopsis>Assume that all public and protected methods and constructors are entry points, and assume that non-final classes might be redefined in the future</synopsis>
+                </alternative>
+                <alternative name="ONLY_EXPLICIT_ENTRIES">
+                    <synopsis>Only consider entry points marked as @EntryPoint</synopsis>
+                </alternative>
+                <alternative name="ONLY_STANDARD_ENTRIES">
+                    <synopsis>Only consider default entry points like main methods, event handlers of Swing and Android</synopsis>
+                </alternative>
+                <description>The entry points of the application</description>
+                <documentation>Specify the entry point of the application the analysis starts from.</documentation>
+                <syntax>-entryPoint</syntax>
+            </enumOption>
+            <stringOption value="java8" label="Framework" name="framework" userVisible="true">
+                <alternative name="androidAPI1">
+                    <synopsis>use the framework of analysis for Android API 1</synopsis>
+                </alternative>
+                <alternative name="androidAPI10">
+                    <synopsis>use the framework of analysis for Android API 10</synopsis>
+                </alternative>
+                <alternative name="androidAPI11">
+                    <synopsis>use the framework of analysis for Android API 11</synopsis>
+                </alternative>
+                <alternative name="androidAPI12">
+                    <synopsis>use the framework of analysis for Android API 12</synopsis>
+                </alternative>
+                <alternative name="androidAPI13">
+                    <synopsis>use the framework of analysis for Android API 13</synopsis>
+                </alternative>
+                <alternative name="androidAPI14">
+                    <synopsis>use the framework of analysis for Android API 14</synopsis>
+                </alternative>
+                <alternative name="androidAPI15">
+                    <synopsis>use the framework of analysis for Android API 15</synopsis>
+                </alternative>
+                <alternative name="androidAPI16">
+                    <synopsis>use the framework of analysis for Android API 16</synopsis>
+                </alternative>
+                <alternative name="androidAPI17">
+                    <synopsis>use the framework of analysis for Android API 17</synopsis>
+                </alternative>
+                <alternative name="androidAPI18">
+                    <synopsis>use the framework of analysis for Android API 18</synopsis>
+                </alternative>
+                <alternative name="androidAPI19">
+                    <synopsis>use the framework of analysis for Android API 19</synopsis>
+                </alternative>
+                <alternative name="androidAPI2">
+                    <synopsis>use the framework of analysis for Android API 2</synopsis>
+                </alternative>
+                <alternative name="androidAPI20">
+                    <synopsis>use the framework of analysis for Android API 20</synopsis>
+                </alternative>
+                <alternative name="androidAPI21">
+                    <synopsis>use the framework of analysis for Android API 21</synopsis>
+                </alternative>
+                <alternative name="androidAPI22">
+                    <synopsis>use the framework of analysis for Android API 22</synopsis>
+                </alternative>
+                <alternative name="androidAPI23">
+                    <synopsis>use the framework of analysis for Android API 23</synopsis>
+                </alternative>
+                <alternative name="androidAPI24">
+                    <synopsis>use the framework of analysis for Android API 24</synopsis>
+                </alternative>
+                <alternative name="androidAPI25">
+                    <synopsis>use the framework of analysis for Android API 25</synopsis>
+                </alternative>
+                <alternative name="androidAPI26">
+                    <synopsis>use the framework of analysis for Android API 26</synopsis>
+                </alternative>
+                <alternative name="androidAPI27">
+                    <synopsis>use the framework of analysis for Android API 27</synopsis>
+                </alternative>
+                <alternative name="androidAPI28">
+                    <synopsis>use the framework of analysis for Android API 28</synopsis>
+                </alternative>
+                <alternative name="androidAPI3">
+                    <synopsis>use the framework of analysis for Android API 3</synopsis>
+                </alternative>
+                <alternative name="androidAPI4">
+                    <synopsis>use the framework of analysis for Android API 4</synopsis>
+                </alternative>
+                <alternative name="androidAPI5">
+                    <synopsis>use the framework of analysis for Android API 5</synopsis>
+                </alternative>
+                <alternative name="androidAPI6">
+                    <synopsis>use the framework of analysis for Android API 6</synopsis>
+                </alternative>
+                <alternative name="androidAPI7">
+                    <synopsis>use the framework of analysis for Android API 7</synopsis>
+                </alternative>
+                <alternative name="androidAPI8">
+                    <synopsis>use the framework of analysis for Android API 8</synopsis>
+                </alternative>
+                <alternative name="androidAPI9">
+                    <synopsis>use the framework of analysis for Android API 9</synopsis>
+                </alternative>
+                <alternative name="dotnet">
+                    <synopsis>use the framework of analysis for .NET</synopsis>
+                </alternative>
+                <alternative name="java1">
+                    <synopsis>use the framework of analysis for Java 1.1</synopsis>
+                </alternative>
+                <alternative name="java10">
+                    <synopsis>use the framework of analysis for Java 1.10</synopsis>
+                </alternative>
+                <alternative name="java11">
+                    <synopsis>use the framework of analysis for Java 1.11</synopsis>
+                </alternative>
+                <alternative name="java2">
+                    <synopsis>use the framework of analysis for Java 1.2</synopsis>
+                </alternative>
+                <alternative name="java3">
+                    <synopsis>use the framework of analysis for Java 1.3</synopsis>
+                </alternative>
+                <alternative name="java4">
+                    <synopsis>use the framework of analysis for Java 1.4</synopsis>
+                </alternative>
+                <alternative name="java5">
+                    <synopsis>use the framework of analysis for Java 1.5</synopsis>
+                </alternative>
+                <alternative name="java6">
+                    <synopsis>use the framework of analysis for Java 1.6</synopsis>
+                </alternative>
+                <alternative name="java7">
+                    <synopsis>use the framework of analysis for Java 1.7</synopsis>
+                </alternative>
+                <alternative name="java8">
+                    <synopsis>use the framework of analysis for Java 1.8</synopsis>
+                </alternative>
+                <alternative name="java9">
+                    <synopsis>use the framework of analysis for Java 1.9</synopsis>
+                </alternative>
+                <description>Specify the framework of analysis</description>
+                <documentation>A framework specifies rules specific to the given programming context used for the application under analysis, such as the entry points for the analysis. The "java7" framework will work in most cases, but more specific frameworks might yield more precise results of analysis. The specification of the framework might also change the behavior of the checkers, since some checks might be sensible for some frameworks only.</documentation>
+                <syntax>-framework XXX</syntax>
+            </stringOption>
+            <booleanOption value="false" label="help" name="help" userVisible="true">
+                <description>Display the help of the analyzer</description>
+                <syntax>-help true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="Ignore XML files" name="ignoreXMLFiles" userVisible="false">
+                <description>Ignore XML files regardless of content/type and support</description>
+                <documentation>Frameworks often rely on XML files to specify configuration and application behaviour.By default, Julia tries to parse common xml configuration files and simulate the implied runtime effects, this option forces Julia to ignore all input xml files regardless of the analysis support and optimizations provided by the selected framework.</documentation>
+                <syntax>-ignoreXMLFiles true|false</syntax>
+            </booleanOption>
+            <enumOption value="TYPES" label="Mode of library processing" name="libraryProcessingMode" userVisible="true">
+                <alternative name="TYPES">
+                    <synopsis>ignore the code of the non-runtime libraries</synopsis>
+                </alternative>
+                <alternative name="TYPES_AND_CODE">
+                    <synopsis>include the code of all classes during analysis</synopsis>
+                </alternative>
+                <description>Processing mode for library classes</description>
+                <documentation>Allow the analyzer to discard the implementation of library methods and only uses the hierarchy of the library classes during the analysis. This decreases the precision of the analysis and might occasionally make it unsound, but reduces the time of analysis.</documentation>
+                <syntax>-libraryProcessingMode</syntax>
+            </enumOption>
+            <booleanOption value="false" label="maniac" name="maniac" userVisible="true">
+                <description>Run in maniac mode</description>
+                <documentation>Applies very strict hypotheses about unknown code, such as reflective calls and calls with missing targets</documentation>
+                <syntax>-maniac true|false</syntax>
+            </booleanOption>
+            <intOption value="0" label="maxMethods" name="maxMethods" userVisible="true">
+                <description>Set the maximum number of extracted methods to N (0 means no limit)</description>
+                <documentation>After this threshold, the analysis aborts</documentation>
+                <syntax>-maxMethods N</syntax>
+            </intOption>
+            <booleanOption value="false" label="mergeArrays" name="mergeArrays" userVisible="true">
+                <description>Merge, during the extraction of the application, the arrays of the same type</description>
+                <documentation>This allows you to analyze applications that create a large number of arrays at many program points. This option might sometimes slightly reduce the precision of the analysis, by considering a larger number of methods and fields as reachable. However, it might be important for the analysis of some application, since it improves the scalability of the analyzer</documentation>
+                <syntax>-mergeArrays true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="mergeArraysInsideMethod" name="mergeArraysInsideMethod" userVisible="true">
+                <description>Merge, during the extraction of the application, the arrays of the same type created inside the same method or constructor</description>
+                <documentation>This allows the user to analyze applications that create a large number of arrays at many program points. This option might sometimes slightly reduce the precision of the analysis, by considering a larger number of methods and fields as reachable. However, it might be important for the analysis of some application, since it improves the scalability of the analyzer. This option is less radical than the -mergeArrays option, that is, it introduces less imprecison but also induces less scalability</documentation>
+                <syntax>-mergeArraysInsideMethod true|false</syntax>
+            </booleanOption>
+            <stringOption value="juliaOutput\2c921b87-9526-467e-a83a-7ebaa0b09f5b\" label="outputPath" name="outputPath" userVisible="true">
+                <description>Set the directory where the output of the analyzer must be dumped</description>
+                <documentation>If that directory does not exist, it is automatically created by the analyzer</documentation>
+                <syntax>-outputPath PATH</syntax>
+            </stringOption>
+            <booleanOption value="false" label="Robust" name="robust" userVisible="false">
+                <description>Do not crash if a checker crashes</description>
+                <documentation>If a checker crashes (for any reason), the overall analysis goes ahead and terminates.A warning  stating that &lt;checker&gt; crashed is produced in the console.</documentation>
+                <syntax>-robust true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="rta" name="rta" userVisible="true">
+                <description>Use rapid type analysis to extract the application</description>
+                <documentation>This is rarely used and currently not optimized for large applications. The precision of rapid type analysis is worse than that of the standard extraction algorithm used by Julia but, in principle, should scale better. Please consider using the -mergeArrays and -mergeArraysInsideMethod options instead</documentation>
+                <syntax>-rta true|false</syntax>
+            </booleanOption>
+            <stringOption value="C:\Users\OlivieriL\Julia\sca-core\julia-tests\test-runtimes\java8\rt.jar;C:\Users\OlivieriL\Julia\sca-core\julia-tests\test-runtimes\java8\jsse.jar;C:\Users\OlivieriL\Julia\sca-core\julia-tests\test-runtimes\java8\jce.jar;" label="runtime" name="runtime" userVisible="true">
+                <description>Specify the classpath used for loading the runtime classes</description>
+                <documentation>Runtime classes are normally loaded by using the default class loader. This option allows one to change this behavior, by specifying a specific class path to use for class loading of runtime classes</documentation>
+                <syntax>-runtime XXX</syntax>
+            </stringOption>
+            <booleanOption value="false" label="sequential" name="sequential" userVisible="true">
+                <description>Run checkers one after another</description>
+                <documentation>Instruct Julia to wait for the completion of a checker before starting running another checker</documentation>
+                <syntax>-sequential true|false</syntax>
+            </booleanOption>
+            <booleanOption value="false" label="silent" name="silent" userVisible="true">
+                <description>Run in silent mode</description>
+                <documentation>No textual output is produced with this option, but the analyses are run and output files are generated</documentation>
+                <syntax>-silent true|false</syntax>
+            </booleanOption>
+            <intOption value="1" label="Number of splits" name="splitApplicationJar" userVisible="false">
+                <description>Split statistically closed jars, containing the application to analyse, into the given number of partitions</description>
+                <documentation>Splits the jars containing the application to analyse. This decreases the precision of the analysis and might occasionally make it unsound, but reduces the time of analysis.</documentation>
+                <syntax>-splitApplicationJar N</syntax>
+            </intOption>
+            <booleanOption value="false" label="verbose" name="verbose" userVisible="true">
+                <description>Run in verbose mode</description>
+                <documentation>This produces a longer and more detailed textual output. Mostly useful for debugging the analyzer</documentation>
+                <syntax>-verbose true|false</syntax>
+            </booleanOption>
+        </options>
+        <checkers>
+            <checker group="Advanced" level="Public" name="Gdpr">
+                <booleanOption value="false" label="compileLeakagePoints" name="compileLeakagePoints" userVisible="true">
+                    <description>allow to identify and tag automatically the leakage points of analized code.It is disabled in the case of an initial phase with the File specific in active option</description>
+                    <documentation>If set to true, it produces a specification file with the leakage points already compiled with a list ofthe most critical common leakage points</documentation>
+                    <syntax>compileLeakagePoints true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="dumpAnalysis" name="dumpAnalysis" userVisible="true">
+                    <description>dump extensive (very large!) log information about the analysis</description>
+                    <documentation>Only useful for debugging the analyzer</documentation>
+                    <syntax>dumpAnalysis true|false</syntax>
+                </booleanOption>
+                <booleanOption value="false" label="dumpCompleteGraphs" name="dumpCompleteGraphs" userVisible="true">
+                    <description>dump the complete backward flow graph derivated from a leakage point</description>
+                    <documentation>If set to true, it produces an archive with the complete backward flow graphs that are used for the extraction of source-sink subgraphs</documentation>
+                    <syntax>dumpCompleteGraphs true|false</syntax>
+                </booleanOption>
+                <enumOption value="AVERAGE" label="flowComputingSpeed" name="flowComputingSpeed" userVisible="true">
+                    <alternative name="AVERAGE">
+                        <synopsis>reconstruct graphs until max of 2000 nodes</synopsis>
+                    </alternative>
+                    <alternative name="FAST">
+                        <synopsis>reconstruct graphs until max of 1000 nodes</synopsis>
+                    </alternative>
+                    <alternative name="FASTEST">
+                        <synopsis>reconstruct graphs until max of 500 nodes</synopsis>
+                    </alternative>
+                    <alternative name="SLOW">
+                        <synopsis>reconstruct graphs until max of 4000 nodes</synopsis>
+                    </alternative>
+                    <alternative name="SLOWEST">
+                        <synopsis>reconstruct graphs until max of integer limit nodes</synopsis>
+                    </alternative>
+                    <description>efficiency of the flow reconstruction</description>
+                    <documentation>This speciefies the efficiency of the flow reconstruct. Interesting only if option flow is set to true. (AVERAGE by default)</documentation>
+                    <syntax>flowComputingSpeed</syntax>
+                </enumOption>
+                <enumOption value="Report" label="phase" name="phase" userVisible="true">
+                    <alternative name="Init">
+                        <synopsis>option to execute Init phase</synopsis>
+                    </alternative>
+                    <alternative name="Report">
+                        <synopsis>option to execute Report phase</synopsis>
+                    </alternative>
+                    <description>phase of the Gdpr analysis</description>
+                    <documentation>If set to Init, it produces the excel file used to annotate sources of sensitive data, leakage points and set a policy.If set to Report (default), it runs the analysis and produces the output files.</documentation>
+                    <syntax>phase</syntax>
+                </enumOption>
+                <fileOption label="specificationFile" name="specificationFile" userVisible="true">
+                    <description>Gdpr specification file</description>
+                    <documentation>This is the Gdpr specification file and contains settings and information for the analysis</documentation>
+                    <syntax>specificationFile XXX</syntax>
+                    <allowedFileExtension>*.xlsx</allowedFileExtension>
+                    <allowedFileExtension>*.xls</allowedFileExtension>
+                    <allowedFileExtensionName>Excel Workbook</allowedFileExtensionName>
+                    <allowedFileExtensionName>Excel 97-2003 Workbook</allowedFileExtensionName>
+                    <logicalType>GDPR_SPECIFICATION</logicalType>
+                </fileOption>
+                <synopsis>Identify privacy issues for GDPR compliance, and produce a detailed report</synopsis>
+            </checker>
+        </checkers>
+    </analysisSpecification>
+    <formattedRunDuration>00:29:40.805</formattedRunDuration>
+</analysisReportResult>

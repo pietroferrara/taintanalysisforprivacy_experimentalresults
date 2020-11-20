@@ -4,6 +4,7 @@
 
 The repository contains the XML results of the analysis of
 - WebGoat 6.0.1
+- TicketMagpie
 - blojsom 3.3b
 - bluebog 0.9
 - riki 1.3.0
@@ -21,6 +22,7 @@ The repository contains the XML results of the analysis of
 and taint graphs of
 - WebGoat 6.0.1
 - UBCBench
+- TicketMagpie
 
 ## How to view the taint graphs
 
